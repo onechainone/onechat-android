@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_main"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_110"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/push_rectangle"
+    android:gravity="center_vertical"
+    android:maxHeight="@dimen/dimen_110"
+    android:minHeight="@dimen/dimen_110"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_simple_10">
+
+    <ImageView
+        android:id="@+id/iv_user_avatar"
+        android:layout_width="@dimen/dimen_34"
+        android:layout_height="@dimen/dimen_34"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dimen_10"
+        android:src="@drawable/default_other_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/dimen_5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_push_title"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="@string/onechat_id"
+                android:textColor="@color/base_text_color_level1"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_little_5"
+                android:textColor="@color/base_text_color_level2"
+                android:textSize="@dimen/text_size_12"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_little_3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_push_content"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_little_3"
+                android:layout_weight="1"
+                android:maxLines="3"
+                android:text="@string/onechat_id"
+                android:textColor="@color/push_content_gray"
+                android:textSize="@dimen/text_size_12" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_little_3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_refuse"
+                    android:layout_width="@dimen/dimen_54"
+                    android:layout_height="@dimen/dimen_25"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:background="@drawable/btn_refuse"
+                    android:gravity="center"
+                    android:text="@string/button_refuse"
+                    android:textColor="@color/base_bg_color_level1"
+                    android:textSize="@dimen/dimen_10" />
+
+                <TextView
+                    android:id="@+id/tv_agree"
+                    android:layout_width="@dimen/dimen_54"
+                    android:layout_height="@dimen/dimen_25"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_agree"
+                    android:gravity="center"
+                    android:text="@string/button_agree"
+                    android:textColor="@color/base_bg_color_level1"
+                    android:textSize="@dimen/dimen_10" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

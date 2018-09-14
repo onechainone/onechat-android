@@ -1,0 +1,13 @@
+<onemessageui.widght.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="@dimen/dimen_40"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_note_history_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_little_8"
+        android:scaleType="centerCrop" />
+</onemessageui.widght.SquareLayout>

@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_background_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_30"
+                android:layout_marginRight="@dimen/dimen_30"
+                android:layout_marginTop="@dimen/margin_large_15"
+                android:text="@string/make_sure_seed_tip"
+                android:textColor="@color/base_color"
+                android:textSize="@dimen/text_size_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/margin_large_15"
+                android:background="@drawable/simple_shadow_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_large_15">
+
+                <onewalletui.ui.widget.flowtag.FlowTagView
+                    android:id="@+id/tag_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_170"
+                    app:lineSpacing="@dimen/margin_little_6"
+                    app:tagSpacing="@dimen/margin_little_6" />
+
+            </LinearLayout>
+
+            <onewalletui.ui.widget.flowtag.FlowTagView
+                android:id="@+id/tag_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/margin_simple_10"
+                android:padding="@dimen/padding_simple_10"
+                app:lineSpacing="@dimen/margin_simple_10"
+                app:tagSpacing="@dimen/margin_simple_10" />
+
+            <TextView
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/simple_btn_height"
+                android:layout_marginBottom="@dimen/margin_little_8"
+                android:layout_marginLeft="@dimen/margin_large_18"
+                android:layout_marginRight="@dimen/margin_large_18"
+                android:layout_marginTop="@dimen/margin_simple_10"
+                android:alpha="@string/default_transparent_alpha"
+                android:background="@drawable/bt_big"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="@string/finish_verify"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/skip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/margin_simple_10"
+                android:padding="@dimen/padding_little_5"
+                android:text="@string/skip_verify"
+                android:textColor="@color/blue_simple"
+                android:textSize="@dimen/text_size_12" />
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:src="@drawable/register_word_t" />
+
+            <LinearLayout
+                android:id="@+id/ll_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/seed"
+                    android:textColor="@color/base_text_color_level1"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/verification_seed"
+                    android:textColor="@color/base_text_color_level1"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/input_infomation"
+                    android:textColor="@color/base_text_color_level1"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/register_completed"
+                    android:textColor="@color/base_text_color_level1"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

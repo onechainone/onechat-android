@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_share">Deel</string>
+    <string name="action_settings">Instellingen</string>
+    <string name="action_refresh">Vernieuw</string>
+
+    <!-- Errors -->
+    <string name="error_generic">Fout tijdens het uitvoeren van opdracht</string>
+    <string name="error_could_not_read_wallet">Portemonnee toegang geweigerd</string>
+    <string name="error_camera">Camera toegang is geweigerd</string>
+
+    <!-- Generic items -->
+    <string name="button_ok">OK</string>
+    <string name="button_confirm">Bevestig</string>
+    <string name="button_cancel">Annuleer</string>
+    <string name="button_default">Standaard</string>
+    <string name="button_dismiss">Afwijzen</string>
+    <string name="button_add">Toevoegen</string>
+    <string name="button_save">Opslaan</string>
+    <string name="button_send">Verstuur</string>
+    <string name="button_retry">Opnieuw</string>
+    <string name="button_agree">Accepteer</string>
+    <string name="button_disagree">Weiger</string>
+    <string name="scan_qr_code">Scan QR code</string>
+    <string name="copied_to_clipboard">Gekopieerd naar het klembord</string>
+    <string name="wallet_locked_message">Je portemonnee is versleuteld</string>
+    <string name="unlock_wallet_title">Ontgrendel je portemonnee</string>
+    <string name="unlocking_wallet_error_title">Kon je portemonnee niet ontgrendelen</string>
+    <string name="unlocking_wallet_error_detail">Verkeerd paswoord! Zorg er alstublieft voor dat uw paswoord correct is.  Probeer uw paswoord te herstellen door gebruik te maken van uw herstel zin als het probleem zich blijft voordoen.</string>
+
+    <!-- Nav drawer -->
+    <!-- SendOutput widget -->
+    <string name="fee">Transactiekosten</string>
+    <string name="send">Verstuur</string>
+    <string name="receive">Ontvang</string>
+
+    <!-- Wallet activity -->
+    <string name="pay_with">Verstuur met</string>
+    <string name="exchange_and_pay_title">Wissel om en verstuur</string>
+
+    <!-- PayToDialog-->
+    <string name="ambiguous_address_message">Selecteer de juiste munteenheid</string>
+
+    <!-- Balance fragment -->
+    <string name="get_tx_broadcast_error">Transactie verstuur fout</string>
+
+    <!-- Receive fragment -->
+    <string name="create_new_address">Adres aanmaken?</string>
+    <string name="create_new_address_name">Naam (optioneel)</string>
+    <string name="too_many_unused_addresses">Teveel ongebruikte adressen, probeer een oude te gebruiken alvorens u een nieuwe aanmaakt.</string>
+
+    <!-- Send fragment -->
+    <!-- Here the %1$s is a detailed error message -->
+    <string name="scan_error">Fout tijdens het scannen: %1$s</string>
+    <!-- Here the \"%1$s\" is the "coin name"-->
+    <string name="amount_error">Het ingevoerde bedrag is niet geldig.</string>
+    <!-- %1$s is the amount e.g. ... is at least 0.00001 BTC-->
+    <string name="amount_error_not_enough_money_plain">Niet genoeg geld</string>
+    <!-- %1$s is the wallet balance e.g. ... current balance is 3.1415 BTC-->
+
+    <!-- Set Password fragment -->
+    <!-- Here the \"%1$s\" is the "password"-->
+    <!-- The %1$d is a number of characters, usually 10 characters -->
+    <!-- FinalizeWalletRestorationFragment -->
+    <string name="wallet_restoration_master_key">Hoofdsleutel aan het cre쳥n</string>
+    <!-- The %1$s is a coin name e.g. Creating key for Bitcoin -->
+    <string name="wallet_restoration_coin">Sleutel aan het cre쳥n voor %1$s</string>
+    <!-- The %1$s is an error message -->
+    <string name="wallet_restoration_error">Kon uw portemonnee niet herstellen.\n\n%1$s</string>
+    <!-- PasswordConfirmationFragment -->
+    <string name="enter_password">Voer uw paswoord in</string>
+    <!-- SignTransactionFragment -->
+    <!-- &#8230; is the ... character -->
+    <!-- &#8230; is the ... character -->
+    <string name="sent_msg">Verstuurd! Een moment geduld voor de transactie confirmatie alstublift.</string>
+    <!-- %1$s is the time remaining e.g. ... in the next 8 minutes 35 seconds-->
+
+    <!-- About Activity -->
+    <!-- Add Coins -->
+    <!-- %1$s is the coin name e.g. ... create a Bitcoin account ... -->
+    <!-- %1$s is the coin name e.g. Add Bitcoin? -->
+    <string name="adding_coin_confirmation_title">%1$s toevoegen?</string>
+    <!-- %1$s is the coin name e.g. ... a new Bitcoin account -->
+    <string name="adding_coin_working">Een moment geduld. Uw %1$s account wordt aangemaakt</string>
+    <!-- %1$s is the coin name and %2$s is and error message e.g. Error adding Bitcoin: some error message -->
+    <string name="add_coin_error">Fout tijdens het toevoegen van %1$s: %2$s.</string>
+    <!-- %1$s is the coin name e.g. Bitcoin already added -->
+    <!-- Transaction amount visualizer -->
+    <!-- Internal transfer means that the wallet send money to itself.-->
+    <string name="internal_transfer">Interne transactie</string>
+    <!-- Transaction Details -->
+    <!-- Status of a transaction, could be pending for confirmations or confirmed -->
+    <!-- %d is the number of confirmations -->
+
+    <!-- Exchange Rates -->
+    <!-- %1$s is the symbol of a fiat currency e.g. Set EUR as a ... -->
+
+    <!-- Select Coins -->
+
+    <!-- Previous Addresses -->
+
+    <!-- Edit Address Book Entry -->
+    <!-- Edit Account -->
+    <string name="edit_account_description_label">Omschrijving</string>
+    <!-- %1$s is the name of the account e.g. Remove account Bitcoin? -->
+    <!-- Settings -->
+    <string name="pref_title_restore_wallet">Herstel portemonnee</string>
+    <string name="pref_title_exchange_rates">Wisselkoersen</string>
+    <!-- Show Seed -->
+    <string name="title_activity_backup_seed">Backup herstel zin</string>
+    <string name="seed_not_available_title">Geen herstel zin gevonden</string>
+    <string name="seed_not_available">Uw herstel zin is niet opgeslagen op dit apparaat.\nProbeer uw portemonnee te herstellen om dit op te lossen.</string>
+    <!-- &#8230; is the ... character -->
+    <string name="seed_working">Een moment geduld&#8230;</string>
+    <string name="seed_password_protected">Deze herstel zin is beveiligd met een BIP39 wachtwoordzin</string>
+    <!-- Wallet locked -->
+    <string name="touch_to_decrypt_wallet">Raak aan om te ontgrendelen</string>
+    <!-- Debugging -->
+    <!-- Overview -->
+    <string name="title_activity_overview">Overzicht</string>
+    <!-- Exchange -->
+    <!-- Exchange Status -->
+
+    <!-- Sign Message -->
+    <!-- Messages -->
+    <string name="tx_message_public">Publiek bericht</string>
+    <string name="tx_message_private">Prive bericht</string>
+    <!-- Account details -->
+
+    <!-- Support -->
+
+    <!-- Sweep wallet -->
+
+    <!-- Fees settings -->
+    <string name="title_activity_transaction_fees">Transactiekosten</string>
+    <!-- Example: Bitcoin transaction fees-->
+    <string name="tx_fees_title">%1$s transactiekosten</string>
+    <!-- Example: The fee value is per kilobyte.-->
+    <string name="tx_fees_description">De transactiekosten zijn %1$s.</string>
+    <string name="tx_fees_per_kilobyte">per kilobyte aan transactie data</string>
+    <string name="tx_fees_per_transaction">per transactie</string>
+    <string name="tx_fees_per_gas">Gas prijs</string>
+    <!-- Terms -->
+    <string name="terms_of_service_title">Servicevoorwaarden</string>
+    <!-- TODO translate to other languages -->
+    <string name="terms_of_service">Voorwaarden voor gebruik</string>
+
+    <string name="group_chats">Versleutelde Groep</string>
+    <string name="open_group_chats">Open versleutelde Groep</string>
+    <string name="password_confirm">Bevestig</string>
+
+    <string name="menu_groupchat">Versleutelde Groep</string>
+    <string name="menu_addfriend">Contacten toevoegen</string>
+
+
+    <!-- icon_recive_red add begin -->
+    <string name="title_home">Versleutelde communicatie</string>
+
+    <string name="tab_title_home">Bericht</string>
+    <string name="tab_title_wallet">Portemonnee</string>
+    <string name="tab_title_exchange">Ruil</string>
+    <string name="tab_title_my">Ik</string>
+
+    <!-- icon_recive_red add end -->
+
+    <!-- file dialog -->
+    <string name="menu_scan_qrcode">Scan Qr</string>
+    <string name="menu_add_coin">Munten toevoegen</string>
+
+
+    <!-- bts -->
+
+    <string name="unable_to_load_wif">Kon WIF niet laden</string>
+    <string name="error_wif">Fout bij het cre쳥n van WIF sleutel</string>
+
+    <string name="kindly_create_account">Cre즲 een account naam</string>
+    <string name="please_enter_6_digit_pin">Vul alstublieft PIN in</string>
+    <string name="pin_number_warning">Een pin nummer bestaat uit minstens 6 karakters</string>
+    <string name="mismatch_pin">Verkeerde pin</string>
+    <string name="error_invalid_account">Fout account, controleer alstublieft uw hersen sleutel op typfouten</string>
+
+    <string name="please_enter_brainkey">Vul uw hersensleutel in</string>
+    <string name="please_enter_correct_brainkey">Vul een correcte hersensleutel in</string>
+
+    <string name="account_name_should_be_longer">Account naam moet langer zijn</string>
+    <string name="account_name_already_exist">Account naam %s bestaat al</string>
+    <string name="account_name_not_exist">Account naam bestaat niet</string>
+    <string name="account_already_exist">Account bestaat al</string>
+
+    <string name="txt_no_internet_connection">Geen internet connectie</string>
+
+
+    <string name="importing_your_wallet">Portemonnee aan het importeren...</string>
+
+
+    <string name="to_capital">Naar</string>
+    <string name="from_capital">Van</string>
+
+
+    <string name="ok">Oke</string>
+
+
+    <string name="str_balance_available">%1$s %2$s beschikbaar</string>
+
+
+    <string name="date_time_zone">datumTijdZone</string>
+
+    <string name="cancel">Annuleer</string>
+    <string name="delete">Verwijder</string>
+
+
+    // Not to be localized
+    // Not to be localized
+
+
+    <string name="try_again">Probeer het opnieuw over 1 minuut</string>
+    <string name="unable_to_load_brainkey">Kon hersensleutel niet laden</string>
+    <string name="error_read_dict_file">Fout tijdens het laden van het woordenboek bestand</string>
+    <string name="error_with_message">Fout: %s</string>
+    <string name="error_no_message">Een fout weerhield deze handeling succesvol tot uitvoering te laten komen</string>
+    <string name="account_name_must_include_dash_and_a_number">Namen moeten een streepje (-) bevatten en een nummer</string>
+    <string name="validation_in_progress">Validatie gaande...</string>
+    <string name="last_letter_cannot">laatste karakter mag geen - zijn</string>
+    <string name="unable_to_generate_bin_format_for_key">Niet in staat een bin formatering voor sleutel te genereren</string>
+    <string name="saving_bin_file_to">Bin bestand opslaan in</string>
+    <string name="folder_name">onechain</string>
+    <string name="bin_file_saved_successfully_to">Bin bestand succesvol opgeslagen in</string>
+    <string name="unable_to_save_bin_file">Kon bin bestand niet opslaan</string>
+    <string name="creating_backup_file">Backup Bestand cre쳥n</string>
+    <string name="fetching_key">Sleutel ophalen</string>
+    <string name="invalid_pin">Foutieve PIN</string>
+    <string name="generating_bin_format">bin formatering genereren</string>
+    <string name="is_already_added">reeds toegevoegd</string>
+
+
+    <!-- PDF export -->
+
+    <!-- Import Backup activity -->
+
+    <string name="secure_key_important">Een prive sleutel is erg belangrijk. Sla het veilig op!</string>
+
+    <string name="accountname_create_username">Account</string>
+    <string name="accountname_create_username_tips">Alleen letters en nummers, minimaal 6 karakters</string>
+    <string name="accountname_create_nickname">Alias</string>
+    <string name="accountname_create_nickname_tips">Voer uw alias in</string>
+    <string name="accountname_create_password_tips">Minstens 8 karakters</string>
+    <string name="accountname_create_password_tips2">Herhaal paswoord, minstens 8 karakters</string>
+
+    <string name="accountname_restore_key">Hersen sleutel</string>
+    <string name="accountname_restore_key_tips">Voor beveiligingswoord in</string>
+
+    <string name="accountname_friend_username_tips">Vriend Account</string>
+    <string name="accountname_friend_nickname">Alias</string>
+    <string name="accountname_friend_nickname_tips">Lokale alias</string>
+    <string name="accountname_search">Zoek</string>
+
+    <string name="action_ok">Ok</string>
+
+    <string name="accountname_create_title">Cre즲 Account</string>
+    <string name="accountname_restore_title">Herstel Account</string>
+    <string name="action_add_friend">Vriend toevoegen</string>
+
+    <string name="accountname_create_loading">Account aanmaken...</string>
+    <string name="accountname_add_loading">Vriend toevoegen...</string>
+    <string name="create_groupchat_loading">Groep chat cre쳥n...</string>
+
+    <string name="action_have_saved">Opgeslagen</string>
+
+    <string name="default_chat_sentence">We zijn nu vrienden, laten we chatten!</string>
+
+    <string name="default_groupchat_sentence"> Nodig %s uit in de groep chat!</string>
+
+    <string name="feature_come_soon">Moment geduld, het komt snel!</string>
+
+    <string name="default_friend_name">Vriend</string>
+    <string name="default_group_name">Veilige groep</string>
+
+
+    <string name="text_ack_msg">Lees</string>
+    <string name="text_delivered_msg">Levering</string>
+    <string name="button_pushtotalk">Tik om te praten</string>
+    <string name="attach_picture">Afbeelding</string>
+    <string name="attach_take_pic">Foto</string>
+    <string name="attach_location">Locatie</string>
+    <string name="attach_file">Bestand</string>
+    <string name="attach_video_call">Video chat</string>
+    <string name="move_up_to_cancel">Vinger omhoog, Annuleer versturen</string>
+    <string name="send_fail">Verstuur fout</string>
+    <string name="delete_message">Verwijder Bericht</string>
+    <string name="copy_message">Kopie철bericht</string>
+    <string name="delete_voice">Verwijder stem</string>
+    <string name="delete_video">Verwijder video</string>
+    <string name="connect_failuer_toast">Controleer uw verbinding of probeer het later nog eens</string>
+    <string name="forward">Vooruit</string>
+    <string name="prompt">Tips</string>
+    <string name="location_recv">[%1$s Locatie]</string>
+    <string name="location_prefix">[My Locatie]</string>
+    <string name="picture">[Foto bericht]</string>
+    <string name="video">[Video chat]</string>
+    <string name="file">[Bestand bericht]</string>
+    <string name="voice_call">[Bellen]</string>
+    <string name="voice_msg">[Geluidsbericht]</string>
+    <string name="voice">Geluid</string>
+    <string name="password">Paswoord</string>
+    <string name="downwaiting">Wacht op download</string>
+    <string name="not_download">Niet gedownload:</string>
+    <string name="is_down_please_wait">Wacht met downloaden video</string>
+
+    <string name="expression">[Emoticon]</string>
+    <string name="call_duration">Duur</string>
+    <string name="Refused">Geweigerd</string>
+    <string name="The_other_party_has_refused_to">[Persoon heeft geweigerd]</string>
+    <string name="The_other_is_not_online">[Persoon is offline]</string>
+    <string name="The_other_is_on_the_phone">[Persoon is in gesprek]</string>
+    <string name="The_other_party_did_not_answer">[Persoon heeft niet geantwoord]</string>
+    <string name="did_not_answer">[Niet geantwoord]</string>
+    <string name="Has_been_cancelled">[Geannuleerd]</string>
+    <string name="unable_to_get_loaction">Kon uw locatie niet vinden!</string>
+    <string name="sd_card_does_not_exist">SD kaart bestaat niet en kan niet gebruikt worden</string>
+    <string name="cant_find_pictures">Afbeelding niet gevonden</string>
+    <string name="File_does_not_exist">Bestand niet gevonden</string>
+    <string name="The_file_is_not_greater_than_10_m">Bestand moet kleiner zijn dan 10mb</string>
+    <string name="Whether_to_empty_all_chats">Verwijder alle chatberichten?</string>
+    <string name="you_are_group">U bent verwijderd door de groepsleider</string>
+    <string name="the_current_group">Huidige beveiligde groep is gesloten door groepsleider</string>
+    <string name="receive_the_passthrough">Ontvang actie：</string>
+    <string name="Into_the_blacklist">Naar zwarte lijst overzetten?</string>
+    <string name="Have_downloaded">Gedownload</string>
+    <string name="Did_not_download">Niet gedownload</string>
+
+    <string name="message_send_self">Kan niet naar jezelf sturen</string>
+
+    <string name="gallery">Gallerij</string>
+    <string name="camera">Neem fotos</string>
+    <string name="select_photo">Selecteer fotos</string>
+
+    <string name="transaction_account">Handel account</string>
+
+    <string name="money">Volume</string>
+
+    <string name="click_copy">Druk in om te kopi쳥n</string>
+
+
+    <string name="user_info">Persoonlijke informatie</string>
+
+    <string name="sex">Geslacht</string>
+    <string name="man">Man</string>
+    <string name="women">Vrouw</string>
+
+
+    <string name="nick_name">Alias</string>
+    <string name="user_intro">Bio</string>
+
+    <!--用户交易-->
+    <!--交易队界面-->
+
+    <!--买、卖、委托单界面-->
+
+    <!--format-->
+    <string name="erro_format">%1$s mislukt</string>
+
+    <string name="success">Gelukt</string>
+    <string name="erro">Mislukt</string>
+
+    <!-- user_trade_title -->
+
+    <string name="zero_value">0.00</string>
+    <string name="zero">0</string>
+
+    <string name="default_user_intro">Welkom in de ONE wereld!</string>
+
+    <string name="default_value">-.--</string>
+
+    <string name="fast_transfer">Bliksem Overdracht</string>
+
+    <string name="recharge_intro">Van portemonnee account naar handelsaccount</string>
+
+    <string name="save_key_tip">De volgende 15 woorden zijn extreem belangrijk!!!\nWanneer deze uitlekken kunt u al uw digitale valuta in uw portemonnee kwijtraken!\nTen zeerste aanbevolen:\nSchrijf woorden op papier over, maak meerdere kopie쮠en plaats ze op verschillende veilige plekken!\nBelangrijk:\nCre즲 deze woorden niet op een moment waarop u kan worden gefotografeerd, gefilmt of wanneer er anderzijds word meegekeken!\nHet is ten strengste verboden om deze woorden op internet of andere onveilige plaatsen als netwerkschijven te plaatsen.</string>
+    <string name="user_contract">Gebruikersovereenkomst</string>
+    <string name="user_contract_txt">Ik stem toe mij te houden en mee te werken aan alle op van toepassing zijnde lokale, landelijke en internationale wetten en regulaties, internationale conventies en gebruiken. Stop alstublieft One te gebruiken als u zich niet aan bovenstaande kunt houden.</string>
+
+    <!--group-->
+    <string name="change_groupname">Groepsnaam aanpassen</string>
+
+
+    <string name="delete_success">Verwijdering succesvol</string>
+
+    <string name="override_wallet_warning_title">Bestaande portemonnee overschrijven?</string>
+    <string name="override_new_wallet_warning_message">Als u een nieuwe portemonnee aanmaakt, word uw huidige portemonee verwijderd tenzij u een back-up van uw <i>herstel zin</i> heeft.</string>
+
+    <string name="send_msg">Verstuur bericht</string>
+
+    <string name="message_num">Berichten</string>
+
+    <string name="clear_chat_msg">Verwijder chathistorie</string>
+    <string name="change_user_local_name">Alias aanpassen</string>
+
+    <string name="group_name">Groepsnaam</string>
+
+    <string name="contacts">Contacten</string>
+
+    <string name="add_symbol">+</string>
+
+    <string name="lock_status_input">Voer uw gebaren wachtwoord in</string>
+    <string name="lock_status_create">Gebruik alstublieft uw gebaren wachtwoord om uw wachtwoord te beveiligen</string>
+    <string name="lock_status_create_sure">Voer opnieuw in ter comfirmatie</string>
+    <string name="lock_status_correct">Correct</string>
+
+    <string name="lock_status_wrong">Wachtwoord incorrect. U kunt nog %1$d keer proberen.</string>
+    <string name="lock_status_second_wrong">Wachtwoorden komen niet overeen. Probeer het alstublieft opnieuw.</string>
+
+    <string name="click_back_again">Klik terug om weg te gaan</string>
+
+    <string name="reset">Reset</string>
+    <string name="forget_lock">Vergeet gebaren wachtwoord</string>
+    <string name="change_lock_psw">Verander gebaren wachtwoord</string>
+
+    <string name="account_name_length_erro">Gebruikersnaam moet minimaal 6 karakters bevatten.</string>
+    <string name="password_length_erro">Wachtwoord moet minimaal 8 karaters bevatten.</string>
+    <string name="password_second_erro">Wachtwoorden komen niet overeen.</string>
+
+    <string name="register_error">Registratie mislukt</string>
+
+    <string name="clear_mesage_success">Historie gewist</string>
+    <string name="clear_mesage_tip">Weet u zeker dat u uw chat historie wilt wissen?</string>
+
+    <string name="forget_password">Paswoord vergeten</string>
+
+    <string name="select_langurafe">Selecteer taal</string>
+
+    <string name="make_sure_save_seed">Heeft u uw ezelsbrug woorden opgeslagen?？</string>
+
+    <string name="send_location">Verstuur locatie</string>
+
+    <string name="msg_asset">[Flits Overdracht]</string>
+
+    <string name="hint_chat_edittext">&#160; Aan het chatten met %1$s</string>
+    <string name="hint_groupchat_edittext">&#160; Groepschat</string>
+
+    <string name="make_sure_call_to">Wilt u bellen met</string>
+
+    <string name="call">Bel</string>
+    <string name="perm_tip">
+        De huidige applicatie heeft onvoldoende toestemming.\nKlik op "Instellingen" - "Toestemming" - Zet de benodigde toestemming aan.\nKlik daarna tweemaal op "terug" om terug te komen.
+    </string>
+    <string name="ask_again">Geef de applicatie alstublieft de juiste toestemming voor een juiste werking.</string>
+
+
+    <!--k线-->
+    <string name="string_close">Sluit</string>
+    <string name="landscape">Landschap</string>
+    <string name="string_network_disconnect">Netwerk is onbereikbaar, Controleer alstublieft uw connectie.</string>
+
+    <string name="new_group_message">Nieuw groepsbericht</string>
+
+    <string name="lock_status_too_short">Minstens %1$d connectie. Probeer het opnieuw.</string>
+
+    <string name="no_history_tip">Nog geen historie～</string>
+
+
+    <string name="open_out_browser">Open met browser</string>
+    <string name="copy_url">Kopi즲 link</string>
+
+    <!--keep service alive start-->
+    <string name="keep_service_alive_reason">Schakel ONE offline berichten in. </string>
+    <string name="white_list_tip_title_power">%1$s Zet ONE op de batterij optimalisatie whitelist.</string>
+    <string name="white_list_tip_msg_power">%1$s Zet alstublieft %2$s  op de batterij optimalisatie whitelist.\n\nTik 『YES』. Tik 『YES』 voor『negeren batterij optimalisatie』.</string>
+    <string name="white_list_tip_title_close_screen_clean">%1$s Zet ONE op de schermvergrendeling whitelist.</string>
+    <string name="white_list_tip_msg_close_screen_clean">%1$s Zet alstublieft %2$s op de schermvergrendeling whitelist.\n\nTik 『YES』.Zet de overeenkomende instelling aan van %2$s op de schermvergrendelingslijst.</string>
+    <string name="white_list_tip_title_xiaomi_hide_model">Zet %1$s verberg modus uit </string>
+    <string name="white_list_tip_title_run_backend">Machtig %1$s achtergrondverbruik.</string>
+    <string name="white_list_tip_msg_run_backend">%1$s Zet alstublieft %2$s achtergrondsverbruik aan.\n\nTik『YES』. Wissel『Verberg modus 』to『Loop op achtergrond』.</string>
+    <string name="white_list_tip_msg_run_backend_meizu">%1$s Zet alstublieft %2$s gebruik tijdens standby aan.\n\nTik『YES』. Zet de overeenkomstige instelling aan %2$s in 『Standby Stroomverbruik Management』lijst.</string>
+    <string name="white_list_tip_msg_run_backend_lenovo">%1$s Zet alstublieft %2$s achtergrond start ， achtergrond GPS in en draai op de achtergrond.\n\nTab『YES』. Vind『Achtergrond Management』，『Achtergrond GPS』and 『Draai op achtergrond』. Zet de overeenkomstige instelling aan voor %2$s.</string>
+    <string name="white_list_tip_msg_run_backend_lenovo_god">%1$s Onthef %2$s voor automatische beveiliging.\n\nTik 『YES』.Zet overeenkomstige instelling uit %2$s vanuit『Achtergrond Batterij Optimalisatie』.</string>
+    <string name="white_list_tip_msg_run_backend_vivo">%1$s Accepteer draaien van %2$s op de achtergrond tijdens standby mode.\n\nTik『YES』.Zet de overeenkomstige instelling van %2$s aan voor 『Achtergrond stroomverbruik』lijst.</string>
+    <string name="white_list_tip_title_green_backend">%1$s Zet op auto boot modus en in achtergrondsverbruik whitelist.</string>
+    <string name="white_list_tip_msg_green_backend">%1$s Zet alstublieft %2$s auto boot en run aan in de achtergrond.\n\nTik 『YES』. vind『Applicatie Management』->『Auto Boot』en -> 『Groene Achtergrond』from『Systeem Manager』. zet %2$s op『 Whitelist』.</string>
+    <string name="white_list_tip_msg_run_not_clean_backend">%1$s Onthef %2$s voor automatische ontheffing.\n\nTik『JA』vanuit 『Applicatie Beveiliging』. Zet overeenkomstige instelling uit %2$s .</string>
+    <!--keep service alive stop-->
+
+    <string name="sure_delete_user">Groepslid zeker weten verwijderen?</string>
+
+
+    <string name="my_qr_code">Mijn QR code</string>
+    <string name="my_qr_code_tip">Scan de QR code om me toe te voegen.</string>
+
+    <string name="chat_info">Chat info</string>
+
+    <string name="share_group">Deel de groep</string>
+
+    <string name="join_group_tip">%1$s Word lid van de groepschat</string>
+    <string name="group_public_status">Groep types</string>
+    <string name="public_group">Publieke groep</string>
+    <string name="private_group">Prive groep</string>
+
+    <string name="register_request_ok">Uw registratie was succesvol</string>
+    <string name="register_request_user_exist">Gebruikersnaam bestaat al</string>
+    <string name="register_request_unknown_registrar">Registratie fout</string>
+    <string name="register_request_unknown_referrer">Referrer bestaat niet</string>
+    <string name="register_request_param_error">Parameter Fout</string>
+    <string name="register_request_server_error">Server Fout</string>
+    <string name="register_request_name_error">Gebruikersnaam fout</string>
+    <string name="register_request_create_user_exist">Gebruikersnaam bestaat al</string>
+
+    <string name="recharge_search_tip">Overdracht naar ONE Chain word verwerkt</string>
+
+    <string name="upgrade_tip">Tips voor Upgrade</string>
+    <string name="update_ok">Upgrade</string>
+
+    <string name="group_invite_url">Tik om groepsuitnodiging te kopi쳥n</string>
+
+    <string name="download_error">Download mislukt</string>
+    <string name="download_error_retry">Download mislukt, probeer het opnieuw</string>
+    <string name="download_ok">Gedownload</string>
+    <string name="downloading_new_apk">Laatste versie aan het downloaden</string>
+    <string name="downloading">Downloaden, moment geduld...</string>
+
+    <string name="write_file">Bestand</string>
+
+    <string name="group_url_start">Tik de link om aan de groep mee te doen</string>
+
+    <string name="null_this_friend">Gebruiker niet gevonden</string>
+
+    <string name="msg_red_packet">[Rode pakket]</string>
+    <string name="red_packet">Rode pakket</string>
+
+    <string name="send_red_packet">Verstuur Pakket</string>
+
+    <string name="select_coin_type">Selecteer Munt </string>
+
+    <string name="send_red_packet_text">Bereid Rode Pakket voor</string>
+
+    <string name="red_packet_default_msg">Beste wensen</string>
+
+    <string name="red_packet_message">Notities</string>
+
+    <string name="red_packet_num">Hoeveelheid</string>
+
+    <string name="red_packet_total_amount">Totaal</string>
+
+    <string name="red_packet_item_amount">Hoeveelheid van elk</string>
+
+    <string name="simple_red_packet_tip">Identieke hoeveelheid.</string>
+
+    <string name="lucky_red_packet_tip">Willekeurige hoeveelheid.</string>
+
+    <string name="set_lucky_red_packet">Verander naar willekeurige hoeveelheid</string>
+
+    <string name="set_simple_red_packet">Verander naar identieke hoeveelheid</string>
+
+    <string name="please_select_coin_type">Selecteer munt</string>
+
+    <string name="red_packet_num_cant_zero">Hoeveelheid mag niet niks zijn</string>
+
+    <string name="item"> </string>
+
+    <string name="red_packet_value_cant_zero">Hoeveelheid mag niet niks zijn</string>
+
+    <string name="group_member_num">%1$d leden</string>
+
+    <string name="one_red_packet">ONE Rode Pakket</string>
+
+    <string name="look_red_packet">Krijg pakket</string>
+
+    <string name="red_packet_info">Bekijk Details</string>
+
+    <string name="red_packet_text">Verstuur een Pakket</string>
+
+    <string name="app_crash_tip">Programma fout heeft zich voorgedaan, de applicatie zal direct sluiten.！</string>
+
+    <string name="check_sign">Verifi철handtekening</string>
+
+    <string name="user_invite_url_start">Tik op de link om me toe te voegen als ONE vriend:</string>
+
+    <string name="make_sure_seed">Verifi철ezelsbrug woorden</string>
+
+    <string name="make_sure_seed_error_tip">De volgorde is niet correct, probeer het opnieuw. </string>
+
+    <string name="transfer_fee">Overschrijf kosten</string>
+
+    <string name="red_packet_account">Pakket Account</string>
+
+    <string name="transfer_fee_need_more">Niet genoeg saldo</string>
+
+    <string name="make_sure_seed_tip">Zorg er alstublieft voor dat uw ezelsbrug woorden goed overgeschreven zijn en tik op de woorden om dit te verifi쳥n. </string>
+
+    <string name="in_onechain">Overmaken naar ONE Chain</string>
+    <string name="out_onechain">Overmaken vanuit ONE Chain</string>
+
+    <string name="redpacket_open_failed">Pakket openen mislukt</string>
+    <string name="redpacket_send_failed">Pakket versturen mislukt</string>
+
+
+    <string name="register_request_exceeded_max_number">Meer dan het maximale aantal keren geregistreerd</string>
+
+    <string name="social_redpacket">Sociaal rode enveloppen</string>
+    <string name="social_redpacket_tip">Gegenereerde sociale bonus \nSchrijf deze naar een externe partij of kopieer de koppeling om te verzenden</string>
+
+    <string name="tap_copy_url">Klik op de koppeling kopiëren</string>
+    <string name="social_redpacket_url_start">Coil APP Almachtige APP, we komen en pakken een volledige rode valuta-envelop!</string>
+
+    <string name="quit_social_redpacket_tip">Bevestig dat u de rode enveloplink hebt gedeeld of gekopieerd</string>
+
+    <string name="get_asset_list_error">Kan lijst met items niet ophalen</string>
+    <string name="out_chat_group">Delete and leave</string>
+
+    <string name="seed">Mnemonics</string>
+    <string name="create_seed">Generate Mnemonics</string>
+    <string name="input_seed">Input Mnemonics</string>
+
+    <string name="add_trade_team">Add Coin Pairs</string>
+    <string name="look_all_group_members">View More Members</string>
+    <string name="group_members">Group Members</string>
+
+    <string name="delete_failed">Failed to Delete</string>
+    <string name="add_error">Failed to Add</string>
+
+    <string name="switch_service_node">Node Detection</string>
+
+    <string name="config_service_node_ing">Wait a moment, we are selecting nodes for you ...</string>
+
+    <string name="account_name_cannot_number_start">Account can not start with numbers.</string>
+
+    <string name="action_paste">Paste</string>
+    <string name="action_clear">Delete</string>
+
+    <string name="choose_seed">Choose Mnemonics</string>
+    <string name="search_seed">Search Mnemonics</string>
+    <string name="pasteboard_is_null">Clipboard is empty, please copy the mnemonic words first.</string>
+
+    <string name="make_sure_delete_msg">Are you sure to delete the chat?</string>
+
+    <string name="test_service_node_done">Node Detection Completed</string>
+
+    <string name="make_sure_delete_tip">Are you sure to delete?</string>
+
+    <string name="add_success">Add successfully</string>
+
+    <string name="app_not_need_update">This is the lastest version.</string>
+
+    <string name="can_not_remain_one">The remaining ONE coin can not be less than 2.</string>
+
+    <string name="update_user_info">Synchronizing user information</string>
+
+    <string name="register_request_seed_has_register">Mnemonics has been registered, use mnemonics to recover account.</string>
+    <string name="setting_more">More</string>
+
+    <string name="no_notification_tip">The current application lacks notify permission.\nPlease click "Settings" - "Notifications" - Turn on the notify permission.</string>
+
+
+    <string name="jump_pass">Skip</string>
+
+    <string name="over_seed_word_num_two">The number of mnemonic is incorrect.</string>
+
+
+    <string name="message_prompt">Please kindly note the risks associated with trading digital currency.</string>
+
+    <string name="no_message">No more new messages</string>
+
+    <string name="new_chat_message_num">%1$d New Messages</string>
+
+    <string name="verification_seed">Verify Mnemonic</string>
+    <string name="input_infomation">Fill in the information</string>
+    <string name="register_completed">Registration Completed</string>
+
+    <string name="please_rember_the_key">Please save these 15 mnemonics on paper(order is important).</string>
+    <string name="you_just_do_this">Without the mnemonic we cannot help recover wallet and will result in LOSS of ALL of your assets!</string>
+    <string name="safe_tip">Security Tips:</string>
+    <string name="red1_tip">*Write it down or save on offline devices</string>
+    <string name="red2_tip">*Restore once after registry to ensure security</string>
+    <string name="now_bangding">Verify Now</string>
+
+
+    <string name="sync_account_fail">Failed to synchronize information</string>
+
+    <string name="action_back">Back</string>
+
+    <string name="group_leave_fail">exit the group failure</string>
+
+    <string name="search_seed_tip">Input one at a time by order</string>
+
+    <string name="add_network_sataus">Add Node</string>
+    <string name="server_ip">Server IP</string>
+    <string name="please_write_server_ip">Please enter the server IP</string>
+    <string name="port_num">Port</string>
+    <string name="please_write_port_num">Please enter the port</string>
+    <string name="detection_and_use">Detect and Adapt</string>
+    <string name="clear_network_status">Delete Node</string>
+
+    <string name="mining">Mining</string>
+    <string name="mining_income">Mined Tokens</string>
+
+    <string name="finish_verify">Verification Succeeded</string>
+    <string name="skip_verify">Skip Verification</string>
+    <string name="no_screen_shoot">Please don’t screenshot the mnemonics but write it down carefully.</string>
+
+    <string name="next_step">NEXT</string>
+
+    <string name="please_verify_your_seed">To ensure your assets security, please back up and verify your mnemonics! </string>
+    <string name="now_verify">Verify Now</string>
+
+    <string name="release_to_cancel">Release to cancel</string>
+    <string name="Send_voice_need_sdcard_support">Sending voice message needs SD card support</string>
+    <string name="recoding_fail">Recording failure, please try again！</string>
+    <string name="Recording_without_permission">No permission for recording</string>
+    <string name="The_recording_time_is_too_short">The recording time is too short</string>
+    <string name="send_failure_please">Send failure, please check wether the server is connected</string>
+    <string name="choose_brainkey_file">Select the Encrypted  mnemonics file from the folder</string>
+    <string name="click_encrypt_file_address">Tap to choose encrypted  mnemonics\' file address</string>
+    <string name="password_while_export_seed">Please input the account and password when you export encrypted  mnemonics</string>
+    <string name="start_recover">Start recovery</string>
+    <string name="export_encrypted_seed">Export encrypted  mnemonics</string>
+    <string name="saved_offline">Save offline</string>
+    <string name="copy_and_paste_encrypt_brainkey">Please copy and save the encrypted mnemonics to safe and offline spots. Do not save it to e-mail, notebook, disk or chats.</string>
+    <string name="transmission_offline_title">Please do not transfer online.</string>
+    <string name="transmission_offline_content">Please do not transfer encrypted  mnemonics</string>
+    <string name="remember_password_title">Please remember the account and password when export encrypted  mnemonics</string>
+    <string name="remember_password_content">Please remember the account and password when export encrypted  mnemonics, you will have to use the password to restore your account </string>
+    <string name="derive_encrypt_brainkey_address">Export encrypted  mnemonics to this address</string>
+    <string name="encrypted_seed">encrypted  mnemonics</string>
+    <string name="test_service_fail_tip_choose">Please contact customer service for node failure\n </string>
+    <string name="never_remind">Don\'t remind me anymore</string>
+    <string name="whether_export_immediately">Export encrypted mnemonics now?</string>
+    <string name="export_immediately">Export now</string>
+    <string name="no_file_supervisor">No file manager</string>
+    <string name="keep_account_password_in_mind">Please remember this password, it will be the account password</string>
+    <string name="invitation_code">Invitation code:</string>
+    <string name="export_seed_success">Export Encrypted mnemonics succeeded</string>
+    <string name="write_referrer_account">Please enter the invitation code</string>
+
+    <string name="no_regist_phone">Please verify your phone number to gain more power! </string>
+    <string name="sign_add_mining_power">Power+%1$s</string>
+
+    <string name="save_to_phone">Save to phone</string>
+    <string name="save_to_phone_success">Saved</string>
+
+    <string name="please_retry_create">Please click registration again</string>
+
+    <string name="error_invalid_account_or_pass">Illegal account, please check your mnemonics and password! </string>
+    <string name="group_chat_send_url_tip">Sending links in group chat gonna cost your Red Packet, are you sure?</string>
+    <string name="perm_tip_format">
+        The current application lacks %1$s permission.\nPlease click "Settings" - "permissions" - Turn on the required permission. \ n Then click "Back" twice to come back.
+    </string>
+
+    <string name="refresh_node_then_retry">Please refresh the nodes and retry</string>
+    <string name="recover_account_fail">Restore account failed</string>
+    <string name="join_group_error">Join group error</string>
+
+    <string name="error_no_account">Account dosen\'t exist</string>
+
+
+    <string name="newton_plan">Newton Plan</string>
+
+    <string name="money_go_and_out">Fiat deposit and withdrawal</string>
+
+    <string name="service_node_plan">ONE Node Plan</string>
+    <string name="video_course">Help&#038;Feedback</string>
+
+    <string name="from_transaction_account">From trading account</string>
+
+    <string name="no_create_group_auth">You don’t have permission to create group</string>
+
+    <string name="release_to_close">Release to close</string>
+    <string name="record_error_permission">Recording failed, please check the permission</string>
+
+    <string name="upload_file_error">Upload file failed</string>
+
+    <string name="file_overdue">File expired</string>
+    <string name="loading">Loading...</string>
+    <string name="img_overdue">Image expired</string>
+
+    <string name="image_save_fail">Image storage failed</string>
+    <string name="image_save_success">Image storage success</string>
+
+    <string name="group_manage">Group management</string>
+    <string name="group_id">Group ID</string>
+    <string name="group_qr_code">Group QR code</string>
+    <string name="group_notice">Group announcement</string>
+
+    <string name="my_nickname_in_group">My alias in the group</string>
+
+    <string name="group_clean_chatting_records">Delete the chatting records</string>
+    <string name="group_receive_message">Accept information push</string>
+
+    <string name="video_uploading">Video processing...</string>
+    <string name="video_upload_ok">Video uploaded</string>
+
+    <string name="reply_weibo">Reply Weibo</string>
+    <string name="null_shuoshuo">Original Weibo has been deleted</string>
+    <string name="reply">Reply</string>
+    <string name="share">Share</string>
+    <string name="copy">Copy</string>
+
+    <string name="zhuanfa_weibo_hint">Share experience in Weibo...</string>
+
+    <string name="balance">balance&#160;&#160;</string>
+    <string name="other_money">Other amount</string>
+    <string name="submit_shang">Confirm the Like</string>
+    <string name="zanshang">Like</string>
+    <string name="comment">Comment</string>
+    <string name="video_checking">Video reviewing</string>
+    <string name="shang_tip">Please send rewards to the author or tell him/her your opinion by leaving comment</string>
+    <string name="pay">Pay</string>
+    <string name="report">Report</string>
+    <string name="no_next_page">No more data avaliable</string>
+    <string name="more_weibo_msg">Check earlier messages</string>
+
+    <string name="group_community">Community</string>
+    <string name="group_notifications">Group announcement</string>
+
+    <string name="clean_list">Clean the list</string>
+
+    <string name="set_pay_weibo">Change to chargeable content</string>
+
+    <string name="button_check_means_card">Check documents</string>
+    <string name="button_set_as_manager">Set to administrator</string>
+    <string name="button_banned_to_post">Ban member</string>
+    <string name="button_from_group_delete">Delete from the group</string>
+    <string name="button_add_blacklist">Remove and add to the blacklist</string>
+
+    <string name="keyword">Keyword</string>
+    <string name="input_content">Enter the content</string>
+    <string name="no_sensitive_character">Ban sensitive words</string>
+    <string name="publish">Publish</string>
+    <string name="release_invitation">Publish theread</string>
+    <string name="setting_charge_content">Change to chrgeable content</string>
+
+    <string name="all">Total</string>
+    <string name="essence">Best content</string>
+    <string name="charge">Chargeable</string>
+    <string name="free">Free of charge</string>
+
+    <string name="order_by_time">New post</string>
+    <string name="order_by_comment">Most commented article</string>
+    <string name="order_by_profit_up">Rank by long position</string>
+    <string name="order_by_profit_down">Rank by short position</string>
+    <string name="order_by_shang">Number of Like</string>
+    <string name="order_by_comment_time">New comment</string>
+
+    <string name="chat_all_banned_to_post">Ban all the users</string>
+    <string name="chat_owner">All users</string>
+    <string name="message_center">Message center</string>
+    <string name="button_refuse">Reject</string>
+    <string name="heading_qrcode_to_img">Identify the QR code</string>
+
+    <string name="input_join_group_psw">Please enter the group adding password</string>
+    <string name="content_too_short">Content is too shart</string>
+    <string name="content_too_long">Content exceeds the maximum words</string>
+
+    <string name="set_admin_success">Set successfully the admin</string>
+    <string name="limits_of_authority">Permission denied</string>
+    <string name="user_not_in_group">The user is not in the group</string>
+    <string name="admin_counts_limit">Admin number reaches the limit</string>
+    <string name="mute_member_success">Ban successfully the member</string>
+    <string name="add_member_to_blacklist_success">Add successfully to blacklist</string>
+    <string name="reward_amount">Rewards amount</string>
+    <string name="failed_to_reward">Rewards failed</string>
+    <string name="articles_no_more">No more data avaliable</string>
+    <string name="article_detail">Details</string>
+    <string name="article_set_essence">Set as the best content</string>
+    <string name="article_report_success">Report successed</string>
+    <string name="article_has_reported">You have aleardy reported this Weibo</string>
+    <string name="article_essence_success">Set successfully as the best content</string>
+
+    <string name="is_sure_to_forgive_this">Are you sure to cancel the current editing</string>
+
+    <string name="write_key_word">Enter keywords</string>
+
+    <string name="charge_amount">Charge amount</string>
+
+    <string name="group_chat">Chat</string>
+
+    <string name="weibo_msg">message</string>
+
+    <string name="someone_at_me">[someone@me]</string>
+
+    <string name="pls_wait_examine">Please wait for review</string>
+    <string name="group_not_exist">Group doesn\'t exist</string>
+    <string name="already_in_group">You are already in the group</string>
+    <string name="in_group_blacklist">You are in the group blacklist</string>
+
+    <string name="you_in_ban">You are banned</string>
+    <string name="all_in_ban">Ban all the members</string>
+
+    <string name="msg_not_enough_balance">This message requires to send Red Packet, your balance is insufficient</string>
+
+
+    <string name="push_comment_weibo">commented your post</string>
+    <string name="push_reward_weibo">liked your post</string>
+    <string name="push_pay_weibo">checked your chargeable content</string>
+    <string name="group_password_error">group admission password incorrect</string>
+
+    <string name="not_enough_money_todo">This action requires asset consumption, your balance is insufficient</string>
+
+    <string name="to_pay_a_oneluck">Payment completed</string>
+
+    <string name="audit_join">Apply to join</string>
+
+    <string name="group_created_count_exceed">Number of group created exceeds the limit</string>
+
+
+    <string name="weibo_video_max_tip">The maximum size for video files to upload is 500M</string>
+
+    <string name="pls_open_device_permission">Please open the permission to access the device information of your mobile, otherwise the registration may fail</string>
+
+
+    <string name="reward_message">reward message</string>
+
+    <string name="send_add_friend_msg">send invitation</string>
+    <string name="send_add_success">invitation sent</string>
+
+    <string name="new_friend">New friend</string>
+    <string name="group_invitation">Group invitation</string>
+
+    <string name="group_max_people">The group has reached the maximum number</string>
+
+    <string name="remark_length_exceed">Remarks exceed the words number limit</string>
+    <string name="already_agree">Accepted</string>
+    <string name="already_refuse">Rejected</string>
+
+    <string name="pls_wait_apply">Invitation sent, waiting for verification</string>
+    <string name="delete_friend">Delete friend</string>
+    <string name="input_apply_msg">Please enter the verification infomation</string>
+    <string name="apply_add_friend">Apply to be friend</string>
+    <string name="invite_you_join_group"> Invite you to the group</string>
+
+
+    <string name="pls_add_friend">Please add friend first</string>
+    <string name="order_has_change">Some changes in your order</string>
+    <string name="order_id">Order ID:</string>
+
+    <string name="create_a_group">Create a chatting group</string>
+
+    <string name="my_group_chat">Group chatting</string>
+
+    <string name="i_am">I am</string>
+
+    <string name="trade_dividend">Crypto dividend</string>
+    <string name="trade_mining">Transaction fee mining</string>
+
+    <string name="invitation_code_must">Invitation code(Optional ):</string>
+
+</resources>

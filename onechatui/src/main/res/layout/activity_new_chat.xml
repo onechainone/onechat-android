@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/base_bg_color_level1"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_bar"
+        layout="@layout/layout_title" />
+
+    <onemessageui.widght.PagerSlidingTabStrip
+        android:id="@+id/pager_tabs"
+        style="@style/PagerTabStrip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/viewpager_tab_height"
+        android:background="@color/toumin"
+        app:pstsDividerColor="@color/toumin"
+        app:pstsIndicatorColor="@color/base_color"
+        app:pstsIndicatorHeight="3dp"
+        app:pstsIndicatorPaddingLeft="@dimen/dimen_65"
+        app:pstsIndicatorPaddingRight="@dimen/dimen_65"
+        app:pstsIndicatorRound="10dp"
+        app:pstsScrollOffset="@dimen/btn_height_44"
+        app:pstsShouldExpand="true"
+        app:pstsTextAllCaps="true"
+        app:pstsTextColorDrawableResource="@style/account_tabs_text_bg"
+        app:pstsUnderlineHeight="0dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/base_bg_color_level1"
+        android:overScrollMode="never" />
+
+
+</LinearLayout>

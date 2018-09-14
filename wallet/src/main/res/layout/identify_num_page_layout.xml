@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title" />
+
+    <TextView
+        android:id="@+id/tv_identify_notify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:gravity="center"
+        android:text="@string/smssdk_make_sure_mobile_detail"
+        android:textColor="@color/base_color"
+        android:textSize="@dimen/dimen_15" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:gravity="center"
+        android:textColor="@color/base_text_color_level1"
+        android:textSize="@dimen/dimen_20" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:background="@drawable/smssdk_input_bg_focus">
+
+        <EditText
+            android:id="@+id/et_put_identify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@null"
+            android:hint="@string/smssdk_write_identify_code" />
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/et_put_identify"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:src="@drawable/smssdk_clear_search"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_sounds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_unreceive_identify"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/smssdk_receive_msg"
+        android:textColor="@color/base_color"
+        android:textSize="@dimen/dimen_15" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:background="@drawable/bt_big"
+        android:text="@string/smssdk_next"
+        android:textColor="@color/base_bg_color_level1" />
+</LinearLayout>

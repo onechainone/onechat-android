@@ -1,0 +1,150 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    //buildToolsVersion '23.0.2'
+    buildToolsVersion '25.0.0'
+
+    dexOptions {
+
+        javaMaxHeapSize "4g"
+    }
+//    packagingOptions {
+//        exclude 'LICENSE-EDL-1.0.txt'
+//        exclude 'META-INF/LICENSE.txt'
+//    }
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "oneapp.onechat.androidapp"
+        minSdkVersion 15
+        targetSdkVersion 24
+
+        versionCode 240
+        versionName "v2.4.0"
+        multiDexEnabled true
+
+        ndk {
+            abiFilters "armeabi-v7a", "x86"
+        }
+    }
+
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                File outputDirectory = new File(outputFile.parent);
+                def fileName
+                if (variant.buildType.name == "release") {
+                    fileName = "密信_${defaultConfig.versionName}_${defaultConfig.versionCode}_${variant.productFlavors[0].name}.apk"
+
+                } else {
+                    fileName = "密信_${defaultConfig.versionName}_${defaultConfig.versionCode}_beta.apk"
+
+                }
+                output.outputFile = new File(outputDirectory, fileName)
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            zipAlignEnabled true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            zipAlignEnabled true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    sourceSets {
+        androidTest {
+            setRoot('src/test')
+        }
+        main {
+            res.srcDirs = ['src/main/res', 'src/main/res-blackskin']
+            jniLibs.srcDirs = ['libs']
+        }
+        unitTest {
+            java.srcDir file('src/test/java')
+            resources.srcDir file('src/test/resources')
+        }
+    }
+
+    productFlavors {
+        //友盟多渠道打包配置
+        _0test {}//测试包
+        one_release {}
+        gray {}
+        anzhuo {}
+        yingyongbao {}
+        xiaomi {}
+        _360 {}
+        baidu {}
+        wandoujia {}
+        huawei {}
+        lianxiang {}
+        anzhi {}
+        _91 {}
+        mumayi {}
+        yingyonghui {}
+        oppo {}
+        meizu {}
+        sougou {}
+        google {}
+    }
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+}
+
+repositories {
+    flatDir {
+        dirs project(':onechatui').file('libs')
+        dirs 'libs'
+        dirs 'aars'
+    }
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "http://mvn.mob.com/android"
+        }
+    }
+    dependencies {
+//        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+//        classpath 'com.android.tools.build:gradle:2.2.0'
+//        classpath 'com.android.tools.build:gradle:2.3.2'
+        //        classpath 'com.android.tools.build:gradle:3.1.0'
+        // 注册MobSDK
+//        classpath 'com.mob.sdk:MobSDK:2017.1103.1413'
+    }
+
+}
+
+configurations { compile.exclude group: "org.json", module: "json" }
+
+//apply plugin: 'com.neenbedankt.android-apt'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(include: ['*.jar'], dir: '../core/libs')
+    compile project(':universalvideoview')
+    compile project(':sharesdk')
+    compile project(':onechatui')
+}
+configurations {
+    unitTestCompile.extendsFrom runtime
+    unitTestRuntime.extendsFrom unitTestCompile
+}

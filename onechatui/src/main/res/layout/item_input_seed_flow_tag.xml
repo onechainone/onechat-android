@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_seed_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tuoyuan_base_color_bg"
+        android:paddingBottom="@dimen/padding_little_4"
+        android:paddingLeft="@dimen/padding_8"
+        android:paddingRight="@dimen/padding_8"
+        android:paddingTop="@dimen/padding_little_4"
+        android:textColor="@color/base_bg_color_level1"
+        android:textSize="@dimen/text_size_12" />
+
+</LinearLayout>

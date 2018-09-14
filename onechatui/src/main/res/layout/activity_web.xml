@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_bg_color_level1"
+        android:minHeight="@dimen/title_height"
+        android:orientation="vertical">
+
+        <include layout="@layout/title_immersion_bar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="@dimen/dimen_35"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:paddingBottom="@dimen/title_img_padding"
+                android:paddingLeft="@dimen/title_img_padding"
+                android:paddingTop="@dimen/title_img_padding"
+                android:src="@drawable/icon_back"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_back"
+                style="@style/txt_titleStyle1"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/img_back"
+                android:text="@string/action_back"
+                android:textSize="@dimen/text_size_15"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_left"
+                style="@style/txt_titleStyle1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_little_8"
+                android:layout_toRightOf="@id/txt_back"
+                android:text="@string/app_name"
+                android:textSize="@dimen/text_size_15"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_title"
+                style="@style/txt_titleStyle1"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/title_height"
+                android:layout_marginRight="@dimen/title_height"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxWidth="@dimen/dimen_150"
+                android:text="@string/app_name"
+                android:textSize="@dimen/text_size_16" />
+
+            <ImageView
+                android:id="@+id/img_right"
+                android:layout_width="@dimen/title_height"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_little_6"
+                android:padding="@dimen/title_img_padding"
+                android:src="@drawable/icon_add"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_right"
+                style="@style/txt_titleStyle1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_little_6"
+                android:gravity="center|right"
+                android:maxWidth="@dimen/dimen_150"
+                android:padding="@dimen/title_img_padding"
+                android:textSize="@dimen/text_size_14" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_line_height"
+            android:background="@drawable/shadow_line" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/mwebview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/progressbar_drawable"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</LinearLayout>

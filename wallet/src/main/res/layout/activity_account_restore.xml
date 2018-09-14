@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_color_level1"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/brainkey_recover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/accountname_restore_key"
+                android:textColor="@color/black_second"
+                android:textSize="@dimen/text_size_14" />
+
+            <View
+                android:id="@+id/view_brainkey_recover"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="@dimen/dimen_4"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@drawable/switch_cursor_bg" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pass_brainkey_recover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/mnemonic_recovery_background"
+                android:gravity="center"
+                android:text="@string/encrypted_seed"
+                android:textColor="@color/black_second"
+                android:textSize="@dimen/text_size_14" />
+
+            <View
+                android:id="@+id/view_pass_brainkey_recover"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="@dimen/dimen_4"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@drawable/switch_cursor_bg"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pass_brainkey_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_10"
+            android:text="@string/choose_brainkey_file"
+            android:textColor="@color/base_text_color_level1"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_choose_file"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_margin="@dimen/dimen_5"
+            android:background="@drawable/edit_text_circle_bg"
+            android:gravity="center"
+            android:text="@string/click_encrypt_file_address"
+            android:textColor="@color/base_text_color_level2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:paddingLeft="@dimen/dimen_5"
+            android:text="Password:"
+            android:textColor="@color/base_text_color_level1"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/et_encrypt_password"
+            style="@style/edittext_line_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:hint="@string/password_while_export_seed"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColorHint="@color/hint_gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/bt_start_recover"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height_44"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:alpha="0.7"
+            android:background="@drawable/bt_big"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/start_recover"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/brainkey_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large_15"
+                android:text="@string/accountname_restore_key"
+                android:textColor="@color/simple_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/et_brainkey"
+                style="@style/edittext_circle_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:hint="@string/accountname_restore_key_tips"
+                android:maxLength="256"
+                android:minLines="4"
+                android:textColor="@color/base_color"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/tv_brainkey_erro"
+                style="@style/textview_erro_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large_15"
+                android:text="@string/password"
+                android:textColor="@color/simple_text_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_password"
+                style="@style/edittext_line_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:hint="@string/accountname_create_password_tips"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_password_erro"
+                style="@style/textview_erro_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/et_password2"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/margin_large_15"
+                android:text="@string/password_confirm"
+                android:textColor="@color/simple_text_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_password2"
+                style="@style/edittext_line_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:hint="@string/accountname_create_password_tips2"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_password2_erro"
+                style="@style/textview_erro_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/rb_user_contract"
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    android:padding="@dimen/dimen_5"
+                    android:src="@drawable/radiobutton_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_agree"
+                    android:textColor="@color/base_text_color_level1"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/line_space_extra"
+                    android:text="@string/user_contract"
+                    android:textColor="@color/blue_simple"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_25"
+                android:lineSpacingExtra="@dimen/line_space_extra"
+                android:text="@string/user_contract_txt"
+                android:textColor="@color/blue_simple"
+                android:textSize="@dimen/text_size_10" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/margin_simple_10"
+                android:background="@color/base_color_transparent"
+                android:enabled="false"
+                android:text="@string/action_ok"
+                android:textColor="@color/base_bg_color_level1"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_little_6">
+
+                <TextView
+                    android:id="@+id/restoration_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_account_create"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@color/toumin"
+                android:enabled="true"
+                android:paddingBottom="@dimen/padding_simple_10"
+                android:paddingLeft="@dimen/margin_little_6"
+                android:paddingTop="@dimen/margin_little_6"
+                android:text="@string/accountname_create_title"
+                android:textColor="@color/contract_color"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_325"
+    android:layout_gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_normal_circle_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_check_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:gravity="center"
+            android:text="@string/button_check_means_card"
+            android:textColor="@color/base_text_color_level1"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_1px"
+            android:layout_marginLeft="@dimen/dimen_30"
+            android:layout_marginRight="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:background="@color/line_grey_color" />
+
+        <TextView
+            android:id="@+id/tv_set_as_manager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:gravity="center"
+            android:text="@string/button_set_as_manager"
+            android:textColor="@color/base_text_color_level1"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:id="@+id/view_one"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_1px"
+            android:layout_marginLeft="@dimen/dimen_30"
+            android:layout_marginRight="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:background="@color/line_grey_color" />
+
+        <TextView
+            android:id="@+id/tv_banned_to_post"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:gravity="center"
+            android:text="@string/button_banned_to_post"
+            android:textColor="@color/base_text_color_level1"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:id="@+id/view_two"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_1px"
+            android:layout_marginLeft="@dimen/dimen_30"
+            android:layout_marginRight="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:background="@color/line_grey_color" />
+
+        <TextView
+            android:id="@+id/tv_inform_others"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:gravity="center"
+            android:textColor="@color/base_text_color_level1"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_1px"
+            android:layout_marginLeft="@dimen/dimen_30"
+            android:layout_marginRight="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:background="@color/line_grey_color" />
+
+        <TextView
+            android:id="@+id/tv_group_delete"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:gravity="center"
+            android:text="@string/button_from_group_delete"
+            android:textColor="@color/base_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:id="@+id/view_three"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_1px"
+            android:layout_marginLeft="@dimen/dimen_30"
+            android:layout_marginRight="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:background="@color/line_grey_color" />
+
+        <TextView
+            android:id="@+id/tv_add_blacklist"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:gravity="center"
+            android:text="@string/button_add_blacklist"
+            android:textColor="@color/base_color"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:background="@drawable/edittext_normal_circle_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:gravity="center"
+            android:text="@string/button_cancel"
+            android:textColor="@color/base_text_color_level1"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+</LinearLayout>

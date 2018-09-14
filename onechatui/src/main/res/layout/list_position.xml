@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_90"
+    android:layout_height="@dimen/dimen_120"
+    android:background="@drawable/simple_shadow_bg"
+    android:gravity="center"
+    android:maxHeight="@dimen/dimen_120"
+    android:maxWidth="@dimen/dimen_90"
+    android:minHeight="@dimen/dimen_120"
+    android:minWidth="@dimen/dimen_90"
+    android:textColor="@color/base_color"
+    android:textSize="@dimen/dimen_40" />

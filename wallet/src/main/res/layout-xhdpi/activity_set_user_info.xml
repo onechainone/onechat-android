@@ -1,0 +1,333 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_background_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/line_height_1dp"
+        android:layout_marginTop="@dimen/line_height_1dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_user_head"
+                    android:layout_width="@dimen/dimen_user_avatar2"
+                    android:layout_height="@dimen/dimen_user_avatar2"
+                    android:layout_gravity="center"
+                    android:src="@drawable/default_my_head" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_large_15"
+                    android:text="@string/click_change_avatar"
+                    android:textColor="@color/base_text_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_large_15">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nick_name"
+                    android:textColor="@color/black_second"
+                    android:textSize="@dimen/text_size_16" />
+
+                <EditText
+                    android:id="@+id/et_my_nikename"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/hint_input_nickname"
+                    android:lines="1"
+                    android:maxLength="64"
+                    android:textColor="@color/black_second"
+                    android:textColorHint="@color/hint_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/line_height"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_large_15">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_name"
+                    android:textColor="@color/black_second"
+                    android:textSize="@dimen/text_size_16" />
+
+                <EditText
+                    android:id="@+id/et_my_username"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:hint="@string/hint_input_user_name"
+                    android:textColor="@color/black_second"
+                    android:textColorHint="@color/hint_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_large_15">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sex"
+                    android:textColor="@color/black_second"
+                    android:textSize="@dimen/text_size_16" />
+
+                <FrameLayout
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_man"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:paddingRight="40dp"
+                        android:src="@drawable/rb_set_sex_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28dp"
+                        android:text="@string/man"
+                        android:textColor="@color/black_second"
+                        android:textSize="@dimen/text_size_16" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_women"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:paddingRight="40dp"
+                        android:src="@drawable/rb_set_sex_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28dp"
+                        android:text="@string/women"
+                        android:textColor="@color/black_second"
+                        android:textSize="@dimen/text_size_16" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/line_height"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_large_15"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_email"
+                    android:textColor="@color/black_second"
+                    android:textSize="@dimen/text_size_16" />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/user_email"
+                    android:textColor="@color/black_second"
+                    android:textColorHint="@color/hint_gray"
+                    android:textCursorDrawable="@drawable/curcle_bg"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/tv_get_email_code"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/padding_little_5"
+                    android:background="@color/base_color"
+                    android:gravity="center"
+                    android:text="@string/get_code"
+                    android:textColor="@color/base_bg_color_level1"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/line_height"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_large_15"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_email_code"
+                    android:textColor="@color/black_second"
+                    android:textSize="@dimen/text_size_16" />
+
+                <EditText
+                    android:id="@+id/et_email_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/input_code"
+                    android:textColor="@color/black_second"
+                    android:textColorHint="@color/hint_gray"
+                    android:textCursorDrawable="@drawable/curcle_bg"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_bind_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/line_height"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_large_15">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_tel"
+                    android:textColor="@color/black_second"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingRight="@dimen/padding_simple_10"
+                    android:text="@string/user_tel"
+                    android:textColor="@color/base_text_gray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <include layout="@layout/layout_right_icon" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/line_height"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_large_15"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_tel_code"
+                    android:textColor="@color/black_second"
+                    android:textSize="@dimen/text_size_16" />
+
+                <EditText
+                    android:id="@+id/et_tel_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/input_code"
+                    android:textColor="@color/black_second"
+                    android:textColorHint="@color/hint_gray"
+                    android:textCursorDrawable="@drawable/curcle_bg"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/line_height"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_large_15">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_intro"
+                    android:textColor="@color/black_second"
+                    android:textSize="@dimen/text_size_16" />
+
+                <EditText
+                    android:id="@+id/et_jianjie"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/user_intro_hint"
+                    android:maxLength="256"
+                    android:textColor="@color/black_second"
+                    android:textColorHint="@color/hint_gray"
+                    android:textCursorDrawable="@drawable/curcle_bg"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/page_bottom_temp"
+                android:background="@color/base_background_bg" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

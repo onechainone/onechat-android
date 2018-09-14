@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oneapp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_coin_height"
+    android:background="@drawable/base_click_bg_white"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/item_coin_height"
+    android:orientation="vertical">
+
+    <!--<onechatain.androidapp.onemessage.widght.swipe.SwipeLayout&ndash;&gt;-->
+    <!--android:id="@+id/swipe"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dimen_0"-->
+    <!--android:layout_weight="1">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="@dimen/dimen_80"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/base_color"-->
+    <!--android:gravity="center">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txt_del"-->
+    <!--style="@style/MMFontTitleInList"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:singleLine="true"-->
+    <!--android:text="@string/delete"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/text_size_16" />-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0"
+        android:layout_weight="1"
+        android:background="@drawable/base_click_bg_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/quarter_standard_margin"
+        android:paddingLeft="@dimen/margin_simple_10"
+        android:paddingRight="@dimen/margin_simple_10"
+        android:paddingTop="@dimen/quarter_standard_margin">
+
+        <ImageView
+            android:id="@+id/account_icon"
+            android:layout_width="@dimen/generic_icon_size"
+            android:layout_height="@dimen/generic_icon_size"
+            tools:src="@drawable/bitcoin" />
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_little_8"
+            android:layout_marginRight="@dimen/margin_little_8"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/account_description"
+                    style="@style/NormalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="Bitcoin"
+                    tools:text="Bitcoin" />
+
+                <TextView
+                    android:id="@+id/coin_type_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_12"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_little_5"
+                    android:layout_marginRight="@dimen/margin_little_5"
+                    android:background="@drawable/coin_type_one_bg"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="@dimen/dimen_3"
+                    android:paddingRight="@dimen/dimen_3"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_size_10"
+                    android:visibility="gone"
+                    tools:text="BTC" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="@string/almost_equal_to"
+                    android:textColor="@color/base_text_color_level1" />
+
+                <onewalletui.ui.widget.Amount
+                    android:id="@+id/exchange_rate_row_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    oneapp:show_small="true"
+                    oneapp:single_line="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <onewalletui.ui.widget.Amount
+                android:id="@+id/account_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                oneapp:single_line="true" />
+
+            <onewalletui.ui.widget.Amount
+                android:id="@+id/account_balance_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                oneapp:show_small="true"
+                oneapp:single_line="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<!onechatain.androidapp.onemessage.widght.swipe.SwipeLayout>&ndash;&gt;-->
+
+    <View
+        android:id="@+id/view_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_1dp"
+        android:layout_marginLeft="@dimen/margin_simple_10"
+        android:layout_marginRight="@dimen/margin_simple_10"
+        android:background="@color/base_line_bg_color" />
+
+    <!--android:layout_marginLeft="54dp"-->
+</LinearLayout>

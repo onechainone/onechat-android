@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_color_level1"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_bar"
+        layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_25"
+        android:layout_marginRight="@dimen/dimen_25"
+        android:layout_marginTop="@dimen/dimen_50"
+        android:background="@drawable/simple_shadow_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_large_15">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="60.0dip"
+                android:layout_height="60.0dip"
+                android:layout_margin="10dp"
+                android:src="@drawable/default_other_head" />
+
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large_15"
+                android:layout_toRightOf="@+id/iv_head"
+                android:textColor="@color/base_text_color_level1"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/tvmsg"
+                style="@style/txt_ContextStyle1"
+                android:layout_below="@+id/tvname"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/iv_head"
+                android:textColor="@color/base_text_color_level2"
+                android:textSize="@dimen/text_size_14" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="22dp"
+                android:layout_toRightOf="@+id/tvname"
+                android:src="@drawable/ic_sex_female"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/color_white"
+            android:padding="@dimen/padding_simple_10">
+
+            <ImageView
+                android:id="@+id/img_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_image" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/txt_ContextStyle1"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_simple_10"
+            android:layout_marginTop="20dp"
+            android:text="@string/my_qr_code_tip"
+            android:textColor="@color/base_text_color_level2"
+            android:textSize="@dimen/text_size_13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_copy_invite_url"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60"
+        android:layout_marginLeft="@dimen/dimen_25"
+        android:layout_marginRight="@dimen/dimen_25"
+        android:background="@drawable/simple_shadow_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_large_15"
+        android:paddingRight="@dimen/margin_large_15">
+
+        <TextView
+            android:id="@+id/tv_user_invite_url"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/base_text_gray"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_large_18"
+            android:text="@string/tap_copy_url"
+            android:textColor="@color/base_text_gray"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+</LinearLayout>

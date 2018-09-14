@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_background_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/base_background_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/re_change_groupavatar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_80"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_large_15"
+                android:paddingRight="@dimen/margin_large_15">
+
+                <ImageView
+                    android:id="@+id/iv_group_avatar"
+                    android:layout_width="@dimen/dimen_60"
+                    android:layout_height="@dimen/dimen_60"
+                    android:src="@drawable/default_group" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_group_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/base_text_color_level1"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <TextView
+                        android:id="@+id/tv_group_uid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:textColor="@color/base_text_color_level1"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/base_bg_color_level1">
+
+                <onemessageui.chat.widght.ExpandGridView
+                    android:id="@+id/gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_12"
+                    android:columnWidth="10dp"
+                    android:gravity="start"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center"
+                android:padding="@dimen/padding_8">
+
+                <TextView
+                    android:id="@+id/tv_look_all_members"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_little_5"
+                    android:text="@string/look_all_group_members"
+                    android:textColor="@color/base_text_gray"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_group_manage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/padding_12"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_large_15"
+                android:paddingRight="@dimen/margin_large_15"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/group_manage"
+                    android:textColor="@color/base_text_color_level1"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_change_groupname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/padding_12"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_large_15"
+                android:paddingRight="@dimen/margin_large_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/group_name"
+                    android:textColor="@color/base_text_color_level1"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/txt_groupname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:ellipsize="end"
+                    android:maxWidth="200dp"
+                    android:singleLine="true"
+                    android:textColor="@color/base_text_gray"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_switch_block_groupmsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="57dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@color/base_bg_color_level1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/padding_large_15"
+                    android:paddingRight="@dimen/margin_large_15"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="屏蔽群消息"
+                        android:textColor="@color/base_text_color_level1"
+                        android:textSize="16sp"
+                        android:typeface="serif" />
+
+                    <CheckBox
+                        style="@style/CustomCheckboxTheme"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:checked="true" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_group_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/padding_12"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_large_15"
+                android:paddingRight="@dimen/margin_large_15"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/group_id"
+                    android:textColor="@color/base_text_color_level1"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/txt_groupid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:ellipsize="end"
+                    android:maxWidth="200dp"
+                    android:singleLine="true"
+                    android:textColor="@color/base_text_gray"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_group_nick"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/padding_12"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_large_15"
+                android:paddingRight="@dimen/margin_large_15"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/my_nickname_in_group"
+                    android:textColor="@color/base_text_color_level1"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/txt_groupnick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:ellipsize="end"
+                    android:maxWidth="200dp"
+                    android:singleLine="true"
+                    android:textColor="@color/base_text_gray"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_group_qrcode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/padding_12"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_large_15"
+                android:paddingRight="@dimen/margin_large_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/group_qr_code"
+                    android:textColor="@color/base_text_color_level1"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_group_notice"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/padding_12"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_large_15"
+                android:paddingRight="@dimen/margin_large_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/group_notice"
+                    android:textColor="@color/base_text_color_level1"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_switch_chattotop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/padding_12"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_large_15"
+                android:paddingRight="@dimen/margin_large_15"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="置顶聊天"
+                    android:textColor="@color/base_text_color_level1"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+                <CheckBox
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:checked="true" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/view_share_group"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/padding_12"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_large_15"
+                android:paddingRight="@dimen/margin_large_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/share_group"
+                    android:textColor="@color/base_text_color_level1"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/view_copy_group_url"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/padding_12"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_large_15"
+                android:paddingRight="@dimen/margin_large_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/public_group"
+                    android:textColor="@color/base_text_color_level1"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_50"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_group_url"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:textColor="@color/base_text_gray"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_large_18"
+                        android:text="@string/group_invite_url"
+                        android:textColor="@color/base_text_gray"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/wait_review_user"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/padding_12"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_large_15"
+                android:paddingRight="@dimen/margin_large_15"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="等待审核成员"
+                    android:textColor="@color/base_text_color_level1"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:paddingTop="@dimen/dimen_10"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="@dimen/dimen_12"
+                        android:layout_height="@dimen/dimen_12"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/unread_msg_num_bg"
+                        android:gravity="center"
+                        android:textColor="@color/tint_text_color"
+                        android:textSize="@dimen/dimen_5" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_private_group"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/padding_12"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_large_15"
+                android:paddingRight="@dimen/margin_large_15">
+
+                <TextView
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/private_group"
+                    android:textColor="@color/base_text_color_level1"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    android:src="@drawable/icon_private_group" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_clear"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/padding_12"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_large_15"
+                android:paddingRight="@dimen/margin_large_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/group_clean_chatting_records"
+                    android:textColor="@color/base_text_color_level1"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/padding_12"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_large_15"
+                android:paddingRight="@dimen/margin_large_15"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/group_receive_message"
+                    android:textColor="@color/base_text_color_level1"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+                <onemessageui.widght.switchbutton.SwitchButton
+                    android:id="@+id/sb_take_push"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:onColor="@color/base_color" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_marginTop="@dimen/padding_12"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_large_15"
+                android:paddingRight="@dimen/margin_large_15"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/group_receive_message"
+                    android:textColor="@color/base_text_color_level1"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+                <onemessageui.widght.switchbutton.SwitchButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:onColor="@color/base_color" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_exit_grp"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_12"
+                android:background="@color/base_color"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="@string/out_chat_group"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_color_level1"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/secure_key_important"
+                    android:textColor="@color/simple_text_color"
+                    android:textSize="@dimen/text_size_14" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large_15"
+                android:text="@string/accountname_create_username"
+                android:textColor="@color/simple_text_color"
+                android:textSize="@dimen/text_size_14" />
+
+            <EditText
+                android:id="@+id/et_usertel"
+                style="@style/edittext_line_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="@string/string_rule_account_name"
+                android:hint="@string/accountname_create_username_tips"
+                android:inputType="textEmailAddress"
+                android:maxLength="64"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/tv_error_accountname"
+                style="@style/textview_erro_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large_15"
+                android:text="@string/accountname_create_nickname"
+                android:textColor="@color/simple_text_color"
+                android:textSize="@dimen/text_size_14" />
+
+            <EditText
+                android:id="@+id/et_nickname"
+                style="@style/edittext_line_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/accountname_create_nickname_tips"
+                android:maxLength="64"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_14" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large_15"
+                android:text="@string/password"
+                android:textColor="@color/simple_text_color"
+                android:textSize="@dimen/text_size_14" />
+
+            <EditText
+                android:id="@+id/et_password"
+                style="@style/edittext_line_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/accountname_create_password_tips"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/tv_password_erro"
+                style="@style/textview_erro_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large_15"
+                android:text="@string/password_confirm"
+                android:textColor="@color/simple_text_color"
+                android:textSize="@dimen/text_size_14" />
+
+            <EditText
+                android:id="@+id/et_password2"
+                style="@style/edittext_line_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/accountname_create_password_tips2"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/tv_password2_erro"
+                style="@style/textview_erro_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large_15"
+                android:text="@string/invitation_code_must"
+                android:textColor="@color/simple_text_color"
+                android:textSize="@dimen/text_size_14" />
+
+            <EditText
+                android:id="@+id/et_referrer_account"
+                style="@style/edittext_line_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/write_referrer_account"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_simple_10"
+                android:background="@color/base_bg_color_level1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_little_5">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sex"
+                    android:textColor="@color/black_second"
+                    android:textSize="@dimen/text_size_14" />
+
+                <FrameLayout
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_man"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:paddingRight="40dp"
+                        android:src="@drawable/rb_set_sex_selected" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28dp"
+                        android:text="@string/man"
+                        android:textColor="@color/black_second"
+                        android:textSize="@dimen/text_size_14" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_women"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:paddingRight="40dp"
+                        android:src="@drawable/rb_set_sex_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28dp"
+                        android:text="@string/women"
+                        android:textColor="@color/black_second"
+                        android:textSize="@dimen/text_size_14" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!--<CheckBox-->
+                <!--android:id="@+id/rb_user_contract"-->
+                <!--android:layout_width="@dimen/dimen_20"-->
+                <!--android:layout_height="@dimen/dimen_20"-->
+                <!--android:layout_marginRight="@dimargin_little_6le_5"-->
+                <!--android:background="@drawable/radiobutton_bg"-->
+                <!--android:button="@null"-->
+                <!--android:checked="false" />-->
+
+                <ImageView
+                    android:id="@+id/rb_user_contract"
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    android:padding="@dimen/dimen_5"
+                    android:src="@drawable/radiobutton_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_agree"
+                    android:textColor="@color/base_text_color_level1"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/line_space_extra"
+                    android:text="@string/user_contract"
+                    android:textColor="@color/blue_simple"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_25"
+                android:lineSpacingExtra="@dimen/line_space_extra"
+                android:text="@string/user_contract_txt"
+                android:textColor="@color/blue_simple"
+                android:textSize="@dimen/text_size_10" />
+
+            <Button
+                android:id="@+id/btn_register"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/simple_btn_height"
+                android:layout_marginTop="@dimen/margin_simple_10"
+                android:background="@color/base_color_transparent"
+                android:enabled="false"
+                android:text="@string/accountname_create_title"
+                android:textColor="@color/base_bg_color_level1"
+                android:textSize="@dimen/text_size_16" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_little_6">
+
+                <TextView
+                    android:id="@+id/create_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_account_restore"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@color/toumin"
+                android:enabled="true"
+                android:paddingBottom="@dimen/padding_simple_10"
+                android:paddingLeft="@dimen/margin_little_6"
+                android:paddingTop="@dimen/margin_little_6"
+                android:text="@string/accountname_restore_title"
+                android:textColor="@color/contract_color"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

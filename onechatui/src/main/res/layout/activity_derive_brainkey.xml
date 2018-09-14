@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="oneapp.onechat.oneandroid.onemessage.view.activity.DeriveBrainkeyActivity">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:gravity="bottom"
+            android:text="@string/saved_offline"
+            android:textColor="@color/base_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_5"
+            android:text="@string/copy_and_paste_encrypt_brainkey"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30"
+            android:gravity="bottom"
+            android:text="@string/transmission_offline_title"
+            android:textColor="@color/base_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_5"
+            android:text="@string/transmission_offline_content"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30"
+            android:gravity="bottom"
+            android:text="@string/remember_password_title"
+            android:textColor="@color/base_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_5"
+            android:text="@string/remember_password_content"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_seed_path"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_100"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:background="@drawable/edit_text_circle_bg"
+            android:padding="@dimen/dimen_5"
+            android:textColor="@color/color_black" />
+
+        <TextView
+            android:id="@+id/tv_save_seed_file"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height_44"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:background="@drawable/bt_big"
+            android:gravity="center"
+            android:text="@string/derive_encrypt_brainkey_address"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+</LinearLayout>

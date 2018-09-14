@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/simple_shadow_bg"
+    android:maxWidth="@dimen/title_popup_width"
+    android:orientation="vertical">
+
+    <onewalletui.ui.widget.ListViewAdaptWidth
+        android:id="@+id/title_list"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        android:dividerHeight="@dimen/dimen_0"
+        android:scrollingCache="false" />
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="0dp" />-->
+</LinearLayout>  

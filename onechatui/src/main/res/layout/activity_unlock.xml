@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_color_level1"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_immersion_bar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_large_18"
+        android:src="@drawable/icon_logo_text" />
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="@dimen/dimen_60"
+        android:layout_height="@dimen/dimen_60"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_30" />
+
+    <TextView
+        android:id="@+id/tv_lock_statue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:textSize="@dimen/text_size_12" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_large_18">
+
+        <LinearLayout
+            android:id="@+id/seed_encrypted_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/NormalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/wallet_locked_message" />
+
+            <TextView
+                android:id="@+id/lock_icon"
+                android:layout_width="@dimen/font_icon_bg_size"
+                android:layout_height="@dimen/font_icon_bg_size"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/lock_icon" />
+
+            <TextView
+                style="@style/SmallHelpText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/touch_to_decrypt_wallet" />
+        </LinearLayout>
+
+        <onemessageui.widght.lockpattern.LockPatternView
+            android:visibility="gone"
+            android:id="@+id/lock_view"
+            android:layout_width="@dimen/dimen_lock"
+            android:layout_height="@dimen/dimen_lock" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_0"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_reset_lock_psw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="bottom"
+        android:padding="@dimen/padding_large_15"
+        android:text="@string/reset"
+        android:textColor="@color/base_text_gray"
+        android:textSize="@dimen/text_size_12"
+        android:visibility="gone" />
+
+</LinearLayout>

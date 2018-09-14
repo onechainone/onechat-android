@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_50"
+    android:background="@color/base_bg_color_level1"
+    android:minHeight="@dimen/dimen_50"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_more_weibo_msg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/more_weibo_msg"
+        android:textColor="@color/base_text_gray"
+        android:textSize="@dimen/text_size_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:background="@color/base_background_bg" />
+</LinearLayout>

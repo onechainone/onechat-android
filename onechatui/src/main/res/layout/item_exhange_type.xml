@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_click_bg_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/view_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/dimen_50"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_large_15">
+
+        <TextView
+            android:id="@+id/tv_coin_rate_type"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/base_text_color_level1" />
+
+        <ImageView
+            android:id="@+id/iv_select"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_marginLeft="@dimen/margin_large_18"
+            android:src="@drawable/radiobutton_normal" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/base_line_bg_color" />
+
+</LinearLayout>

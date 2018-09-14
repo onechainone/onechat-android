@@ -1,0 +1,1178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_share">シェア</string>
+    　　　　　　　　　　　　　　　　　
+
+    <string name="action_settings">設置</string>
+    　　　　　　　　　　　　　　　　
+    　　　　　　　　　　　　　　
+    <string name="action_refresh">更新</string>
+    　　　　　　　　　　　　　　　
+
+
+    <!-- Errors -->
+    <string name="error_generic">命令を実施した時にエラーが発生しました。</string>
+    　
+    <string name="error_could_not_read_wallet">ウォレット読み取りできません。</string>
+    　
+    <string name="error_camera">カメラにアクセスできません</string>
+
+    <!-- Generic items -->
+    <string name="button_ok">確認</string>
+    <string name="button_confirm">確認</string>
+    <string name="button_cancel">キャンセル</string>
+    <string name="button_default">デフォルト</string>
+    <string name="button_dismiss">取り消し</string>
+    <string name="button_add">追加</string>
+    <string name="button_save">保存</string>
+    <string name="button_send">送信</string>
+    <string name="button_retry">再試行</string>
+    <string name="button_agree">同意</string>
+    <string name="button_disagree">否定</string>
+    <string name="scan_qr_code">QRコードをスキャン</string>
+    　　
+    <string name="copied_to_clipboard">クリップボードにコピーしました</string>
+    　
+    <string name="wallet_locked_message">ウォレットが暗号化されています</string>
+    <string name="unlock_wallet_title">ウォレットロック解除</string>
+
+
+    <string name="unlocking_wallet_error_title">ロック解除できません</string>
+    <string name="unlocking_wallet_error_detail">パスワードが正しく入力されるかどうかを確認して下さい。もし問題が解決できないなら、アカウント復元をご考慮して下さい。</string>
+    　
+
+    <!-- Nav drawer -->
+
+    <!-- SendOutput widget -->
+    <string name="fee">取引手数料</string>
+    <string name="send">送信</string>
+    <string name="receive">受け取り</string>
+
+    <!-- Wallet activity -->
+    <string name="pay_with">で送信</string>
+    <string name="exchange_and_pay_title">に変換して発送します</string>
+
+    <!-- PayToDialog-->
+    <string name="ambiguous_address_message">正しいコインを選択してください</string>
+
+    <!-- Balance fragment -->
+
+    　　　　　　　　　
+    　　　　　　　　　　
+    　　　　　　　　　
+    　　　　　　　　　　　　　　　　　　　
+    <string name="get_tx_broadcast_error">ブロードキャストトレーディング中エラーが発生しました。</string>
+
+    <!-- Receive fragment> -->
+    　
+    <string name="create_new_address">アドレスを新規作成しますか。</string>
+    　　　　　　　　　　　　　　　　　　
+    <string name="create_new_address_name">別名</string>
+    　　　　　　　　　　　　　　　　　　　
+    <string name="too_many_unused_addresses">未使用のアドレスが多すぎます。アドレス新規作成する前に、まず前に作ったアドレスを使って下さい。</string>
+
+    <!-- Send fragment -->
+    　<!-- Here the %1$s is a detailed error message -->
+    　　　　　　　　　　　　　
+    <string name="scan_error">スキャン中、エラーが発生しました： %1$s</string>
+    　　　　　　　　　　　　　
+    <!-- Here the \"%1$s\" is the "coin name"-->コイン名
+    　　
+    <string name="amount_error">無効な金額。</string>
+    　　　　　　　　　　　　　　　　　　
+    <!-- %1$s is the amount e.g. ... is at least 0.00001 BTC-->
+    <string name="amount_error_not_enough_money_plain">残高不足</string>
+    <!-- %1$s is the wallet balance e.g. ... current balance is 3.1415 BTC-->
+
+
+    <!-- Set Password fragment -->
+    <!-- Here the \"%1$s\" is the "password"-->
+    <!-- The %1$d is a number of characters, usually 10 characters -->
+
+    　　　　　　　　　　　
+    <!-- FinalizeWalletRestorationFragment -->
+    <string name="wallet_restoration_master_key">マスターキーを新規作成</string>
+    　　　　　　　　　　　　　　　　　　　　
+    <!-- The %1$s is a coin name e.g. Creating key for Bitcoin -->ビットコインの秘密鍵を新規作成
+    <string name="wallet_restoration_coin"> %1$s の秘密鍵を作成する</string>
+    　　　　　　　　　　　　　　　　　　　　　　
+
+    <!-- The %1$s is an error message -->エラーメッセージ
+    <string name="wallet_restoration_error">ウォレット復元できません\n\n%1$s</string>
+    　　　　　　　　　　　　　　　　　　　　
+    <!-- PasswordConfirmationFragment -->
+    <string name="enter_password">パスワードを入力</string>
+    <!-- SignTransactionFragment -->
+    <!-- &#8230; is the ... character -->
+    　　　　　　　　　　　　　　　　　　　　
+
+    <!-- &#8230; is the ... character -->
+    <string name="sent_msg">送信済み！承認待ち中です。</string>
+    　　　　　　　　　　　　　
+
+    　　　　　　　　　　　　　　
+    <!-- %1$s is the time remaining e.g. ... in the next 8 minutes 35 seconds-->
+    　　　　　　　　　　　　　　　　　　　
+
+    <!-- About Activity -->
+    <!-- Add Coins -->
+    <!-- %1$s is the coin name e.g. ... create a Bitcoin account ... —>
+
+　 <!- %1$s is the coin name e.g. Add Bitcoin? —>
+　　　　　　　　　　　　　　　　　
+    <string name="adding_coin_confirmation_title">追加 %1$s?</string>
+    <!- %1$s is the coin name e.g. ... a new Bitcoin account -->
+    <string name="adding_coin_working">%1$s 追加中、お待ち下さい。</string>
+    <!-- %1$s is the coin name and %2$s is and error message e.g. Error adding Bitcoin: some error message
+<string name="add_coin_error"> %1$s: %2$s 追加できませんでした。</string>
+    <!- %1$s is the coin name e.g. Bitcoin already added —>
+    <string name="coin_already_added_title">%1$s 追加済み。</string>
+    <string name="coin_already_added">余分なアカウントが支持されていない</string>
+　　　　　　　　　　　　　　　
+
+    <!- Transaction amount visualizer —>
+　<!- Internal transfer means that the wallet send money to itself.-->内部送金とはウォレット内で送金ということだ。
+    <string name="internal_transfer">内部移転</string>
+    <!-- Transaction Details -->
+    <!-- Status of a transaction, could be pending for confirmations or confirmed -->
+
+    <!-- %d is the number of confirmations -->
+    　　　　　　　　　　　　　　　
+    <!-- Exchange Rates -->
+    　　　　　　　　　　　　　　　　　
+    <!-- %1$s is the symbol of a fiat currency e.g. Set EUR as a ... -->
+
+    　　　　　　　　　　　　　　　　　　　
+    　　　　　　　　　　　　　　　　　　　　
+
+    <!-- Select Coins -->
+    <!-- Previous Addresses -->
+
+    <!-- Edit Address Book Entry -->
+    <!-- Edit Account -->
+    <string name="edit_account_description_label">タグ</string>
+    <!-- %1$s is the name of the account e.g. Remove account Bitcoin? -->
+
+    　　　　　　　　　　　　　　　　　　　　　　
+    <!-- Settings -->
+    <string name="pref_title_restore_wallet">ウォレット復元</string>
+    　　　　　　　　　　　　　　　　　　
+    <string name="pref_title_exchange_rates">為替レート</string>
+    　　　　　　　　　　　　　　　　　
+    <!-- Show Seed -->
+    <string name="title_activity_backup_seed">ウォレット復元用のニーモニックをバックアップする</string>
+    　
+    <string name="seed_not_available_title">復元用のニーモニックが見つかりません。</string>
+    　　　　　　　　　　　　　　　　　　
+    <string name="seed_not_available">復元用のニーモニックが端末に保存されていません\nウォレットの復元によって問題を解決します。</string>
+    <!-- &#8230; is the ... character -->
+    <string name="seed_working">少々お待ちください&#8230;</string>
+    <string name="seed_password_protected">復元ニーモニックには暗号化の保護が設置されています。(BIP39)</string>
+    <!-- Wallet locked -->ウォレットがロックされた。
+    <string name="touch_to_decrypt_wallet">タッチでロック解除</string>
+    <!-- Debugging -->
+    <!-- Overview -->
+    <string name="title_activity_overview">概況</string>
+    <!-- Exchange -->
+    　<!-- Exchange Status -->
+
+    <!-- Sign Message -->
+    <!-- Messages -->
+    <string name="tx_message_public">公開情報</string>
+    　　　　　　　　　　　　　　　　
+    <string name="tx_message_private">プライベートメッセージ</string>
+    　　　　　　　　　　　　　　　　　　　　
+    <!-- Account details —>
+　　　　　　　　　　　　　　　　　　　
+    <string name="title_activity_account_details">アカウント情報</string>
+　　　　　　　　　　　　　　　　　
+    <string name="account_public_key_label">パブリックキー</string>
+    <string name="account_public_key_warning">公開鍵を共有すると、他人が自分の口座に残る残高と取引履歴をチエックできます。</string>
+　<!- Support -->
+    　　　　　　　　　　　　
+    　 <!-- Sweep wallet -->
+
+    <!-- Fees settings -->
+    <string name="title_activity_transaction_fees">取引手数料</string>
+    <!-- Example: Bitcoin transaction fees-->
+    <string name="tx_fees_title">%1$s 取引手数料</string>
+    <!-- Example: The fee value is per kilobyte.-->
+    <string name="tx_fees_description">手数料は %1$s.</string>
+    <string name="tx_fees_per_kilobyte">千文字xxxバイト</string>
+    　
+    <string name="tx_fees_per_transaction">〜取引ごとに/</string>
+
+    <string name="tx_fees_per_gas">ガス料金</string>
+    <!-- Terms -->
+    <string name="terms_of_service_title">サービス規約</string>
+    <!-- TODO translate to other languages -->
+    <string name="terms_of_service">使用規約</string>
+
+    <string name="group_chats">グループチャット</string>
+    <string name="open_group_chats">グループチャット開始</string>
+    <string name="password_confirm">パスワード確認</string>
+
+    <string name="menu_groupchat">グループチャット</string>
+    <string name="menu_addfriend">友人追加</string>
+    　　　　　　　　　　　　　
+
+
+    <!-- icon_recive_red add begin -->
+    <string name="title_home">自由なコミュニケーション</string>
+    　　　　　　　　　　　
+    　　　　　　　　　　　
+    　　　　　　　　　　　　　　
+
+    <string name="tab_title_home">メッセージ</string>
+    <string name="tab_title_wallet">ウォレット</string>
+    <string name="tab_title_exchange">取引</string>
+    <string name="tab_title_my">自分</string>
+
+    <!-- icon_recive_red add end -->
+
+    <!-- file dialog -->
+    <string name="menu_scan_qrcode">QRコード</string>
+    <string name="menu_add_coin">コイン追加</string>
+
+
+    <!-- bts -->
+
+    <string name="unable_to_load_wif">WIFプライベートキー読取失敗</string>
+    　　　　　　　　　　　　　　　
+    <string name="error_wif">WIFプライベートキー作成失敗</string>
+
+    <string name="kindly_create_account">アカウント作成</string>
+    <string name="please_enter_6_digit_pin">PINを設置</string>
+    <string name="pin_number_warning">PINを６桁以上の数字に設定してください</string>
+    　
+    <string name="mismatch_pin">正しいPINを入力してください</string>
+    <string name="error_invalid_account">無効なアカウント、関連のニーモニックをチェックしてください。</string>
+    　　　　　　　　　　　
+    <string name="please_enter_brainkey">ニーモニックを入力してください。</string>
+    　　　　　　　　　　　　　　　　　　　　　　
+    <string name="please_enter_correct_brainkey">正しいニーモニックを入力してください</string>
+    　　　　　　　　　　　　　　　　　　　　
+    <string name="account_name_should_be_longer">アカウント名を６桁以上の文字にしてください</string>
+    　
+    <string name="account_name_already_exist">既存するアカウント名</string>
+    　　　　　　　　　　　　　　　　　　
+    <string name="account_name_not_exist">存在しないアカウント</string>
+    　　　　　　　　　　　　　　　　　　　
+    <string name="account_already_exist">既存するアカウント</string>
+    　　　　　　　　　　　　　　　　　　
+    <string name="txt_no_internet_connection">ネットにつながらない</string>
+
+
+    <string name="importing_your_wallet">ウォレット復元中</string>
+
+
+    <string name="to_capital">〜に</string>
+    　　　　　　　　　　
+    <string name="from_capital">〜から</string>
+
+    　　　　　　　　　　　
+    <string name="ok">成功</string>
+
+
+    　　　　　　　　　　　　　　　　　　　　　
+    <string name="str_balance_available">%1$s %2$s は使用可能</string>
+
+    <string name="date_time_zone">タイムゾーン</string>
+
+    　
+
+    <string name="cancel">キャンセル</string>
+    　　　　　　　　　　　
+    <string name="delete">削除</string>
+
+
+    <string name="try_again">1分後に再試行してください。</string>
+    　　　　　　　　　　　　
+    <string name="unable_to_load_brainkey">ニーモニック読取失敗。</string>
+    　　　　　　　　　　　　　　　　　
+    <string name="error_read_dict_file">DICTファイル読取失敗</string>
+    　　　　　　　　　　　　　　　　　　　　
+    <string name="error_with_message">エラー: %s</string>
+    <string name="error_no_message">操作中にエラーが発生しました</string>
+    　　　　　　　　　　　　
+    <string name="account_name_must_include_dash_and_a_number">アカウント名はハイフンと数字の組み合わせからなっている</string>
+    　
+    <string name="validation_in_progress">確認中..</string>
+    <string name="last_letter_cannot">最後の文字をハイフンにしてはいけない。</string>
+    　　　　　　　　　　　　
+    <string name="unable_to_generate_bin_format_for_key">binファイルのキーを生成することができません。</string>
+    <string name="saving_bin_file_to">Binファイルを保存する</string>
+    　　　　　　　　　　　　　　　　　　　
+    <string name="folder_name">onechain</string>
+    <string name="bin_file_saved_successfully_to">Binファイル保存成功</string>
+    <string name="unable_to_save_bin_file">Binファイル保存できません</string>
+    <string name="creating_backup_file">バックアップファイルを作成</string>
+    <string name="fetching_key">Keyを獲得</string>
+    　
+    <string name="invalid_pin"> 無効なPIN </string>
+
+    <string name="generating_bin_format">Binファイルを作成</string>
+    　　　　　　　　　　　　　　　　　　→Binファイルが生成される
+
+    <string name="is_already_added">追加済み</string>
+
+
+    <!-- PDF export -->
+
+    <!-- Import Backup activity -->
+    <string name="secure_key_important">ニーモニックだからこそ、仮想通貨が安全というものだ。盗撮、録画、盗み見できない場合に、ニーモニックを作成してください。</string>
+    　
+    <string name="accountname_create_username">アカウント</string>
+    <string name="accountname_create_username_tips">しばらくの間、小文字と数字しか支持されなく、そして、6桁以上の数字にしてください。</string>
+    <string name="accountname_create_nickname">ニックネーム</string>
+    <string name="accountname_create_nickname_tips">ニックネームを入力してください</string>
+    <string name="accountname_create_password_tips">８文字以上のパスワードを入力してください</string>
+    <string name="accountname_create_password_tips2">８文字以上のパスワードを再び入力してください</string>
+
+    <string name="accountname_restore_key">記憶ワード</string>
+    　　　　　　　　　　　　　　　　　　　→ニーモニック
+    <string name="accountname_restore_key_tips">記憶ワードを入力</string>
+    　　　　　　　　　　　　　　　　　　　→ニーモニックを入力してください。
+    <string name="accountname_friend_username_tips">友達のアカウント</string>
+    <string name="accountname_friend_nickname">ニックネーム</string>
+    <string name="accountname_friend_nickname_tips">連絡先にて友人のニックネーム</string>
+    　
+    <string name="accountname_search">検索</string>
+
+    <string name="action_ok">確認</string>
+
+    <string name="accountname_create_title">アカウント作成</string>
+    <string name="accountname_restore_title">アカウント復元</string>
+    　　　　　　　　　　　　　　　　　　　
+    <string name="action_add_friend">友人追加</string>
+    　　　　　　　　　　　　　　　　　
+    <string name="accountname_create_loading">アカウント作成中...</string>
+    <string name="accountname_add_loading">友達追加中...</string>
+    <string name="create_groupchat_loading">暗語化されたグループチャット作成中</string>
+    　　　　　　　　　　　　　　　　　　
+    <string name="action_have_saved">保存済み</string>
+
+    <string name="default_chat_sentence">〜さんをWeChat連絡先として追加しました。チャットを始めましょう。</string>
+    　
+    <string name="default_groupchat_sentence"> %sを暗号化されたグループチャットに招待された。</string>
+    <string name="feature_come_soon">もうすぐの登場で、ご期待してください。</string>
+
+    <string name="default_friend_name">暗語化されたグループチャットに招待された友人</string>
+
+    <string name="default_group_name">暗語化されたグループ</string>
+
+    <string name="text_ack_msg">既読</string>
+    <string name="text_delivered_msg">送信</string>
+    <string name="button_pushtotalk">押したまま話す</string>
+
+    <string name="attach_picture">画像</string>
+    <string name="attach_take_pic">写真を撮る</string>
+
+    <string name="attach_location">位置</string>
+    　　　　　　　　　　　　　　　
+    <string name="attach_file">ファイル</string>
+    <string name="attach_video_call">ビデオコール</string>
+    <string name="move_up_to_cancel">上にスライドして、発送を取り消します</string>
+    　　　　　　　　　　　　　　
+    <string name="send_fail">送信失敗</string>
+    <string name="delete_message">メッセージ削除</string>
+    <string name="copy_message">メッセージをコピー</string>
+    <string name="delete_voice">音声を削除する</string>
+    　　　　　　　　　
+    <string name="delete_video">録画を削除</string>
+    <string name="connect_failuer_toast">ネット状態をチェックした上で再試行してください。</string>
+    <string name="forward">転送</string>
+    <string name="prompt">提示</string>
+    <string name="location_recv">[%1$sの位置]</string>
+    <string name="location_prefix">[本人の所在地]</string>
+    　　　　　　　　　　　　　　　
+    <string name="picture">[画像メッセージ]</string>
+    　　　　　　　　　　　
+    <string name="video">[動画通話]</string>
+    　　　　　　　　
+    <string name="file">[ファイル]</string>
+    <string name="voice_call">[音声通話]</string>
+
+    <string name="voice_msg">[音声メッセージ]</string>
+    　　　　　　
+    <string name="voice">音声</string>
+    <string name="password">パスワード</string>
+    <string name="downwaiting">ファイルダウンロード中です。しばらくお待ち下さい。</string>
+
+    <string name="not_download">まだダウンロードしていません:</string>
+    　　　　　　　　　　　　　
+    <string name="is_down_please_wait">ビデオダウンロード中です。しばらくお待ち下さい。</string>
+
+    <string name="expression">[絵文字]</string>
+    <string name="call_duration">通話時間</string>
+    <string name="Refused">拒否しました</string>
+    　　　　　　　　　　　　
+    <string name="The_other_party_has_refused_to">[受信者から拒否しました。]</string>
+    　　　　　　　　　　　　　　　　　　　　　
+    <string name="The_other_is_not_online">[相手がオフライン]</string>
+    <string name="The_other_is_on_the_phone">[相手が通話中]</string>
+    <string name="The_other_party_did_not_answer">[相手が答えなかった]</string>
+    <string name="did_not_answer">[答えなかった]</string>
+    <string name="Has_been_cancelled">[キャンセルしました]</string>
+    　　　　　　　　　　　　　　　　　
+    <string name="unable_to_get_loaction">位置情報が取得できません。</string>
+    　　　　　　　　　　　　　　　　
+    <string name="sd_card_does_not_exist">SDカードが備え付けないため、撮影できません。
+    </string>
+    　
+    <string name="cant_find_pictures">画像が見つかりません</string>
+    <string name="File_does_not_exist">該当ファイルが存在しません。</string>
+    　　　　　　　　　　　　　　　　　
+    <string name="The_file_is_not_greater_than_10_m">ファイルは10M以内にしてください</string>
+    <string name="Whether_to_empty_all_chats">チャット記録を削除しますか</string>
+    <string name="you_are_group">チャットから追放されました</string>
+    <string name="the_current_group">暗語化されたグループチャットが解散されました</string>
+    <string name="receive_the_passthrough">パスツルーを受け取り：action：</string>
+    <string name="Into_the_blacklist">ブラックリストにしますか？</string>
+    <string name="Have_downloaded">ダウンロード済み</string>
+    <string name="Did_not_download">未ダウンロード</string>
+
+    <string name="message_send_self">自分へメッセージを送信しできません。</string>
+    　　　　　　　　　　　　　
+
+    <string name="gallery">アルバム</string>
+    <string name="camera">写真</string>
+    <string name="select_photo">画像を選択</string>
+
+    <string name="transaction_account">取引アカウント</string>
+    　　　　　　　
+
+    　　　　　　　　　　　　　　
+    　
+    <string name="money">金額</string>
+
+    <string name="click_copy"> タップでコピーできます。</string>
+
+    　
+
+    <string name="user_info">個人情報</string>
+
+    <string name="sex">性別</string>
+    <string name="man">男性</string>
+    <string name="women">女性</string>
+
+
+    <string name="nick_name">ニックネーム</string>
+    <string name="user_intro">紹介</string>
+
+    <!--用户交易-->
+    <!--交易队界面-->
+
+    <!--买、卖、委托单界面-->
+
+    <!--format-->
+    <string name="erro_format">%1$s失敗</string>
+    　
+    　
+    <string name="success">成功</string>
+    <string name="erro">失敗</string>
+
+    　
+
+
+    <!-- user_trade_title -->
+
+    　
+
+    <string name="zero_value">0.00</string>
+    <string name="zero">0</string>
+
+    <string name="default_user_intro">ONEの世界へようこそ！</string>
+
+    <string name="default_value">-.--</string>
+
+    　　　　　　　　　　　　　　　　　　　　
+    <string name="fast_transfer">即時振り込み</string>
+
+    <string name="recharge_intro">ウォレットアカウントから取引アカウントに</string>
+
+    　　　　　　　　　　　　　
+
+    <string name="save_key_tip">下記の15ニーモニックが極めて重要です。一旦漏れたら、ウォレットに置いているすべてのデジタルアセットが失われてしまいます。そのニーモニックが忘れた場合、全てのデジタルアセットが回復できません。ニーモニックを手で記録、そしてできるだけ多くバックアップし、安全なところに保存しておくと強くおすすめます。盗撮、撮影、盗見できる場合でウォレットを新規作成をしないことを必ず注意して下さい。ネットにニーモニックをアップロードしたり、ネットディスクのような不安全なところにおいといてはいけません。</string>
+
+    <string name="user_contract">ユーザー規約</string>
+
+    <string name="user_contract_txt">各国と地域の法律法規、国際公約、および風俗習慣を遵守し、合法的な範囲内で本アプリを使用してください。</string>
+
+    <!--group-->
+    <string name="change_groupname">グループ名変更</string>
+
+
+    <string name="delete_success">削除成功</string>
+
+    <string name="override_wallet_warning_title">ウォレットを削除しますか。</string>
+
+    <string name="override_new_wallet_warning_message">新しいウォレットを作成するには、まずは今が使っているウォレットを削除します。相応のニーモニックがバックアップしておいた場合は、今のウォレットが復元できます。</string>
+    　　　　
+    <string name="send_msg">メッセージ送信</string>
+
+    <string name="message_num">メッセージ</string>
+
+    <string name="clear_chat_msg">チャット記録をクリアする</string>
+    <string name="change_user_local_name">友達ネーム変更</string>
+
+    <string name="group_name">グループ名</string>
+
+    　　　　　　　　　　　　
+
+    <string name="contacts">連絡先</string>
+
+    <string name="add_symbol">+</string>
+
+    　　　　　　　　　　
+
+
+    <string name="lock_status_input">パターンロックを入力して下さい。</string>
+    　
+    <string name="lock_status_create">スワードの入力回数を減らすため、パターンロックを設定してください。</string>
+    <string name="lock_status_create_sure">再びパターンを入力してください。</string>
+
+    <string name="lock_status_correct">正しく入力されました。</string>
+
+    <string name="lock_status_wrong">パスワードが間違えってしまいました。あと%1$d回入力できます。</string>
+    　
+    <string name="lock_status_second_wrong">初回のと不一致で、改めて入力して下さい。</string>
+    　
+    <string name="click_back_again">再びバックキーをタップして前へ戻ります。</string>
+
+    <string name="reset">再設置</string>
+    <string name="forget_lock">パターンロックを忘れてしまいました。</string>
+    <string name="change_lock_psw">パターンロックを変更します。</string>
+    <string name="account_name_length_erro">ユーザー名を６文字以上にして下さい。</string>
+    <string name="password_length_erro">ユーザー名を８文字以上にして下さい。</string>
+
+
+    <string name="password_second_erro">パスワードが異なります</string>
+
+    <string name="register_error">登録失敗、ユーザー名かパスワードを変更してください</string>
+
+    <string name="clear_mesage_success">クリア成功</string>
+    <string name="clear_mesage_tip">チャット記録をクリアしますか？</string>
+
+    <string name="forget_password">パスワードを忘れました</string>
+
+    <string name="select_langurafe">言語切り替え</string>
+
+    <string name="make_sure_save_seed">ニーモニックの保存を確認しましたか。</string>
+    　
+    <string name="send_location">位置情報送信</string>
+
+
+    <string name="msg_asset">[即時振り込み]</string>
+    　
+
+    <string name="hint_chat_edittext">&#160;%1$sとチャット中</string>
+    <string name="hint_groupchat_edittext">&#160;グループチャット中</string>
+
+    <string name="make_sure_call_to">に発信確認</string>
+
+    <string name="call">に発信</string>
+    <string name="perm_tip">
+    今は若干の権限が必要です。設定、権限の順でタップし、必要な権限を許可し、最後に、バックキーを2回にタップ、前へ戻ります。</string>
+    　
+    <string name="ask_again">プログラミングが正常に動作するために、必要な権限を許可して下さい。</string>
+
+
+    <!--k线-->
+    データ
+    トピック
+    イベントロッグ
+    最高値
+    最低値
+    　
+    <string name="string_close">閉じる</string>
+    <string name="landscape">横スクリーン</string>
+    <string name="string_network_disconnect">ネットと繋がりできません。ネットの状況を確認して下さい。</string>
+
+    <string name="new_group_message">新しいグループメッセージがあります</string>
+
+    <string name="lock_status_too_short">%1$d 少なくともと接続して下さい。改めてご試行して下さい。</string>
+    　　
+    　　　　　　　　　　　　
+
+    <string name="no_history_tip">まだ記録がありません～</string>
+
+
+    <string name="open_out_browser">ウェブブラウザーで開く</string>
+
+    <string name="copy_url">URLをコピー</string>
+
+    <!--keep service alive start-->
+    <string name="keep_service_alive_reason">ONEオフラインメッセージを受け取るために</string>
+
+    <string name="white_list_tip_title_power">%1$s のバーテリのスタミナモードを略すの必要があります。</string>
+    　
+    <string name="white_list_tip_msg_power">%1$sは%2$sがバッテリー機能の向上を略すリストに加入することが必要だとします。「確認」をタップし、ポップアップの『バッテリー機能の向上を略す』に、「はい」を選択して下さい。</string>
+
+    <string name="white_list_tip_title_close_screen_clean">%1$s はスクリーンロック解除のワイトリストに加入することが必要です。</string>
+    <string name="white_list_tip_msg_close_screen_clean">%1$s は%2$sがスクリーンロック整理のワイトリストに加入することが必要だとします。「確認」をタップし、対応のポップアップ「スクリーンロック解除」リストに、%2$s対応のボタンをONにします。 </string>
+    <string name="white_list_tip_title_xiaomi_hide_model">%1$sのスタミナモードをOFFにする必要があります。</string>
+    <string name="white_list_tip_title_run_backend">%1$sのバックグランドでの動作を許可する必要があります。</string>
+    <string name="white_list_tip_msg_run_backend">%1$s は%2$sのバックグランドでの動作を許可することが必要だとします。「確認」をタップして、対応のポップアップ画面に、「バクグランド管理」の項目を「バックグラウンドでの動作を継続」と切り替わります。</string>
+
+    <string name="white_list_tip_msg_run_backend_meizu">%1$s は%2$sの待機モードで動作しつつあるが必要です。「確認」をタップし、出てきたポップアップの『待機モードでのバッテリー管理』リストに、%2$sをONにして下さい。</string>
+
+
+    <string name="white_list_tip_msg_run_backend_lenovo">%1$s は%2$sのバックグラウンドでの自動起動、GPSと運行が必要です。「確認」をタップし、『バックグランド管理』リストで「バックグラウンドで自動運行」「バックグランドでGPS」「バックグランドで運行」をONにして下さい。</string>
+
+    <string name="white_list_tip_msg_run_backend_lenovo_god">%1$sは%2$sの自動的にクリーニングされることを禁止します。「確認」をタップし。出てきたポップアップの「バックグラウンドバッテリー機能アップ」に、 %2$s  をOFFにして下さい。</string>
+
+    <string name="white_list_tip_msg_run_backend_vivo">%1$sは%2$sの待機モードで運行しつつあることが必要です。「確認」をタップし、出てきた『バックグラウンドでバッテリー管理』リストで、%2$sをONにして下さい。</string>
+
+    <string name="white_list_tip_title_green_backend">%1$s はアプリ自動起動とバックグラウンドホワイトリストに加入する必要があります。</string>
+
+    <string name="white_list_tip_msg_green_backend">%1$s は%2$sの自動起動とバックグラウンドでの運行を許可することが必要です。「確認」をタップし、出てきたポップアップの『システム管理』に、「アプリ管理」、「アプリ自動起動」、「バックグラウンド」、「ホワイトリストクリーニング」の順で操作し、 %2$sをホワイトリストに追加して下さい。</string>
+
+
+    <string name="white_list_tip_msg_run_not_clean_backend">%1$s は%2$sの自動クリーニングされることを禁止してはいけません。「確認」をタップし、出てきたポップアップの『アプリ保護』に、%2$sをOFFにして下さい。</string>
+
+    <!--keep service alive stop-->
+
+    <string name="sure_delete_user">グループメンバー削除確認</string>
+
+
+    <string name="my_qr_code">マイQRコード</string>
+    <string name="my_qr_code_tip">QRコードをスキャンし、ONE友達を追加します。</string>
+
+
+    <string name="chat_info">チャット情報</string>
+
+    <string name="share_group">グループをシェア</string>
+
+    <string name="join_group_tip">%1$sがグループチャットに加入します</string>
+
+    <string name="group_public_status">グループ類</string>
+
+    <string name="public_group">公開化グループ</string>
+    <string name="private_group">暗語化グループ</string>
+
+    <string name="register_request_ok">登録成功</string>
+    <string name="register_request_user_exist">ユーザー名が存在しています</string>
+    <string name="register_request_unknown_registrar">レジストラエラー</string>
+
+    <string name="register_request_unknown_referrer">招待コード</string>
+
+    <string name="register_request_param_error">ペラメーターエラー</string>
+
+    <string name="register_request_server_error">サーバエラー</string>
+    <string name="register_request_name_error">ユーザー名エラー</string>
+    <string name="register_request_create_user_exist">ユーザー名が存在しています</string>
+
+    　
+    　
+
+    　
+    <string name="recharge_search_tip">取引アカウントに振り込み始め、入金中です。</string>
+
+
+    　
+    <string name="upgrade_tip">新バージョンがあります</string>
+    <string name="update_ok">更新</string>
+    <string name="group_invite_url">グループ招待のURLをクリックしてコピーします。</string>
+
+
+    　　　
+    <string name="download_error">ファイルダウンロード失敗</string>
+    <string name="download_error_retry">ファイルダウンロード失敗です。〜をタップして再試行して下さい。</string>
+    　
+    <string name="download_ok">ダウンロード完了、インストールしますか</string>
+    <string name="downloading_new_apk">新バージョンをダウンロード中</string>
+    <string name="downloading">ダウンロード中、お待ちください...</string>
+
+
+    <string name="write_file">ファイル</string>
+
+
+    <string name="group_url_start">該当URLを通じてONEグループに加入してください。</string>
+
+    <string name="null_this_friend">該当ユーザーが見つかりません</string>
+
+    <string name="msg_red_packet">[ラッキーマネー]</string>
+
+    <string name="red_packet">ラッキーマネー</string>
+
+    <string name="send_red_packet">ラッキーマネーを手配します。</string>
+
+    <string name="select_coin_type">コインの種類を選択します。</string>
+
+    　
+    <string name="send_red_packet_text">〜をラッキーマネーに入れてください</string>
+
+    　
+
+    　
+    <string name="red_packet_default_msg">良い一日を</string>
+
+    　
+    <string name="red_packet_message">メッセージを残します。</string>
+
+    <string name="red_packet_num">ラッキーマネーの通数</string>
+
+    <string name="red_packet_total_amount">総金額</string>
+    <string name="red_packet_item_amount">個々金額</string>
+
+
+    <string name="simple_red_packet_tip">各人が固定的な金額を受取る</string>
+    　　　　
+    <string name="lucky_red_packet_tip">個人の運試しによって受け取った金額がランダムです。</string>
+    　
+    <string name="set_lucky_red_packet">運試しラッキーマネーと切り替わる</string>
+    　
+    <string name="set_simple_red_packet">普通ラッキーマネーと切り替わる。</string>
+
+    <string name="please_select_coin_type">ラッキーマネーのコイン種類を選択してください。</string>
+
+
+    <string name="red_packet_num_cant_zero">ラッキーマネーをゼロ位上にしてください。</string>
+
+    <string name="item">個</string>
+    <string name="red_packet_value_cant_zero">ラッキーマネーの金額数をゼロ以上にしてください。</string>
+
+    <string name="group_member_num">本グループの総人数はお伸び%1$dです。</string>
+
+
+    <string name="one_red_packet">ONEアプリ内で受け取ったラッキーマネー</string>
+    <string name="look_red_packet">プ受け取ったラッキーマネーを確認します。</string>
+
+
+    <string name="red_packet_info">ラッキーマネーの詳細</string>
+    　
+
+    <string name="red_packet_text">ラッキーマネー1通を手配しました。</string>
+
+    <string name="app_crash_tip">システム異状が発生しました。</string>
+
+
+    <string name="check_sign">署名を承認します。</string>
+
+
+    　
+    <string name="user_invite_url_start">URLをタップし開いて、「自分」を友達招待で追加してください。</string>
+
+    <string name="make_sure_seed">ニーモニックを承認します。</string>
+
+    <string name="make_sure_seed_error_tip">ニーモニック承認エラーです。チェックした上で再施行してください。</string>
+
+    <string name="transfer_fee">取引費用</string>
+
+    <string name="red_packet_account">ラッキーマネーアカウント</string>
+
+
+    <string name="transfer_fee_need_more">取引費用が足りない。</string>
+
+
+    <string name="make_sure_seed_tip">記録しておいたニーモニックを順番でタップし、バックアップしたニーモニックの正確性を承認します。</string>
+    　　
+    <string name="in_onechain">取引アカウントに転入します。</string>
+
+    <string name="out_onechain">取引アカウントから転出します。</string>
+
+    <string name="redpacket_open_failed">ラッキーマネー開封失敗です。</string>
+
+    <string name="redpacket_send_failed">ラッキーマネー配り失敗です。</string>
+
+    <string name="register_request_exceeded_max_number">登録できる最大回数を上回りました。</string>
+
+
+    <string name="social_redpacket">社交紅包</string>
+    　　　
+    <string name="social_redpacket_tip">社交紅包も生成され、第三者へシェア或いはURLをコピーし送信してください。\nシェアしてね</string>
+    　
+    <string name="tap_copy_url">URLをタップしてコピーします。</string>
+    　　　
+    <string name="social_redpacket_url_start">仮想通貨世界における万能アプリは旗を揚げて新事業を始め、ONEアプリにおいて支持されたすべて種類のコインのラッキーマネーをご招待します</string>
+    　
+    <string name="quit_social_redpacket_tip">シェアし、或いはラッキーマネーに関するURLをコピーしたことを確認してください。</string>
+    <string name="get_asset_list_error">資産リスト獲得失敗</string>
+
+    <string name="out_chat_group">グループチャットから退出します。</string>
+
+    <string name="seed">ニーモニック</string>
+
+    <string name="create_seed">ニーモニックを作成します</string>
+
+    <string name="input_seed">所持のニーモニックによって登録します。</string>
+
+    　
+
+    <string name="add_trade_team">取引ペアを追加します</string>
+
+    <string name="look_all_group_members">グループメンバーをチェック</string>
+    <string name="group_members">グループメンバー</string>
+
+    <string name="delete_failed">削除失敗</string>
+    <string name="add_error">追加失敗</string>
+
+    <string name="switch_service_node">ノードテスト</string>
+
+
+    <string name="config_service_node_ing">少々お待ちください、ネットノードを自動的に選出中です。</string>
+
+    <string name="account_name_cannot_number_start">アカウントは数字以外の形式で開始してください。</string>
+
+    <string name="action_paste">ペースト</string>
+    <string name="action_clear">クリア</string>
+
+    　　
+    <string name="choose_seed">ニーモニックを選択します。</string>
+    <string name="search_seed">ニーモニックを検索します。</string>
+
+    <string name="pasteboard_is_null">リップボードは空いています。ニーモニックをコピーしておいてください。</string>
+    　
+    <string name="make_sure_delete_msg">関連のチャットを削除しますか。</string>
+    　
+    　　　　　　　　　　　
+    <string name="test_service_node_done">ノードテスト完了です。</string>
+    　　
+    <string name="make_sure_delete_tip">削除しますか?</string>
+
+    <string name="add_success">追加成功</string>
+
+    <string name="app_not_need_update">最新バージョンです</string>
+
+    <string name="can_not_remain_one">残りのONEコインは取引手数料のために使い、2個以上にしてください。</string>
+
+    <string name="update_user_info">ユーザー情報同期中</string>
+
+    <string name="register_request_seed_has_register">ニーモニックが使用されて、それによってアカウント復元できます。</string>
+    　
+    <string name="setting_more">もっと</string>
+
+    <string name="no_notification_tip">アプリの通知権限が必要です。\n"「設定」、「通知欄」の順でタップし、通知権限をONにしてください。</string>
+    　
+    <string name="over_seed_word_num_two">ニーモニックの文字数が間違っています。</string>
+    <string name="jump_pass">スキープ</string>
+
+    <string name="message_prompt">ONEは暗号通貨のツールで、できるだけ多くの仮想通貨を支持するように頑張ります。適切にリスクを分析し控え、慎重に注意をもって投資活動を行なってください。</string>
+
+    <string name="no_message">新メッセージがありません</string>
+
+    <string name="new_chat_message_num">%1$d件メッセージがあります</string>
+
+    　　
+    　　　
+
+    <string name="verification_seed">ニーモニックを承認します。</string>
+
+    <string name="input_infomation">情報入力</string>
+    <string name="register_completed">登録完了</string>
+
+    <string name="please_rember_the_key">15文字のニーモニックを記録してください。</string>
+    　
+    <string name="you_just_do_this">これらのニーモニックによってアカウントを復元することが可能です。一旦失うなら、資産は取り戻せません。万が一漏れたら、資産が盗まれる可能性があります。</string>
+
+    <string name="safe_tip">注意</string>
+
+    <string name="red1_tip">*手で書き留め、或いはオフライン設備にて保存するのがお勧めです。</string>
+    <string name="red2_tip">*安全のため、新規登録してから、一度復元してください。</string>
+
+    <string name="now_bangding">→即時にバンディングしてください。</string>
+
+    <string name="sync_account_fail">情報同期できません</string>
+    　
+
+
+    <string name="action_back">戻る</string>
+    <string name="group_leave_fail">グループから退出失敗しました。</string>
+
+
+    <string name="search_seed_tip">順番によって、毎回ごとに1文字を入力してください。</string>
+    　　
+
+    <string name="add_network_sataus">ノードを追加</string>
+    <string name="server_ip">サーバIP</string>
+    <string name="please_write_server_ip">サーバIPを入力してください</string>
+    <string name="port_num">ポート</string>
+    <string name="please_write_port_num">ポートを入力してください</string>
+    <string name="detection_and_use">検索して使用</string>
+    <string name="clear_network_status">ノードをクリアする</string>
+
+    <string name="mining">マイニング採掘</string>
+    <string name="mining_income">採掘収入</string>
+
+    <string name="finish_verify">承認完了です。</string>
+    <string name="skip_verify">認証をスキープ</string>
+    <string name="no_screen_shoot">真面目に書きとどめてください。スクリーンショットの形式で保存してはいけません。</string>
+
+    <string name="next_step">次</string>
+
+    <string name="please_verify_your_seed">資産安全確保のため、ニーモニックをバックアップしておき、承認してください。</string>
+    　
+    <string name="now_verify">すぐ承認します。</string>
+
+
+    <string name="release_to_cancel">指を離れて、メッセージの送信をキャンセルします。
+    </string>
+    　
+    <string name="Send_voice_need_sdcard_support">音声送信には、SDカードの支持されることが必要です。</string>
+    　
+    <string name="recoding_fail">録音失敗です。再試行してください。</string>
+    <string name="Recording_without_permission">マイクにアクセスできません</string>
+    <string name="The_recording_time_is_too_short">録音時間は短すぎます</string>
+    <string name="send_failure_please">送信失敗です。サーバーと正常につながるかどうかを確認してください。</string>
+    　
+
+
+    <string name="choose_brainkey_file">ファイル管理から暗語化ニーモニックファイルを選択してください。</string>
+    <string name="click_encrypt_file_address">暗語化ニーモニックファイルのアドレスをタップして選択してください。</string>
+    <string name="password_while_export_seed">暗語化ニーモニックをアウトポートした時に使用したアカウントのパスワードを入力してください。</string>
+    　
+    <string name="start_recover">復元開始</string>
+
+
+    <string name="export_encrypted_seed">暗語化ニーモニックをエクスポートします。</string>
+
+    <string name="saved_offline">オフライン保存</string>
+
+    <string name="copy_and_paste_encrypt_brainkey">非常に危険ですから、暗語化ニーモニックをコピーし、安全、オフラインのところに保存してください。メールアドレス、ノート、ネットディスク、社交メディアに保存してはいけません。</string>
+
+    <string name="transmission_offline_title">ネットを通じて転送しないでください。</string>
+
+    <string name="transmission_offline_content">ネットツールで暗語化ニーモニックを転送しないでください。一旦ギークが取得したら、挽回のできない資産損失を招いてしまいます。</string>
+
+    　
+    <string name="remember_password_title">暗語化ニーモニックをエクスポートするときに使用したパスワードをきちんと覚えておいといて下さい。暗語化されたニーモニックによってアカウントを復元するときにこのパスワードが必要です。</string>
+    　
+    <string name="derive_encrypt_brainkey_address">暗語化ニーモニックを下記のアドレスにエクスポートして下さい。</string>
+    　
+    <string name="encrypted_seed">暗語化ニーモニック</string>
+
+    <string name="test_service_fail_tip_choose">ノードに問題が発生するなら、メールでお客様セーターと連絡して下さい。\n</string>
+    <string name="never_remind">二度と注意されません。</string>
+
+    <string name="whether_export_immediately">すぐに暗語化されたニーモニックをエクスポートしますか。</string>
+    　
+    <string name="export_immediately">すぐエクスポートします。</string>
+
+    <string name="no_file_supervisor">ファイル管理システムがありません。</string>
+
+    <string name="keep_account_password_in_mind">該当パスワードをきちんと覚えて下さい。該当パスワードはアカウントのパスワードになります。</string>
+    　
+
+    　
+    <string name="invitation_code">招待コード</string>
+
+    <string name="export_seed_success">暗語化されたニーモニックをエクスポート成功</string>
+    <string name="write_referrer_account">招待コードを入力して下さい。</string>
+    <string name="no_regist_phone">まだ承認されていません。携帯番号をバインディグすることでマイニング採掘計算力を引き上げます。</string>
+    <string name="sign_add_mining_power">毎日サインインすることで、計算力+%1$sを引き上げます。</string>
+
+    <string name="save_to_phone">携帯に保存します。</string>
+
+    <string name="save_to_phone_success">携帯に保存済み</string>
+
+    <string name="please_retry_create">もう一度タップして登録して下さい。</string>
+
+    <string name="error_invalid_account_or_pass">無効なアカウントです。ニーモニック或いはパスワードをチェックして下さい。</string>
+
+    <string name="group_chat_send_url_tip">グループチャットで、関連するURLを発送するなら、ラッキーマネーを配る必要があります。</string>
+
+    <string name="perm_tip_format">該当アプリは%1$sの権限が足りないです。設定、権限の順でタップし、必要な権限をONにします。最後に、バックキーを2回にタップして戻れます。</string>
+    　
+    <string name="refresh_node_then_retry">ノードを更新してから再試行して下さい。</string>
+
+    <string name="recover_account_fail">アアカウント復元失敗です。</string>
+
+    <string name="join_group_error">グループ加入失敗</string>
+
+    <string name="error_no_account">該当アカウントが存在しません。</string>
+
+    <string name="newton_plan">ニュートン計画</string>
+
+    <string name="money_go_and_out">USDA/CNYAの振り込みと引き出し</string>
+
+    <string name="service_node_plan">ONEノード公開計画</string>
+    <string name="video_course">ビデオコース</string>
+
+    <string name="from_transaction_account">取引アカウントから</string>
+    <string name="adding_coin_confirmation_title">Add %1$s?</string>
+    <string name="add_coin_error">Error occurred while adding %1$s: %2$s.</string>
+    <string name="remember_password_content">Please remember the account and password when export encrypted  mnemonics, you will have to use the password to restore your account </string>
+
+    <string name="no_create_group_auth">You don’t have permission to create group</string>
+
+    <string name="release_to_close">Release to close</string>
+    <string name="record_error_permission">Recording failed, please check the permission</string>
+
+    <string name="upload_file_error">Upload file failed</string>
+
+    <string name="file_overdue">File expired</string>
+    <string name="loading">Loading...</string>
+    <string name="img_overdue">Image expired</string>
+
+    <string name="image_save_fail">Image storage failed</string>
+    <string name="image_save_success">Image storage success</string>
+
+    <string name="group_manage">Group management</string>
+    <string name="group_id">Group ID</string>
+    <string name="group_qr_code">Group QR code</string>
+    <string name="group_notice">Group announcement</string>
+
+    <string name="my_nickname_in_group">My alias in the group</string>
+
+    <string name="group_clean_chatting_records">Delete the chatting records</string>
+    <string name="group_receive_message">Accept information push</string>
+
+    <string name="video_uploading">Video processing...</string>
+    <string name="video_upload_ok">Video uploaded</string>
+
+    <string name="reply_weibo">Reply Weibo</string>
+    <string name="null_shuoshuo">Original Weibo has been deleted</string>
+    <string name="reply">Reply</string>
+    <string name="share">Share</string>
+    <string name="copy">Copy</string>
+
+    <string name="zhuanfa_weibo_hint">Share experience in Weibo...</string>
+
+    <string name="balance">balance&#160;&#160;</string>
+    <string name="other_money">Other amount</string>
+    <string name="submit_shang">Confirm the Like</string>
+    <string name="zanshang">Like</string>
+    <string name="comment">Comment</string>
+    <string name="video_checking">Video reviewing</string>
+    <string name="shang_tip">Please send rewards to the author or tell him/her your opinion by leaving comment</string>
+    <string name="pay">Pay</string>
+    <string name="report">Report</string>
+    <string name="no_next_page">No more data avaliable</string>
+    <string name="more_weibo_msg">Check earlier messages</string>
+
+    <string name="group_community">Community</string>
+    <string name="group_notifications">Group announcement</string>
+
+    <string name="clean_list">Clean the list</string>
+
+    <string name="set_pay_weibo">Change to chargeable content</string>
+
+    <string name="button_check_means_card">Check documents</string>
+    <string name="button_set_as_manager">Set to administrator</string>
+    <string name="button_banned_to_post">Ban member</string>
+    <string name="button_from_group_delete">Delete from the group</string>
+    <string name="button_add_blacklist">Remove and add to the blacklist</string>
+
+    <string name="keyword">Keyword</string>
+    <string name="input_content">Enter the content</string>
+    <string name="no_sensitive_character">Ban sensitive words</string>
+    <string name="publish">Publish</string>
+    <string name="release_invitation">Publish theread</string>
+    <string name="setting_charge_content">Change to chrgeable content</string>
+
+    <string name="all">Total</string>
+    <string name="essence">Best content</string>
+    <string name="charge">Chargeable</string>
+    <string name="free">Free of charge</string>
+
+    <string name="order_by_time">New post</string>
+    <string name="order_by_comment">Most commented article</string>
+    <string name="order_by_profit_up">Rank by long position</string>
+    <string name="order_by_profit_down">Rank by short position</string>
+    <string name="order_by_shang">Number of Like</string>
+    <string name="order_by_comment_time">New comment</string>
+
+    <string name="chat_all_banned_to_post">Ban all the users</string>
+    <string name="chat_owner">All users</string>
+    <string name="message_center">Message center</string>
+    <string name="button_refuse">Reject</string>
+    <string name="heading_qrcode_to_img">Identify the QR code</string>
+
+    <string name="input_join_group_psw">Please enter the group adding password</string>
+    <string name="content_too_short">Content is too shart</string>
+    <string name="content_too_long">Content exceeds the maximum words</string>
+
+    <string name="set_admin_success">Set successfully the admin</string>
+    <string name="limits_of_authority">Permission denied</string>
+    <string name="user_not_in_group">The user is not in the group</string>
+    <string name="admin_counts_limit">Admin number reaches the limit</string>
+    <string name="mute_member_success">Ban successfully the member</string>
+    <string name="add_member_to_blacklist_success">Add successfully to blacklist</string>
+    <string name="reward_amount">Rewards amount</string>
+    <string name="failed_to_reward">Rewards failed</string>
+    <string name="articles_no_more">No more data avaliable</string>
+    <string name="article_detail">Details</string>
+    <string name="article_set_essence">Set as the best content</string>
+    <string name="article_report_success">Report successed</string>
+    <string name="article_has_reported">You have aleardy reported this Weibo</string>
+    <string name="article_essence_success">Set successfully as the best content</string>
+
+    <string name="is_sure_to_forgive_this">Are you sure to cancel the current editing</string>
+
+    <string name="write_key_word">Enter keywords</string>
+
+    <string name="charge_amount">Charge amount</string>
+
+    <string name="group_chat">Chat</string>
+
+    <string name="weibo_msg">message</string>
+
+    <string name="someone_at_me">[someone@me]</string>
+
+    <string name="pls_wait_examine">Please wait for review</string>
+    <string name="group_not_exist">Group doesn\'t exist</string>
+    <string name="already_in_group">You are already in the group</string>
+    <string name="in_group_blacklist">You are in the group blacklist</string>
+
+    <string name="you_in_ban">You are banned</string>
+    <string name="all_in_ban">Ban all the members</string>
+
+    <string name="msg_not_enough_balance">This message requires to send Red Packet, your balance is insufficient</string>
+
+
+    <string name="push_comment_weibo">commented your post</string>
+    <string name="push_reward_weibo">liked your post</string>
+    <string name="push_pay_weibo">checked your chargeable content</string>
+    <string name="group_password_error">group admission password incorrect</string>
+
+    <string name="not_enough_money_todo">This action requires asset consumption, your balance is insufficient</string>
+
+    <string name="to_pay_a_oneluck">Payment completed</string>
+
+    <string name="audit_join">Apply to join</string>
+
+    <string name="group_created_count_exceed">Number of group created exceeds the limit</string>
+
+
+    <string name="weibo_video_max_tip">The maximum size for video files to upload is 500M</string>
+
+    <string name="pls_open_device_permission">Please open the permission to access the device information of your mobile, otherwise the registration may fail</string>
+
+    <string name="reward_message">reward message</string>
+
+    <string name="send_add_friend_msg">send invitation</string>
+    <string name="send_add_success">invitation sent</string>
+
+    <string name="new_friend">New friend</string>
+    <string name="group_invitation">Group invitation</string>
+
+    <string name="group_max_people">The group has reached the maximum number</string>
+
+    <string name="remark_length_exceed">Remarks exceed the words number limit</string>
+    <string name="already_agree">Accepted</string>
+    <string name="already_refuse">Rejected</string>
+
+    <string name="pls_wait_apply">Invitation sent, waiting for verification</string>
+    <string name="delete_friend">Delete friend</string>
+    <string name="input_apply_msg">Please enter the verification infomation</string>
+    <string name="apply_add_friend">Apply to be friend</string>
+    <string name="invite_you_join_group"> Invite you to the group</string>
+
+
+    <string name="pls_add_friend">Please add friend first</string>
+    <string name="order_has_change">Some changes in your order</string>
+    <string name="order_id">Order ID:</string>
+
+    <string name="create_a_group">Create a chatting group</string>
+
+    <string name="my_group_chat">Group chatting</string>
+
+    <string name="i_am">I am</string>
+
+    <string name="trade_dividend">Crypto dividend</string>
+    <string name="trade_mining">Transaction fee mining</string>
+
+    <string name="invitation_code_must">Invitation code(Optional ):</string>
+
+</resources>

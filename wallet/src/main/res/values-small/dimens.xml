@@ -1,0 +1,21 @@
+<resources>
+    <!-- Amount Widget -->
+    <dimen name="amount_text_size_big">40sp</dimen>
+    <dimen name="amount_symbol_text_size">20sp</dimen>
+
+    <!-- SendOutput Widget -->
+    <dimen name="send_output_amount_text_size">24sp</dimen>
+
+    <!-- IntroActivity -->
+    <dimen name="seed_text_size">22sp</dimen>
+
+    <!-- Overview fragment -->
+
+    <!-- About Activity -->
+
+    <!-- generic rows -->
+    <dimen name="row_padding_vertical">4dp</dimen>
+
+    <!-- Qr codes -->
+    <dimen name="qr_code_size">176dp</dimen>
+</resources>

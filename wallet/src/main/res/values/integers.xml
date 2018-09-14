@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="max_red_packet_msg_length">26</integer>
+    <integer name="max_msg_length">1024</integer>
+    <string name="default_transparent_alpha">0.6</string>
+</resources>

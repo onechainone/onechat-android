@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 24
+    //buildToolsVersion '23.0.2'
+    buildToolsVersion '25.0.0'
+
+
+    defaultConfig {
+
+    }
+
+    buildTypes {
+        release {
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/MobCommons-2017.1024.1907.jar')
+    compile files('libs/MobTools-2017.1024.1907.jar')
+    compile files('libs/ShareSDK-Core-3.1.1.jar')
+    compile files('libs/ShareSDK-Email-3.1.1.jar')
+    compile files('libs/ShareSDK-Facebook-3.1.1.jar')
+    compile files('libs/ShareSDK-FacebookMessenger-3.1.1.jar')
+    compile files('libs/ShareSDK-Kakao-Core-3.1.1.jar')
+    compile files('libs/ShareSDK-KakaoTalk-3.1.1.jar')
+    compile files('libs/ShareSDK-Line-3.1.1.jar')
+    compile files('libs/ShareSDK-ShortMessage-3.1.1.jar')
+    compile files('libs/ShareSDK-SinaWeibo-3.1.1.jar')
+    compile files('libs/ShareSDK-Telegram-3.1.1.jar')
+    compile files('libs/ShareSDK-Twitter-3.1.1.jar')
+    compile files('libs/ShareSDK-Wechat-3.1.1.jar')
+    compile files('libs/ShareSDK-Wechat-Core-3.1.1.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-3.1.1.jar')
+    compile files('libs/ShareSDK-WhatsApp-3.1.1.jar')
+    compile files('libs/SMSSDK-3.1.0.jar')
+}

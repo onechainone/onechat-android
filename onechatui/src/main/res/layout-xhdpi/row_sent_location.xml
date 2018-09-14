@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_2"
+    android:paddingTop="@dimen/item_msg_margin">
+
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_little_5"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_userhead_bg"
+            android:layout_width="@dimen/size_avatar"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/margin_chat_activity"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/group_owner_avatar_bg"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_userhead"
+            style="@style/chat_avatar_style"
+            android:layout_width="@dimen/size_avatar"
+            android:layout_height="@dimen/size_avatar"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/margin_chat_activity"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_other_head" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_little_6"
+            android:layout_marginRight="@dimen/margin_chat_activity"
+            android:layout_toLeftOf="@id/iv_userhead"
+            android:gravity="center"
+            android:minHeight="@dimen/msg_location_height"
+            android:minWidth="@dimen/msg_location_width">
+
+            <TextView
+                android:id="@+id/tv_location"
+                style="@style/chat_content_date_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/location_msg"
+                android:gravity="top"
+                android:lines="1"
+                android:textColor="@color/black_second"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/msg_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/ll_location"
+            android:clickable="true"
+            android:src="@drawable/msg_state_failed_resend"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_ack"
+            style="@style/chat_text_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/ll_location"
+            android:text="@string/text_ack_msg"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_delivered"
+            style="@style/chat_text_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_chatcontent"
+            android:text="@string/text_delivered_msg"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/pb_sending"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/ll_location"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/small_prograssbar"
+            android:indeterminateOnly="true"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

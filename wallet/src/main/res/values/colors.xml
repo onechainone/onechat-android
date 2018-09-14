@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 一级背景色 -->
+    <color name="base_bg_color_level1">#FCFCFC</color>
+
+    <!-- 二级背景色 -->
+    <color name="base_bg_color_level2">#f2f2f2</color>
+
+    <!--一级高亮色-->
+    <color name="base_color">#FF6000</color>
+
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+
+    <color name="base_line_bg_color">#bababa</color>
+
+    <color name="color_white">#FCFCFC</color>
+    <color name="color_black">#000000</color>
+
+    <color name="base_text_color_level1">#303030</color>
+    <color name="base_text_color_level2">#838383</color>
+    <color name="base_text_color_level3">#adadad</color>
+
+    <color name="tint_text_color">#FCFCFC</color>
+
+    <!-- 高亮文字 -->
+    <color name="highlight_text_color">#303030</color>
+
+    <color name="big_amount_text_color">#FCFCFC</color>
+
+    <color name="simple_text_color">#4E5D6F</color>
+    <color name="profile_menu_text_color">#4E5D6F</color>
+    <color name="toumin">@color/transparent</color>
+
+
+    <!-- http://www.google.com/design/spec/style/color.html#color-ui-color-application -->
+    <!--<color name="primary_100">#B3E5FC</color>-->
+    <color name="primary_500">@color/base_color</color>
+    <!--<color name="primary_900">#01579B</color>-->
+    <!--<color name="accent">#0091EA</color>-->
+
+
+    <!-- foreground -->
+
+
+    <!-- scanner -->
+    <color name="scan_mask">#60000000</color>
+    <color name="scan_laser">#cc0000</color>
+    <color name="scan_dot">#ff6600</color>
+    <color name="scan_result_view">#b0000000</color>
+    <color name="scan_result_dots">#c099cc00</color>
+
+    <color name="progress_bar_color_1">#8BD3FF</color>
+    <color name="progress_bar_color_2">#FFF39B</color>
+
+    <!-- QR code -->
+    <color name="qr_code_normal_bg">#00000000</color>
+
+
+    <!-- BTS -->
+
+    <color name="receive_amount">#669900</color>
+    <color name="receive_amount_light">#c5e1a5</color>
+    <color name="send_amount">#DC473A</color>
+    <color name="send_amount_light">#ef9a9a</color>
+
+
+    <color name="base_background_bg">@color/base_bg_color_level2</color>
+
+    <color name="hint_gray">@color/base_text_color_level3</color>
+
+    <color name="chat_to_bg">#1177D8</color>
+    <color name="chat_to_click_bg">#991177D8</color>
+
+    <color name="chat_from_bg">#FCFCFC</color>
+    <color name="chat_from_click_bg">#99FCFCFC</color>
+    <color name="chat_from_text_color">#303030</color>
+
+
+    <color name="base_color_transparent">#99FF6000</color>
+
+    <color name="base_text_gray">@color/base_text_color_level2</color>
+    <color name="base_text_gray_83">@color/base_text_color_level2</color>
+
+    <color name="bottom_text_gray">#9A9A9A</color>
+
+    <color name="black_second">@color/base_text_color_level1</color>
+
+    <color name="base_text_gray_30">@color/base_text_color_level1</color>
+
+    <color name="one_id_color">#4E98FF</color>
+
+    <color name="contract_color">#1177D8</color>
+    <color name="blue_simple">#267AEB</color>
+
+    <color name="receive_color">@color/trade_color_up</color>
+    <color name="send_color">@color/trade_color_down</color>
+
+    <!--交易颜色-->
+
+    <color name="trade_color_up">@color/trade_color_green</color>
+    <color name="trade_color_down">@color/trade_color_red</color>
+
+    <color name="trade_color_green">#13CA7E</color>
+    <color name="trade_color_red">#FD7144</color>
+    <!--交易颜色-->
+
+    <color name="good_asset_color">#F8CD54</color>
+    <color name="bad_asset_color">#D85426</color>
+
+    <color name="btn_send_msg_color">#71CF50</color>
+
+    <color name="lock_normal_color">#D5DBE8</color>
+    <color name="lock_correct_color">@color/blue_simple</color>
+    <color name="lock_wrong_color">@color/base_color</color>
+
+    <color name="base_amount_color">#4e5d6f</color>
+    <color name="link_line_color">#45bfff</color>
+
+    <!--kline start-->
+    <!--kline stop-->
+
+    <color name="msg_asset_symbol_color">#FFBF99</color>
+
+    <!-- title -->
+
+    <color name="red_packet_color">#DB5942</color>
+
+    <color name="red_packet_text">#FFDDAE</color>
+
+    <color name="seed_word_color">#4E5D6F</color>
+
+    <color name="chat_voice_press">#bababa</color>
+
+    <color name="mnemonic_recovery_background">@color/base_bg_color_level2</color>
+
+    <color name="unread_msg_num">#84D152</color>
+
+    <color name="black_alpha60">#66000000</color>
+
+    <color name="zan_num_red">#ff3b15</color>
+    <color name="view_grey">#CECECE</color>
+    <color name="group_community_color">#494949</color>
+    <color name="line_grey_color">#C3C3C3</color>
+    <color name="push_content_gray">#777777</color>
+
+    <color name="main_bottom_bg">#F8F8F8</color>
+
+    <color name="bottom_line_bg">#cccccc</color>
+
+</resources>

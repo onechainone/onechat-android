@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_background_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/base_bg_color_level1"
+                android:paddingBottom="@dimen/padding_little_5"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:text="@string/accountname_create_username"
+                android:textColor="@color/simple_text_color"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/base_bg_color_level1"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_simple_10"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <EditText
+                    android:id="@+id/et_usertel"
+                    style="@style/edittext_line_style"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:hint="@string/accountname_friend_username_tips"
+                    android:inputType="textEmailAddress"
+                    android:lines="1"
+                    android:maxLength="64"
+                    android:textSize="16sp" />
+
+                <ImageButton
+                    android:id="@+id/btn_scan_qr_code"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/margin_little_6"
+                    android:background="@drawable/qr_code"
+                    android:contentDescription="@string/scan_qr_code" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/accountname_friend_nickname"
+                android:textColor="@color/simple_text_color"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/et_nickname"
+                style="@style/edittext_line_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/accountname_friend_nickname_tips"
+                android:inputType="text"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_gray"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/btn_add_friend"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/simple_btn_height"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="40dp"
+                android:alpha="@string/default_transparent_alpha"
+                android:background="@color/base_color"
+                android:enabled="false"
+                android:text="@string/action_ok"
+                android:textColor="@color/color_white"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

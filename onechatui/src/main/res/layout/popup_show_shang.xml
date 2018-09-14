@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@color/base_bg_color_level1"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_close_note"
+        android:layout_width="@dimen/dimen_25"
+        android:layout_height="@dimen/dimen_25"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/margin_little_5"
+        android:padding="@dimen/padding_little_5"
+        android:src="@drawable/close_circle_white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_little_3"
+        android:layout_marginRight="@dimen/margin_simple_10"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_little_6"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_chongzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red_packet_text"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="@dimen/dimen_14"
+            android:layout_height="@dimen/dimen_14"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gv_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_30"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:numColumns="3" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_other_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="@dimen/padding_large_15"
+            android:text="@string/other_money"
+            android:textColor="@color/blue_simple" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_input_money"
+        android:layout_width="@dimen/dimen_180"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_large_15"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_little_8"
+            android:text="@string/money"
+            android:textColor="@color/base_text_color_level1"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/et_input_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:textColor="@color/red_packet_text"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_submit_shang"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_44"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/dimen_20"
+        android:gravity="center"
+        android:text="@string/submit_shang"
+        android:textColor="@color/base_bg_color_level1"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

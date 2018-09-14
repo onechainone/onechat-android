@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/iv_expression"
+        android:layout_width="@dimen/dimen_emoji"
+        android:layout_height="@dimen/dimen_emoji"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin_little_6"
+        android:padding="@dimen/padding_little_5"
+        android:scaleType="fitStart" />
+</RelativeLayout>

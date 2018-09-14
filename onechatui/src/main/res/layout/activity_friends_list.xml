@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_color_level1"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_simple_10"
+        android:layout_marginLeft="@dimen/margin_large_15"
+        android:layout_marginRight="@dimen/margin_large_15"
+        android:layout_marginTop="@dimen/margin_simple_10"
+        android:background="@drawable/search_bar_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_simple_10">
+
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="@dimen/margin_large_15"
+            android:layout_height="@dimen/margin_large_15"
+            android:src="@drawable/search_icon" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="@string/accountname_search"
+            android:lines="1"
+            android:textColor="@color/black_second"
+            android:textColorHint="@color/hint_gray"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@color/base_background_bg"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:listSelector="#00000000"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <onemessageui.widght.SideBar
+            android:id="@+id/sideBar"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginTop="@dimen/dimen_70" />
+    </FrameLayout>
+</LinearLayout>

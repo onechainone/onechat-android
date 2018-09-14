@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PagerTabStrip" parent="NormalText">
+        <item name="android:background">@color/base_bg_color_level1</item>
+        <item name="android:textColor">@color/black_second</item>
+    </style>
+    <style name="AppThemeNoTitleBar" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/primary_500</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/primary_500</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated,
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/primary_500</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+        <!--<item name="android:statusBarColor">@color/toumin</item>-->
+
+        <item name="android:overScrollMode">never</item>
+    </style>
+</resources>

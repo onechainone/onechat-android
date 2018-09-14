@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/simple_dialog_width"
+    android:layout_height="@dimen/choose_pic_dialog_width"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/tuoyuan_top_normal_bg"
+        android:gravity="center"
+        android:text="@string/select_photo"
+        android:textColor="@color/base_text_color_level1" />
+
+    <TextView
+        android:id="@+id/btn_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1px"
+        android:background="@drawable/base_click_bg_white"
+        android:gravity="center"
+        android:text="@string/gallery"
+        android:textColor="@color/base_color" />
+
+    <TextView
+        android:id="@+id/btn_camera"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1px"
+        android:background="@drawable/tuoyuan_bottom_bg"
+        android:gravity="center"
+        android:padding="@dimen/padding_little_5"
+        android:text="@string/camera"
+        android:textColor="@color/base_color" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/tuoyuan_bg"
+        android:gravity="center"
+        android:padding="@dimen/padding_little_5"
+        android:text="@string/cancel"
+        android:textColor="@color/base_color" />
+
+</LinearLayout>

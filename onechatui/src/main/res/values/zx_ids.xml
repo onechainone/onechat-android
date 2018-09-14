@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="action_bar" type="id">false</item>
+
+    <!-- start 二维码 zxing -->
+    <!-- Messages IDs -->
+    <!-- end zxing -->
+
+    <item name="gridview" type="id"/>
+
+</resources>

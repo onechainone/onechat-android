@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/pay_dialog_width"
+    android:layout_height="@dimen/pay_dialog_height"
+    android:background="@drawable/tuoyuan_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0"
+        android:layout_marginTop="@dimen/margin_simple_10"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_tip_tv"
+            android:layout_width="@dimen/dimen_110"
+            android:layout_height="@dimen/dimen_15"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="@dimen/margin_little_5"
+            android:gravity="center"
+            android:textColor="@color/base_bg_color_level1"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/dialog_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_simple_10"
+            android:gravity="center"
+            android:textColor="@color/base_text_color_level1"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/dialog_msg_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_simple_10"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textColor="@color/black_second"
+            android:textSize="@dimen/text_size_14" />
+
+        <EditText
+            android:id="@+id/et_input_money"
+            android:layout_width="@dimen/dimen_210"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_large_15"
+            android:background="@drawable/edit_text_circle_bg"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:paddingBottom="@dimen/padding_little_4"
+            android:paddingLeft="@dimen/padding_8"
+            android:paddingRight="@dimen/padding_8"
+            android:paddingTop="@dimen/padding_little_4"
+            android:textColor="@color/red_packet_text"
+            android:textColorHint="@color/hint_gray"
+            android:textSize="@dimen/text_size_14"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_large_15"
+        android:layout_marginTop="@dimen/margin_simple_10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="@dimen/dimen_90"
+            android:layout_height="@dimen/dimen_25"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/base_bg_color_level1" />
+
+
+        <TextView
+            android:id="@+id/btn_commit"
+            android:layout_width="@dimen/dimen_90"
+            android:layout_height="@dimen/dimen_25"
+            android:layout_marginLeft="@dimen/dimen_50"
+            android:gravity="center"
+            android:text="@string/pay"
+            android:textColor="@color/base_bg_color_level1" />
+    </LinearLayout>
+</LinearLayout>

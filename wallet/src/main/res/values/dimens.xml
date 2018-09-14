@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <!-- All UI margins must be in dp and multiples of 16 -->
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="standard_margin">16dp</dimen>
+    <dimen name="half_standard_margin">8dp</dimen>
+    <dimen name="quarter_standard_margin">4dp</dimen>
+    <dimen name="activity_horizontal_margin">18dp</dimen>
+    <dimen name="activity_vertical_margin">15dp</dimen>
+
+    <dimen name="dimen_user_avatar2">65dp</dimen>
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+
+    <!-- Generic sizes taken from
+         http://www.google.com/design/spec/style/typography.html#typography-standard-styles -->
+    <dimen name="caption">14dp</dimen>
+
+    <!-- Default elevation -->
+
+    <dimen name="dimen_0">0dp</dimen>
+    <dimen name="dimen_1">1dp</dimen>
+    <dimen name="dimen_2">2dp</dimen>
+    <dimen name="dimen_3">3dp</dimen>
+    <dimen name="dimen_4">4dp</dimen>
+    <dimen name="dimen_5">5dp</dimen>
+    <dimen name="dimen_6">6dp</dimen>
+    <dimen name="dimen_7">7dp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_12">12dp</dimen>
+    <dimen name="dimen_14">14dp</dimen>
+    <dimen name="dimen_15">15dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_23">23dp</dimen>
+    <dimen name="dimen_24">24dp</dimen>
+    <dimen name="dimen_25">25dp</dimen>
+    <dimen name="dimen_26">26dp</dimen>
+    <dimen name="dimen_27">27dp</dimen>
+    <dimen name="dimen_30">30dp</dimen>
+    <dimen name="dimen_32">32dp</dimen>
+    <dimen name="dimen_34">34dp</dimen>
+    <dimen name="dimen_35">35dp</dimen>
+    <dimen name="dimen_36">36dp</dimen>
+    <dimen name="dimen_40">40dp</dimen>
+    <dimen name="dimen_44">44dp</dimen>
+    <dimen name="dimen_45">45dp</dimen>
+    <dimen name="dimen_50">50dp</dimen>
+    <dimen name="dimen_54">54dp</dimen>
+    <dimen name="dimen_60">60dp</dimen>
+    <dimen name="dimen_65">65dp</dimen>
+    <dimen name="dimen_70">70dp</dimen>
+    <dimen name="dimen_75">75dp</dimen>
+    <dimen name="dimen_78">78dp</dimen>
+    <dimen name="dimen_80">80dp</dimen>
+    <dimen name="dimen_90">90dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
+    <dimen name="dimen_110">110dp</dimen>
+    <dimen name="dimen_120">120dp</dimen>
+    <dimen name="dimen_130">130dp</dimen>
+    <dimen name="dimen_135">135dp</dimen>
+    <dimen name="dimen_140">140dp</dimen>
+    <dimen name="dimen_150">150dp</dimen>
+    <dimen name="dimen_160">160dp</dimen>
+    <dimen name="dimen_170">170dp</dimen>
+    <dimen name="dimen_180">180dp</dimen>
+    <dimen name="dimen_200">200dp</dimen>
+    <dimen name="dimen_210">210dp</dimen>
+    <dimen name="dimen_250">250dp</dimen>
+    <dimen name="dimen_260">260dp</dimen>
+    <dimen name="dimen_300">300dp</dimen>
+    <dimen name="dimen_325">325dp</dimen>
+    <!-- Coin icons -->
+    <dimen name="generic_icon_size">36dp</dimen>
+
+    <!-- Font icons -->
+    <dimen name="font_icon_bg_size">50dp</dimen>
+    <dimen name="font_icon_text_size">24sp</dimen>
+
+    <!-- Generic items -->
+    <dimen name="generic_circle_bg_size">22dp</dimen>
+
+    <!-- Dialogs -->
+    <dimen name="dialog_margin">24dp</dimen>
+    <dimen name="dialog_title_margin_bottom">20dp</dimen>
+
+    <!-- Amount Widget -->
+    <dimen name="amount_text_size_big">44sp</dimen>
+    <dimen name="amount_text_size_small">12sp</dimen>
+    <dimen name="amount_symbol_text_size">24sp</dimen>
+
+    <!-- SendOutput Widget -->
+    <dimen name="send_output_amount_text_size">24sp</dimen>
+
+    <!-- IntroActivity -->
+    <dimen name="seed_text_size">26sp</dimen>
+
+    <!-- Overview fragment -->
+
+    <!-- Receive fragment -->
+    <!-- Receive fragment -->
+
+    <!-- Qr codes -->
+    <dimen name="qr_code_size">192dp</dimen>
+    <dimen name="qr_code_quite_zone_pixels">0dp</dimen>
+    <dimen name="qr_code_margin">16dp</dimen>
+
+    <!-- Send fragment -->
+
+    <!-- Balance fragment -->
+
+    <!-- generic rows -->
+    <dimen name="row_font_icon_bg_size">40dp</dimen>
+    <dimen name="row_text_size_header_text">14sp</dimen>
+    <dimen name="row_text_size_label">14dp</dimen>
+    <dimen name="row_padding_vertical">12dp</dimen>
+    <dimen name="row_padding_horizontal">@dimen/activity_horizontal_margin</dimen>
+
+    <!-- Transaction Row -->
+    <dimen name="transaction_row_direction_bg_size">@dimen/row_font_icon_bg_size</dimen>
+    <dimen name="transaction_row_text_size_direction_text">@dimen/row_text_size_header_text</dimen>
+    <dimen name="transaction_row_padding_vertical">@dimen/row_padding_vertical</dimen>
+    <dimen name="transaction_row_padding_horizontal">@dimen/row_padding_horizontal</dimen>
+
+    <!-- About Activity -->
+
+    <!-- Exchange row -->
+
+    <!-- Coin list row -->
+
+    <!-- Address row -->
+    <dimen name="address_row_status_bg_size">22dp</dimen>
+    <dimen name="address_row_status_text_size">10sp</dimen>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--<dimen name="activity_horizontal_margin">16dp</dimen>-->
+    <!--<dimen name="activity_vertical_margin">16dp</dimen>-->
+
+    <!-- Dimensions form the transaction list -->
+    <dimen name="transaction_details_text_size">13sp</dimen>
+
+    <dimen name="profile_menu_height">60dp</dimen>
+    <!-- Settings -->
+
+    <!-- 我-图标高宽 -->
+    <dimen name="profile_icon_height">25dp</dimen>
+
+    <dimen name="tab_bottom_img_width">20dp</dimen>
+
+    <!--margin-->
+    <dimen name="margin_little_3">3dp</dimen>
+    <dimen name="margin_little_5">5dp</dimen>
+    <dimen name="margin_little_6">6dp</dimen>
+    <dimen name="margin_little_8">8dp</dimen>
+    <dimen name="margin_simple_10">10dp</dimen>
+    <dimen name="margin_simple_12">12dp</dimen>
+    <dimen name="margin_large_15">15dp</dimen>
+    <dimen name="margin_large_18">18dp</dimen>
+
+    <!--padding-->
+    <dimen name="padding_little_4">4dp</dimen>
+    <dimen name="padding_little_5">5dp</dimen>
+    <dimen name="padding_little_6">6dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_simple_10">10dp</dimen>
+    <dimen name="padding_12">12dp</dimen>
+    <dimen name="padding_large_15">15dp</dimen>
+    <dimen name="padding_large_18">18dp</dimen>
+    <dimen name="padding_chat_bg">10dp</dimen>
+
+    <dimen name="line_space_extra">2dp</dimen>
+    <dimen name="line_space_multiple">5dp</dimen>
+
+    <dimen name="choose_pic_dialog_height">300dp</dimen>
+    <dimen name="choose_pic_dialog_width">188dp</dimen>
+
+    <dimen name="webview_dialog_height">220dp</dimen>
+    <dimen name="webview_dialog_width">250dp</dimen>
+
+    <dimen name="simple_dialog_width">250dp</dimen>
+    <dimen name="simple_dialog_height">120dp</dimen>
+
+
+    <dimen name="select_asset_dialog_width">300dp</dimen>
+    <dimen name="select_asset_dialog_height">400dp</dimen>
+
+    <dimen name="edit_dialog_width">280dp</dimen>
+    <dimen name="edit_dialog_height">150dp</dimen>
+
+    <dimen name="dialog_btn_height">40dp</dimen>
+
+    <dimen name="line_height_1dp">0.5dp</dimen>
+    <dimen name="line_height_1px">0.5dp</dimen>
+    <dimen name="line_height">0.5dp</dimen>
+
+    <dimen name="text_size_10">10dp</dimen>
+    <dimen name="text_size_11">11dp</dimen>
+    <dimen name="text_size_12">12dp</dimen>
+    <dimen name="text_size_13">13dp</dimen>
+    <dimen name="text_size_14">14dp</dimen>
+    <dimen name="text_size_15">15dp</dimen>
+    <dimen name="text_size_16">16dp</dimen>
+    <dimen name="text_size_18">18dp</dimen>
+    <dimen name="btn_height_44">44dp</dimen>
+
+    <dimen name="chat_bg_round">20dp</dimen>
+    <dimen name="chat_bg_min_width">50dp</dimen>
+
+    <dimen name="title_height">48dp</dimen>
+
+    <dimen name="title_img_padding">15dp</dimen>
+
+    <dimen name="title_text_max_width">200dp</dimen>
+
+    <dimen name="profile_head_height">200dp</dimen>
+
+    <dimen name="viewpager_tab_height">36dp</dimen>
+
+    <!--虚线宽度-->
+    <dimen name="dotted_line_width">3dp</dimen>
+
+    <dimen name="simple_btn_height">44dp</dimen>
+
+    <dimen name="dimen_user_sex_icon">10dp</dimen>
+
+    <dimen name="dimen_user_avatar1">68dp</dimen>
+    <dimen name="dimen_good_asset_icon">20dp</dimen>
+
+    <dimen name="temp_simple_height">6dp</dimen>
+
+    <dimen name="dimen_lock">260dp</dimen>
+
+    <dimen name="dimen_setting_item_height">40dp</dimen>
+
+    <dimen name="title_popup_width">160dp</dimen>
+
+    <dimen name="dimen_emoji">40dp</dimen>
+
+    <dimen name="dimen_msg_avatar">44dp</dimen>
+
+    <dimen name="msg_asset_height">80dp</dimen>
+    <dimen name="msg_asset_min_width">226dp</dimen>
+    <dimen name="msg_asset_amount_max_width">200dp</dimen>
+
+    <dimen name="msg_location_height">140dp</dimen>
+    <dimen name="msg_location_width">216dp</dimen>
+
+    <!--kline start-->
+    <!--kline stop-->
+
+    <dimen name="set_fee_seekbar_height">2dp</dimen>
+
+    <dimen name="emoji_default_size">22dp</dimen>
+
+    <dimen name="dimen_chat_more_height">250dp</dimen>
+
+    <dimen name="page_bottom_temp">50dp</dimen>
+
+    <dimen name="red_packet_edit_item_height">36dp</dimen>
+
+    <dimen name="red_packet_dialog_width">250dp</dimen>
+    <dimen name="red_packet_dialog_height">368dp</dimen>
+
+    <dimen name="red_packet_bg_width">295dp</dimen>
+    <dimen name="red_packet_bg_height">435dp</dimen>
+
+    <dimen name="red_packet_avatar">36dp</dimen>
+
+    <dimen name="red_packet_chai">100dp</dimen>
+
+    <dimen name="dimen_input_seed_height">320dp</dimen>
+    <dimen name="msg_red_packet_height">177dp</dimen>
+    <dimen name="msg_red_packet_width">120dp</dimen>
+
+    <dimen name="screenshot_width">250dp</dimen>
+    <dimen name="screenshot_height">160dp</dimen>
+
+    <dimen name="chat_emoji_menu_width">34dp</dimen>
+
+    <dimen name="dialog_triple_width">339dp</dimen>
+
+    <dimen name="item_coin_height">64dp</dimen>
+
+    <dimen name="msg_voice_height">36dp</dimen>
+    <dimen name="chat_progress_width">20dp</dimen>
+
+    <dimen name="chat_input_height">34dp</dimen>
+    <dimen name="item_msg_margin">8dp</dimen>
+    <dimen name="chat_bottom_bar_height">58dp</dimen>
+
+    <dimen name="max_img_msg_height">140dp</dimen>
+    <dimen name="max_img_msg_width">170dp</dimen>
+
+    <dimen name="pay_dialog_width">269dp</dimen>
+    <dimen name="pay_dialog_height">120dp</dimen>
+
+    <!--群管理条目-->
+
+    <dimen name="manage_silent_weight">67dp</dimen>
+    <dimen name="manage_silent_height">26dp</dimen>
+
+    <dimen name="publish_weight">52dp</dimen>
+    <dimen name="publish_height">32dp</dimen>
+
+    <!--group qrcode-->
+    <dimen name="group_qr_ll_weight">297dp</dimen>
+    <dimen name="group_qr_ll_height">442dp</dimen>
+    <dimen name="group_qrcode_weight_height">144dp</dimen>
+
+    <dimen name="title_line_height">2dp</dimen>
+
+    <dimen name="title_bar_height">18dp</dimen>
+
+</resources>

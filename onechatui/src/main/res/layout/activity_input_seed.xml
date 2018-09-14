@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_color_level1"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_little_8"
+        android:gravity="center"
+        android:text="@string/search_seed_tip"
+        android:textColor="@color/black_second"
+        android:textSize="@dimen/text_size_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_simple_10"
+            android:layout_weight="1"
+            android:background="@drawable/empty_circle_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_8">
+
+            <onewalletui.ui.widget.flowtag.FlowTagView
+                android:id="@+id/seed_select"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_input_seed_height"
+                app:lineSpacing="@dimen/margin_little_6"
+                app:tagSpacing="@dimen/margin_little_6" />
+
+            <TextView
+                android:id="@+id/tv_paste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:layout_marginTop="@dimen/margin_large_18"
+                android:background="@color/base_color"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="@dimen/padding_8"
+                android:text="@string/action_paste"
+                android:textColor="@color/base_bg_color_level1"
+                android:textSize="@dimen/text_size_16"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:layout_marginTop="@dimen/margin_large_18"
+                android:background="@color/base_color"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="@dimen/padding_8"
+                android:text="@string/action_clear"
+                android:textColor="@color/base_bg_color_level1"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_simple_10"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_simple_10"
+                android:layout_marginLeft="@dimen/margin_large_15"
+                android:layout_marginRight="@dimen/margin_large_15"
+                android:background="@drawable/search_bar_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_little_5"
+                android:paddingLeft="@dimen/padding_simple_10"
+                android:paddingRight="@dimen/padding_simple_10"
+                android:paddingTop="@dimen/padding_little_5">
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="@dimen/margin_large_15"
+                    android:layout_height="@dimen/margin_large_15"
+                    android:src="@drawable/search_icon" />
+
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:hint="@string/search_seed"
+                    android:inputType="textEmailAddress"
+                    android:lines="1"
+                    android:textColor="@color/black_second"
+                    android:textColorHint="@color/hint_gray"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height_1dp"
+                android:background="@color/base_line_bg_color" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/base_bg_color_level1"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/list"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:cacheColorHint="#00000000"
+                        android:divider="@null"
+                        android:dividerHeight="0dp"
+                        android:listSelector="#00000000"
+                        android:scrollbars="none" />
+                </LinearLayout>
+
+                <onemessageui.widght.SideBar
+                    android:id="@+id/sideBar"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginTop="30dp" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

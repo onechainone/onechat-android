@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/contactitem_catalog"
+        style="@style/MMListCatalog"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/view_contact"
+        style="@style/MMListItem"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_click_bg_white"
+        android:paddingLeft="@dimen/margin_simple_10">
+
+        <TextView
+            android:id="@+id/tv_seed_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_little_8"
+            android:layout_marginTop="@dimen/margin_little_8"
+            android:singleLine="true"
+            android:text="seed"
+            android:textColor="@color/seed_word_color"
+            android:textSize="@dimen/text_size_14" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/base_line_bg_color" />
+
+</LinearLayout>

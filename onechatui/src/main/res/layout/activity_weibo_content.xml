@@ -1,0 +1,347 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/base_background_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0"
+        android:layout_weight="1"
+        android:background="@color/base_bg_color_level1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_little_6"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_little_6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_44"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_user_avatar"
+                    android:layout_width="@dimen/dimen_40"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_large_15"
+                    android:src="@drawable/default_head_man" />
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_simple_10"
+                    android:layout_marginTop="@dimen/margin_little_8"
+                    android:textColor="@color/base_color"
+                    android:textSize="@dimen/text_size_16" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_user_jianjie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_25"
+                android:layout_marginRight="@dimen/dimen_25"
+                android:layout_marginTop="@dimen/margin_little_3"
+                android:lineSpacingExtra="@dimen/dimen_2"
+                android:textColor="@color/base_text_gray"
+                android:textSize="@dimen/dimen_14"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_weibo_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_simple_10"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="@dimen/line_space_extra"
+                android:textColor="@color/black_second"
+                android:textSize="@dimen/text_size_16" />
+
+            <FrameLayout
+                android:id="@+id/fl_video"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_180"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_launcher" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_60"
+                    android:layout_height="@dimen/dimen_60"
+                    android:layout_gravity="center"
+                    android:src="@drawable/play_video_bg" />
+
+                <TextView
+                    android:id="@+id/tv_video_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginBottom="@dimen/dimen_14"
+                    android:layout_marginRight="@dimen/dimen_20"
+                    android:text=""
+                    android:textColor="@color/base_bg_color_level1"
+                    android:textSize="@dimen/dimen_12" />
+
+                <TextView
+                    android:id="@+id/tv_video_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:alpha="0.7"
+                    android:background="@color/base_color"
+                    android:gravity="center"
+                    android:textColor="@color/base_bg_color_level1"
+                    android:textSize="@dimen/text_size_10" />
+            </FrameLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_other_video"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_90"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:paddingBottom="@dimen/padding_little_6"
+                android:paddingLeft="@dimen/dimen_15"
+                android:paddingRight="@dimen/dimen_15"
+                android:paddingTop="@dimen/padding_little_6"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+            <onemessageui.widght.GridViewForScrollView
+                android:id="@+id/gv_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:dividerHeight="@dimen/dimen_0"
+                android:numColumns="3"
+                android:paddingLeft="@dimen/dimen_5"
+                android:paddingRight="@dimen/dimen_5"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/tv_weibo_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:textColor="@color/base_text_gray"
+                android:textSize="@dimen/dimen_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_5"
+                android:background="@color/base_bg_color_level1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_5"
+                android:background="@color/base_background_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_44"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_shang_num"
+                    android:layout_width="@dimen/dimen_70"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_little_3"
+                    android:drawablePadding="@dimen/padding_little_6"
+                    android:gravity="center"
+                    android:text="@string/zanshang"
+                    android:textColor="@color/base_text_gray"
+                    android:textSize="@dimen/dimen_14" />
+
+                <TextView
+                    android:id="@+id/tv_comment_num"
+                    android:layout_width="@dimen/dimen_70"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_little_3"
+                    android:drawableBottom="@drawable/bottom_line"
+                    android:drawablePadding="@dimen/padding_little_6"
+                    android:gravity="center"
+                    android:text="@string/comment"
+                    android:textColor="@color/base_text_gray"
+                    android:textSize="@dimen/dimen_14" />
+
+                <View
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/iv_zan"
+                    android:layout_width="@dimen/dimen_25"
+                    android:layout_height="@dimen/dimen_25"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/padding_little_4"
+                    android:src="@drawable/icon_go_up_gray" />
+
+                <TextView
+                    android:id="@+id/tv_zan_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_little_3"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:text="0"
+                    android:textColor="@color/base_text_gray"
+                    android:textSize="@dimen/dimen_14" />
+
+
+                <ImageView
+                    android:id="@+id/iv_cai"
+                    android:layout_width="@dimen/dimen_25"
+                    android:layout_height="@dimen/dimen_25"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/padding_little_4"
+                    android:src="@drawable/icon_go_down_gray" />
+
+                <TextView
+                    android:id="@+id/tv_cai_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_little_3"
+                    android:layout_marginRight="@dimen/dimen_15"
+                    android:text="0"
+                    android:textColor="@color/base_text_gray"
+                    android:textSize="@dimen/dimen_14" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:background="@color/base_background_bg" />
+
+
+            <onemessageui.widght.ListViewForScrollView
+                android:id="@+id/lv_reply_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/base_bg_color_level1"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@color/toumin"
+                android:dividerHeight="@dimen/dimen_0"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/empty"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_0"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/dimen_15"
+                android:paddingTop="@dimen/dimen_15"
+                android:text="暂无"
+                android:textColor="#8f8f8f"
+                android:textSize="15dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:alpha="0.97"
+        android:background="@color/base_bg_color_level1"
+        android:gravity="center"
+        android:minHeight="@dimen/dimen_65"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/reply_et"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_circle_bg"
+            android:hint="@string/reply_weibo"
+            android:imeOptions="actionSend"
+            android:inputType="textMultiLine"
+            android:lineSpacingExtra="@dimen/dimen_4"
+            android:maxLines="3"
+            android:minHeight="@dimen/dimen_35"
+            android:paddingLeft="@dimen/padding_little_6"
+            android:paddingRight="@dimen/padding_little_6"
+            android:textColor="@color/base_text_color_level1"
+            android:textColorHint="@color/hint_gray"
+            android:textCursorDrawable="@drawable/curcle_bg"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/tv_shang"
+            android:layout_width="@dimen/dimen_65"
+            android:layout_height="@dimen/dimen_65"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:src="@drawable/icon_shang"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/tv_send"
+            android:layout_width="@dimen/dimen_54"
+            android:layout_height="@dimen/dimen_35"
+            android:layout_marginRight="@dimen/margin_simple_10"
+            android:paddingLeft="@dimen/padding_12"
+            android:paddingRight="@dimen/padding_12"
+            android:src="@drawable/chat_send_btn"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="4dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_margin="1dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/chatting_biaoqing_btn_normal"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_margin="1dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/chatting_biaoqing_btn_enable"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

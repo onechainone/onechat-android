@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/webview_dialog_width"
+    android:layout_height="@dimen/webview_dialog_height"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/btn_open_out_browser"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1px"
+        android:background="@drawable/tuoyuan_top_normal_bg"
+        android:gravity="center"
+        android:text="@string/open_out_browser"
+        android:textColor="@color/base_color" />
+
+    <TextView
+        android:id="@+id/btn_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1px"
+        android:background="@drawable/base_click_bg_white"
+        android:gravity="center"
+        android:text="@string/action_refresh"
+        android:textColor="@color/base_color" />
+
+    <TextView
+        android:id="@+id/btn_copy_url"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1px"
+        android:background="@drawable/tuoyuan_bottom_bg"
+        android:gravity="center"
+        android:padding="@dimen/padding_little_5"
+        android:text="@string/copy_url"
+        android:textColor="@color/base_color" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/tuoyuan_bg"
+        android:gravity="center"
+        android:padding="@dimen/padding_little_5"
+        android:text="@string/cancel"
+        android:textColor="@color/base_color" />
+
+</LinearLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 一级背景色 -->
+    <color name="base_bg_color_level1_blackskin">#191919</color>
+
+    <!-- 二级背景色 -->
+    <color name="base_bg_color_level2_blackskin">#202020</color>
+
+    <!--一级高亮色-->
+    <color name="base_color_blackskin">#FFD076</color>
+
+    <!-- 透明 -->
+    <color name="transparent_blackskin">#00000000</color>
+
+    <color name="color_white_blackskin">#FFFFFF</color>
+    <color name="color_black_blackskin">#000000</color>
+
+    <color name="base_line_bg_color_blackskin">#303030</color>
+
+    <color name="base_text_color_level1_blackskin">#C8C8C8</color>
+    <color name="base_text_color_level2_blackskin">#777777</color>
+    <color name="base_text_color_level3_blackskin">#444444</color>
+
+    <color name="tint_text_color_blackskin">#191919</color>
+
+    <!-- 高亮文字 -->
+    <color name="highlight_text_color_blackskin">#FFD076</color>
+
+    <color name="big_amount_text_color_blackskin">#FFD076</color>
+
+    <color name="simple_text_color_blackskin">#C8C8C8</color>
+    <color name="profile_menu_text_color_blackskin">#C8C8C8</color>
+    <color name="toumin_blackskin">@color/transparent_blackskin</color>
+
+    <color name="trade_queue_text_highlight_blackskin">#FFD076</color>
+    <color name="trade_queue_quote_text_blackskin">#777777</color>
+
+
+    <color name="link_color_blackskin">#ff4abad7</color>
+    <color name="font_value_blackskin">#ff888271</color>
+    <color name="black1_blackskin">@color/base_text_color_level2_blackskin</color>
+    <color name="black2_blackskin">@color/base_text_color_level3_blackskin</color>
+
+
+    <!-- http://www.google.com/design/spec/style/color.html#color-ui-color-application -->
+    <!--<color name="primary_100_blackskin">#B3E5FC</color>-->
+    <color name="primary_500_blackskin">@color/base_color_blackskin</color>
+    <!--<color name="primary_900_blackskin">#01579B</color>-->
+    <!--<color name="accent_blackskin">#0091EA</color>-->
+
+    <color name="gray_87_text_blackskin">#dd000000</color>
+    <color name="gray_54_sec_text_icons_blackskin">#89000000</color>
+    <color name="gray_26_hint_text_blackskin">#42000000</color>
+
+
+    <!-- foreground -->
+    <color name="fg_error_blackskin">#ffe73519</color>
+    <color name="fg_warning_blackskin">@color/fg_error_blackskin</color>
+    <color name="fg_ok_blackskin">#ff6db10c</color>
+
+
+    <!-- scanner -->
+    <color name="scan_mask_blackskin">#60000000</color>
+    <color name="scan_laser_blackskin">#cc0000</color>
+    <color name="scan_dot_blackskin">#ff6600</color>
+    <color name="scan_result_view_blackskin">#b0000000</color>
+    <color name="scan_result_dots_blackskin">#c099cc00</color>
+
+    <color name="progress_bar_color_1_blackskin">#8BD3FF</color>
+    <color name="progress_bar_color_2_blackskin">#FFF39B</color>
+    <color name="progress_bar_color_3_blackskin">#FF8F8F</color>
+    <color name="progress_bar_color_4_blackskin">#C7F28D</color>
+
+    <!-- QR code -->
+    <color name="qr_code_normal_bg_blackskin">#00000000</color>
+
+
+    <!-- BTS -->
+    <color name="colorPrimary_blackskin">#0099d6</color>
+    <color name="colorPrimaryDark_blackskin">#0099d6</color>
+    <color name="colorAccent_blackskin">#669900</color>
+
+    <color name="receive_amount_blackskin">#669900</color>
+    <color name="receive_amount_light_blackskin">#c5e1a5</color>
+    <color name="send_amount_blackskin">#DC473A</color>
+    <color name="send_amount_light_blackskin">#ef9a9a</color>
+
+
+    <color name="base_background_bg_blackskin">@color/base_bg_color_level2_blackskin</color>
+
+    <color name="hint_gray_blackskin">@color/base_text_color_level3_blackskin</color>
+
+    <color name="chat_to_bg_blackskin">#FFD076</color>
+    <color name="chat_to_click_bg_blackskin">#99FFD076</color>
+    <color name="chat_from_bg_blackskin">#404040</color>
+    <color name="chat_from_click_bg_blackskin">#99404040</color>
+    <color name="chat_from_text_color_blackskin">#ffffff</color>
+
+    <color name="base_color_transparent_blackskin">#99FFD076</color>
+
+    <color name="base_text_gray_blackskin">@color/base_text_color_level2_blackskin</color>
+    <color name="base_text_gray_83_blackskin">@color/base_text_color_level2_blackskin</color>
+
+    <color name="bottom_text_gray_blackskin">#b7b7b7</color>
+
+    <color name="black_second_blackskin">@color/base_text_color_level1_blackskin</color>
+
+    <color name="base_text_gray_30_blackskin">@color/base_text_color_level1_blackskin</color>
+
+    <color name="one_id_color_blackskin">#4E98FF</color>
+
+    <color name="contract_color_blackskin">#1177D8</color>
+    <color name="blue_simple_blackskin">#267AEB</color>
+
+    <color name="receive_color_blackskin">@color/trade_color_up_blackskin</color>
+    <color name="send_color_blackskin">@color/trade_color_down_blackskin</color>
+
+    <!--交易颜色-->
+    <color name="bid_progress_color_blackskin">#183C2D</color>
+    <color name="ask_progress_color_blackskin">#482715</color>
+    <color name="order_progress_bg_blackskin">#fff</color>
+
+    <color name="bid_color_blackskin">@color/trade_color_up_blackskin</color>
+    <color name="ask_color_blackskin">@color/trade_color_down_blackskin</color>
+
+    <color name="price_up_color_blackskin">@color/trade_color_up_blackskin</color>
+    <color name="price_down_color_blackskin">@color/trade_color_down_blackskin</color>
+
+    <color name="trade_color_up_blackskin">@color/trade_color_green_blackskin</color>
+    <color name="trade_color_down_blackskin">@color/trade_color_red_blackskin</color>
+
+    <color name="trade_color_green_blackskin">#13CA7E</color>
+    <color name="trade_color_red_blackskin">#FD7144</color>
+    <!--交易颜色-->
+
+    <color name="good_asset_color_blackskin">#F8CD54</color>
+    <color name="bad_asset_color_blackskin">#D85426</color>
+
+    <color name="btn_send_msg_color_blackskin">#71CF50</color>
+
+    <color name="status_confirmed_color_blackskin">@color/blue_simple_blackskin</color>
+    <color name="status_confirming_color_blackskin">#E8B801</color>
+    <color name="status_fail_color_blackskin">@color/base_color_blackskin</color>
+
+    <color name="lock_normal_color_blackskin">#D5DBE8</color>
+    <color name="lock_correct_color_blackskin">@color/blue_simple_blackskin</color>
+    <color name="lock_wrong_color_blackskin">@color/base_color_blackskin</color>
+
+    <color name="base_amount_color_blackskin">#4e5d6f</color>
+    <color name="link_line_color_blackskin">#45bfff</color>
+
+    <!--kline start-->
+    <color name="test_blackskin">#bec5da</color>
+    <color name="theme_bg_color_blackskin">#2c2c2c</color>
+    <color name="spot_price_blackskin">#5e6c7f</color>
+    <color name="spot_price_low_blackskin">#01e69a</color>
+    <color name="spot_price_up_blackskin">#ef3f2f</color>
+    <color name="spot_price_down_blackskin">#05e43f</color>
+    <color name="text_white_blackskin">#FFFFFF</color>
+    <color name="color_orange_light_blackskin">#ff6000</color>
+    <color name="color_grey_light_blackskin">#808080</color>
+    <color name="color_trade_grey_blackskin">#989898</color>
+    <color name="market_text_unpress_blackskin">#5e6c7f</color>
+    <color name="market_text_press_blackskin">@color/base_color_blackskin</color>
+    <color name="color_grey_blackskin">#919aac</color>
+    <color name="color_green_blackskin">#0bc86b</color>
+    <color name="top_order_press_background_blackskin">#50424242</color>
+    <color name="color_red_blackskin">#d13a38</color>
+    <color name="bg_all_blackskin">#efeff4</color>
+    <color name="target_bg_blackskin">#ed101416</color>
+    <color name="color_blue_blackskin">#04d6fc</color>
+    <color name="home_color_green_blackskin">#009900</color>
+    <color name="home_color_red_blackskin">#ee3523</color>
+    <color name="text_black_blackskin">#000000</color>
+    <!--kline stop-->
+
+    <color name="msg_asset_symbol_color_blackskin">#FFBF99</color>
+
+    <!-- title -->
+    <color name="base_title_bar_color_blackskin">@color/base_color_blackskin</color>
+    <color name="base_title_text_color_blackskin">@color/base_bg_color_level1_blackskin</color>
+
+    <color name="red_packet_color_blackskin">#DB5942</color>
+
+    <color name="red_packet_text_blackskin">#FFDDAE</color>
+
+    <color name="seed_word_color_blackskin">#ffffff</color>
+
+    <color name="chat_voice_press_blackskin">#bababa</color>
+
+    <color name="mnemonic_recovery_background_blackskin">@color/base_bg_color_level2_blackskin
+    </color>
+
+    <color name="mining_power_text_color_blackskin">#A40000</color>
+
+    <color name="mining_power_yellow_color_blackskin">#FFC102</color>
+    <color name="unread_msg_num_blackskin">#FFD076</color>
+
+    <color name="seekbar_gray_bg_blackskin">#D8D8D8</color>
+
+    <color name="black_alpha60_blackskin">#66000000</color>
+
+    <color name="zan_num_red_blackskin">#ff3b15</color>
+    <color name="view_grey_blackskin">#CECECE</color>
+    <color name="group_community_color_blackskin">#494949</color>
+    <color name="line_grey_color_blackskin">#C3C3C3</color>
+    <color name="invitation_line_blackskin">#979797</color>
+    <color name="message_center_line_blackskin">#F0F0F0</color>
+    <color name="push_content_gray_blackskin">#777777</color>
+
+    <color name="eos_txt_color_blackskin">#C8C8C8</color>
+    <color name="eos_location_color_blackskin">#FF007DDC</color>
+
+    <color name="main_bottom_bg_blackskin">#262626</color>
+
+    <color name="bottom_line_bg_blackskin">#191919</color>
+
+</resources>

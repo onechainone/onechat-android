@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_2"
+    android:paddingTop="@dimen/item_msg_margin">
+
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_little_5"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/iv_userhead_bg"
+            android:layout_width="@dimen/size_avatar"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/margin_chat_activity"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/group_owner_avatar_bg"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_userhead"
+            style="@style/chat_avatar_style"
+            android:layout_width="@dimen/size_avatar"
+            android:layout_height="@dimen/size_avatar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/margin_chat_activity"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_other_head" />
+
+
+        <TextView
+            android:id="@+id/tv_userid"
+            style="@style/chat_text_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_simple_10"
+            android:layout_toRightOf="@id/iv_userhead" />
+
+        <LinearLayout
+            android:id="@+id/ll_red_packet_container"
+            android:layout_width="@dimen/msg_red_packet_width"
+            android:layout_height="@dimen/msg_red_packet_height"
+            android:layout_below="@+id/tv_userid"
+            android:layout_marginLeft="@dimen/margin_chat_activity"
+            android:layout_toLeftOf="@+id/pb_sending"
+            android:layout_toRightOf="@id/iv_userhead"
+            android:background="@drawable/msg_red_packet_no_click"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_simple_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_little_6"
+                    android:textColor="@color/base_bg_color_level1"
+                    android:textSize="@dimen/text_size_14" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_simple_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_red_packet_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:text="@string/red_packet_default_msg"
+                    android:textColor="@color/red_packet_text"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_little_6"
+                    android:text="@string/look_red_packet"
+                    android:textColor="@color/base_bg_color_level1"
+                    android:textSize="@dimen/text_size_12"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/margin_simple_10"
+                android:text="@string/one_red_packet"
+                android:textColor="@color/base_color"
+                android:textSize="@dimen/text_size_10"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

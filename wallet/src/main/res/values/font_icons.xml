@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Font icons -->
+    <string name="font_icon_lock_bip39" translatable="false">&#58883;</string>
+</resources>

@@ -1,0 +1,352 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_color_level1"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_12"
+        android:paddingRight="@dimen/padding_12">
+
+        <LinearLayout
+            android:id="@+id/ll_charge_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/setting_charge_content"
+                android:textColor="@color/simple_text_color"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_set_pay_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/dimen_5"
+                android:textColor="@color/hint_gray"
+                android:textSize="@dimen/text_size_12" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height_1px"
+            android:background="@color/base_line_bg_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:text="@string/input_content"
+            android:textColor="@color/simple_text_color"
+            android:textSize="@dimen/text_size_14"
+            android:textStyle="bold" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/weibo_content_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_little_3"
+                    android:background="@null"
+                    android:hint="@string/no_sensitive_character"
+                    android:paddingBottom="@dimen/padding_simple_10"
+                    android:paddingTop="@dimen/padding_simple_10"
+                    android:textColor="@color/base_text_color_level1"
+                    android:textColorHint="@color/hint_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <FrameLayout
+                    android:id="@+id/fl_video"
+                    android:layout_width="@dimen/dimen_180"
+                    android:layout_height="@dimen/dimen_120"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:visibility="gone">
+
+
+                    <ImageView
+                        android:id="@+id/iv_video_thumb"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_50"
+                        android:layout_height="@dimen/dimen_50"
+                        android:layout_gravity="center" />
+
+                    <ImageView
+                        android:id="@+id/iv_delete_video"
+                        android:layout_width="@dimen/dimen_25"
+                        android:layout_height="@dimen/dimen_25"
+                        android:layout_gravity="right"
+                        android:src="@drawable/delete_menu" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_20"
+                        android:layout_gravity="bottom"
+                        android:alpha="0.2"
+                        android:background="@color/black_second" />
+
+                    <TextView
+                        android:id="@+id/tv_video_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:layout_margin="@dimen/margin_little_3"
+                        android:textColor="@color/base_bg_color_level1"
+                        android:textSize="@dimen/dimen_12" />
+
+                    <TextView
+                        android:id="@+id/tv_video_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="@dimen/margin_little_3"
+                        android:textColor="@color/base_bg_color_level1"
+                        android:textSize="@dimen/dimen_12" />
+                </FrameLayout>
+
+                <onemessageui.widght.GridViewForScrollView
+                    android:id="@+id/weibo_img_gv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_0"
+                    android:layout_margin="@dimen/dimen_10"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:numColumns="3" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_12"
+        android:paddingRight="@dimen/padding_12">
+
+        <LinearLayout
+            android:id="@+id/ll_input_keyword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_20"
+                android:layout_height="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/margin_little_5"
+                android:src="@drawable/add_keyword_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/keyword"
+                android:textColor="@color/simple_text_color"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <onewalletui.ui.widget.flowtag.FlowTagView
+            android:id="@+id/keyword_select"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginTop="@dimen/dimen_5"
+            app:lineSpacing="@dimen/margin_little_6"
+            app:tagSpacing="@dimen/margin_little_6" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_12"
+        android:paddingRight="@dimen/padding_12">
+
+        <ImageView
+            android:id="@+id/iv_gallery"
+            android:layout_width="@dimen/dimen_32"
+            android:layout_height="@dimen/dimen_32"
+            android:src="@drawable/insertion_img_two" />
+
+        <ImageView
+            android:id="@+id/iv_video"
+            android:layout_width="@dimen/dimen_32"
+            android:layout_height="@dimen/dimen_32"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:src="@drawable/insertion_video_two" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="@dimen/publish_weight"
+                android:layout_height="@dimen/publish_height"
+                android:background="@drawable/btn_bg_blue2"
+                android:gravity="center"
+                android:text="@string/publish"
+                android:textColor="@color/base_bg_color_level1"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dimen_0"-->
+    <!--android:layout_weight="1"-->
+    <!--android:scrollbars="none">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/temp_simple_height"-->
+    <!--android:background="@color/base_background_bg" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/weibo_content_et"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/dimen_10"-->
+    <!--android:layout_marginRight="@dimen/dimen_10"-->
+    <!--android:layout_marginTop="@dimen/dimen_10"-->
+    <!--android:background="@null"-->
+    <!--android:padding="@dimen/dimen_8"-->
+    <!--android:textColorHint="@color/hint_gray"-->
+    <!--android:textCursorDrawable="@drawable/curcle_bg"-->
+    <!--android:textSize="@dimen/text_size_16" />-->
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/fl_video"-->
+    <!--android:layout_width="@dimen/dimen_180"-->
+    <!--android:layout_height="@dimen/dimen_120"-->
+    <!--android:layout_marginLeft="@dimen/dimen_15"-->
+    <!--android:visibility="gone">-->
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_video_thumb"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="@dimen/dimen_50"-->
+    <!--android:layout_height="@dimen/dimen_50"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:src="@drawable/icon_video" />-->
+
+    <!--<ImageView-->
+
+    <!--android:id="@+id/iv_delete_video"-->
+    <!--android:layout_width="@dimen/dimen_15"-->
+    <!--android:layout_height="@dimen/dimen_15"-->
+    <!--android:layout_gravity="right"-->
+    <!--android:src="@drawable/delete_menu" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dimen_20"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:alpha="0.2"-->
+    <!--android:background="@color/black_second" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_video_time"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="right|bottom"-->
+    <!--android:layout_margin="@dimen/margin_little_3"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/dimen_12" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_video_size"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:layout_margin="@dimen/margin_little_3"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/dimen_12" />-->
+    <!--</FrameLayout>-->
+
+    <!--<onechatain.androidapp.onemessage.widght.GridViewForScrollView&ndash;&gt;-->
+    <!--android:id="@+id/weibo_img_gv"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="@dimen/dimen_0"-->
+    <!--android:layout_margin="@dimen/dimen_10"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:numColumns="3" />-->
+    <!--</LinearLayout>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_video"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="@dimen/dimen_10"-->
+    <!--android:padding="@dimen/dimen_2"-->
+    <!--android:src="@drawable/icon_video" />-->
+    <!--</ScrollView>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dimen_45"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:layout_marginBottom="@dimen/margin_simple_10"-->
+    <!--android:gravity="center_vertical|right"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_gallery"-->
+    <!--android:layout_width="@dimen/dimen_40"-->
+    <!--android:layout_height="@dimen/dimen_40"-->
+    <!--android:layout_marginRight="@dimen/dimen_25"-->
+    <!--android:padding="@dimen/dimen_2"-->
+    <!--android:src="@drawable/icon_video" />-->
+
+    <!--</LinearLayout>-->
+</LinearLayout>

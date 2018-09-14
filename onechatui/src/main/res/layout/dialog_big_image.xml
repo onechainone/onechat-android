@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_250"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_heading_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginTop="@dimen/dimen_1"
+        android:background="@drawable/tuoyuan_top_bg"
+        android:gravity="center"
+        android:padding="@dimen/dimen_5"
+        android:text="@string/heading_qrcode_to_img"
+        android:textColor="@color/black_second"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginTop="@dimen/dimen_1"
+        android:background="@drawable/tuoyuan_bottom_bg"
+        android:gravity="center"
+        android:padding="@dimen/dimen_5"
+        android:text="@string/button_save"
+        android:textColor="@color/black_second"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/margin_little_6"
+        android:background="@drawable/tuoyuan_bg"
+        android:gravity="center"
+        android:padding="@dimen/dimen_5"
+        android:text="@string/cancel"
+        android:textColor="@color/base_color"
+        android:textSize="@dimen/text_size_14" />
+
+</LinearLayout>

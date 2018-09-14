@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_background_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="@dimen/red_packet_bg_width"
+                android:layout_height="@dimen/red_packet_bg_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_large_15"
+                android:background="@drawable/dialog_red_packet_bg"
+                android:padding="@dimen/margin_large_18">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_40"
+                    android:gravity="center"
+                    android:lineSpacingExtra="@dimen/line_space_extra"
+                    android:text="@string/social_redpacket_tip"
+                    android:textColor="@color/red_packet_text"
+                    android:textSize="@dimen/text_size_14" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/view_copy_share_url"
+                android:layout_width="@dimen/red_packet_bg_width"
+                android:layout_height="@dimen/dimen_50"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_large_15"
+                android:background="@drawable/copy_red_packet_url_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_large_15"
+                android:paddingRight="@dimen/margin_large_15">
+
+                <TextView
+                    android:id="@+id/tv_red_packet_url"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="@color/base_bg_color_level1"
+                    android:textSize="@dimen/text_size_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_large_18"
+                    android:text="@string/tap_copy_url"
+                    android:textColor="@color/base_bg_color_level1"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

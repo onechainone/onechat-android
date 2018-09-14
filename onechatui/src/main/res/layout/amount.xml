@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oneapp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/amount_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <onewalletui.ui.widget.FontFitTextView
+            android:id="@+id/amount_text"
+            style="@style/Amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:lineSpacingMultiplier="0.9"
+            android:textColor="@color/highlight_text_color"
+            tools:text="@string/default_value" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/amount_pending"-->
+        <!--style="@style/AmountPending"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="+1.337"-->
+        <!--android:layout_gravity="end" />-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/symbol"
+        style="@style/AmountSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|end"
+        android:includeFontPadding="false"
+        android:paddingLeft="2dp"
+        android:textColor="@color/base_text_color_level1"
+        tools:text="SYMBOL" />
+
+</LinearLayout>

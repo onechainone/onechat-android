@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- 普通底部导航 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_1px"
+        android:background="@color/bottom_line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/main_bottom_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/padding_little_4">
+
+        <FrameLayout
+            android:id="@+id/re_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onTabClicked"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ib_home"
+                    android:layout_width="@dimen/tab_bottom_img_width"
+                    android:layout_height="@dimen/tab_bottom_img_width"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/tab_home" />
+
+                <TextView
+                    android:id="@+id/tv_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_little_3"
+                    android:text="@string/tab_title_home"
+                    android:textColor="@color/bottom_text_gray"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/unread_msg_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/margin_simple_10"
+                android:layout_marginTop="@dimen/margin_little_3"
+                android:background="@drawable/unread_msg_num_bg"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding_little_4"
+                android:paddingRight="@dimen/padding_little_4"
+                android:textColor="@color/tint_text_color"
+                android:textSize="@dimen/text_size_10"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/re_wallet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onTabClicked"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/tab_bottom_img_width"
+                android:layout_height="@dimen/tab_bottom_img_width"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/tab_contacts" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_little_3"
+                android:text="@string/tab_title_wallet"
+                android:textColor="@color/bottom_text_gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/re_contact"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onTabClicked"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ib_contact"
+                android:layout_width="@dimen/tab_bottom_img_width"
+                android:layout_height="@dimen/tab_bottom_img_width"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/tab_contacts" />
+
+            <TextView
+                android:id="@+id/tv_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_little_3"
+                android:text="@string/contacts"
+                android:textColor="@color/bottom_text_gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/re_exchange"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onTabClicked"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/tab_bottom_img_width"
+                android:layout_height="@dimen/tab_bottom_img_width"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/tab_contacts" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_little_3"
+                android:text="@string/tab_title_exchange"
+                android:textColor="@color/bottom_text_gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/re_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onTabClicked"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ib_profile"
+                android:layout_width="@dimen/tab_bottom_img_width"
+                android:layout_height="@dimen/tab_bottom_img_width"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/tab_profile" />
+
+            <TextView
+                android:id="@+id/tv_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_little_3"
+                android:text="@string/tab_title_my"
+                android:textColor="@color/bottom_text_gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

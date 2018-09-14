@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/MMListItem"
+        android:layout_height="65.0dip"
+        android:background="@drawable/base_click_bg_white"
+        android:paddingLeft="@dimen/padding_large_15">
+
+        <ImageView
+            android:id="@+id/iv_group_avatar"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/default_group" />
+
+        <TextView
+            android:id="@+id/tv_group_name"
+            style="@style/MMFontTitleInList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_large_15"
+            android:gravity="center_vertical"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/tv_group_member_size"
+            style="@style/MMFontTitleInList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_little_5"
+            android:layout_marginRight="@dimen/margin_large_15"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/base_text_color_level1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/base_line_bg_color" />
+
+</LinearLayout>

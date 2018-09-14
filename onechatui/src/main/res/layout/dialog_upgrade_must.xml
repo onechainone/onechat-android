@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0"
+        android:layout_weight="1"
+        android:background="@drawable/tuoyuan_top_normal_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:gravity="center"
+            android:text="@string/upgrade_tip"
+            android:textColor="@color/black_second"
+            android:textSize="@dimen/dimen_20" />
+
+        <TextView
+            android:id="@+id/dialog_msg_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/margin_large_15"
+            android:autoLink="web|phone|email"
+            android:lineSpacingExtra="@dimen/line_space_extra"
+            android:textColor="@color/black_second" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2"
+        android:background="@color/base_background_bg" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:background="@drawable/tuoyuan_bottom_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_browser"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tuoyuan_bottom_left_bg"
+            android:gravity="center"
+            android:padding="@dimen/dimen_5"
+            android:text="@string/open_out_browser"
+            android:textColor="@color/base_color" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/base_background_bg" />
+
+        <TextView
+            android:id="@+id/btn_commit"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tuoyuan_bottom_right_bg"
+            android:gravity="center"
+            android:padding="@dimen/dimen_5"
+            android:text="@string/update_ok"
+            android:textColor="@color/base_color" />
+
+    </LinearLayout>
+</LinearLayout>

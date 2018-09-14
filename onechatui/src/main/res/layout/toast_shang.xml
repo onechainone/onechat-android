@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_110"
+    android:layout_height="@dimen/dimen_65"
+    android:background="@color/toumin">
+
+    <ImageView
+        android:layout_width="@dimen/dimen_110"
+        android:layout_height="@dimen/dimen_65"
+        android:paddingTop="@dimen/padding_large_15"
+        android:src="@drawable/shang_ok_icon" />
+
+    <ImageView
+        android:layout_width="@dimen/dimen_25"
+        android:layout_height="@dimen/dimen_25"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/margin_little_5"
+        android:src="@drawable/shang_ok_yuan" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="@dimen/dimen_25"
+        android:layout_height="@dimen/dimen_25"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/margin_little_5"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@color/base_bg_color_level1"
+        android:textSize="@dimen/text_size_10" />
+</FrameLayout>

@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_background_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/menu_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_36"
+        android:background="@color/base_background_bg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/view_select_type"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_select_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_little_6"
+                android:textColor="@color/base_amount_color"
+                android:textSize="@dimen/text_size_14" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen_10"
+                android:layout_height="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/margin_little_3"
+                android:src="@drawable/icon_pull_down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_select_order"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_select_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_little_6"
+                android:textColor="@color/base_amount_color"
+                android:textSize="@dimen/text_size_14" />
+
+            <ImageView
+                android:layout_width="@dimen/dimen_10"
+                android:layout_height="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/margin_little_3"
+                android:src="@drawable/icon_pull_down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0"
+        android:layout_weight="1">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/swipeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_little_6"
+            android:orientation="vertical"
+            app:srlEnableLoadMore="true">
+
+            <com.scwang.smartrefresh.header.MaterialHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/weibo_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@color/base_background_bg"
+                    android:dividerHeight="@dimen/dimen_0" />
+
+                <TextView
+                    android:id="@+id/txt_no_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="@dimen/margin_large_18"
+                    android:drawableTop="@drawable/no_history"
+                    android:gravity="center"
+                    android:text="@string/no_message"
+                    android:textColor="@color/black_second"
+                    android:textSize="@dimen/text_size_16" />
+            </FrameLayout>
+
+            <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <ImageView
+            android:id="@+id/iv_send_weibo"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/dimen_100"
+            android:layout_marginRight="@dimen/margin_large_15"
+            android:src="@drawable/send_weibo_icon" />
+    </FrameLayout>
+</LinearLayout>

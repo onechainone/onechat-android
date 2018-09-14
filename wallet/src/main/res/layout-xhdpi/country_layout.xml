@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_simple_10"
+        android:layout_marginLeft="@dimen/margin_large_15"
+        android:layout_marginRight="@dimen/margin_large_15"
+        android:layout_marginTop="@dimen/margin_simple_10"
+        android:background="@drawable/search_bar_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_simple_10">
+
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="@dimen/margin_large_15"
+            android:layout_height="@dimen/margin_large_15"
+            android:src="@drawable/search_icon" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="@string/accountname_search"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:textColor="@color/black_second"
+            android:textColorHint="@color/hint_gray"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <oneapp.onechat.chat.sharesdk.sms.CountryListView
+        android:id="@+id/clCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

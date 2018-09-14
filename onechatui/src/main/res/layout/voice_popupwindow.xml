@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_200"
+    android:layout_height="@dimen/dimen_200"
+    android:layout_gravity="center"
+    android:background="@drawable/record_voice_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_simple_10">
+
+    <LinearLayout
+        android:id="@+id/view_start_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_100"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/record_voice_microphone" />
+
+            <ImageView
+                android:id="@+id/voice_shengyin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_large_15"
+                android:adjustViewBounds="true"
+                android:src="@drawable/record_voice1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/dimen_150"
+            android:layout_height="@dimen/dimen_36"
+            android:layout_marginTop="@dimen/margin_large_18"
+            android:gravity="center"
+            android:text="@string/move_up_to_cancel"
+            android:textColor="@color/base_bg_color_level1"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_cancel_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_100"
+            android:adjustViewBounds="true"
+            android:src="@drawable/icon_cancel_record" />
+
+        <TextView
+            android:layout_width="@dimen/dimen_150"
+            android:layout_height="@dimen/dimen_36"
+            android:layout_marginTop="@dimen/margin_large_18"
+            android:background="@drawable/cancel_record_bg"
+            android:gravity="center"
+            android:text="@string/release_to_cancel"
+            android:textColor="@color/base_bg_color_level1"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <onemessageui.chat.voice.MyChronometer
+        android:id="@+id/mychronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+</LinearLayout>

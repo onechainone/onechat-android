@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:alpha="0.97"
+    android:background="@color/base_bg_color_level1"
+    android:gravity="center"
+    android:minHeight="@dimen/dimen_54"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/zhuanfa_et"
+        android:layout_width="@dimen/dimen_0"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_weight="1"
+        android:background="@drawable/edit_text_circle_bg"
+        android:hint="@string/zhuanfa_weibo_hint"
+        android:imeOptions="actionSend"
+        android:inputType="textMultiLine"
+        android:lineSpacingExtra="@dimen/dimen_4"
+        android:maxLines="3"
+        android:minHeight="@dimen/dimen_35"
+        android:paddingLeft="@dimen/padding_little_6"
+        android:paddingRight="@dimen/padding_little_6"
+        android:textColor="@color/base_text_color_level1"
+        android:textColorHint="@color/hint_gray"
+        android:textCursorDrawable="@drawable/curcle_bg"
+        android:textSize="@dimen/text_size_14" />
+
+    <ImageView
+        android:id="@+id/tv_send"
+        android:layout_width="@dimen/dimen_54"
+        android:layout_height="@dimen/dimen_35"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:src="@drawable/chat_send_btn"
+        android:paddingLeft="@dimen/padding_12"
+        android:paddingRight="@dimen/padding_12"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="4dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_margin="1dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/chatting_biaoqing_btn_enable"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_margin="1dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/chatting_biaoqing_btn_enable"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/simple_dialog_width"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_msg_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tuoyuan_top_normal_bg"
+        android:gravity="center"
+        android:padding="@dimen/padding_large_15"
+        android:textColor="@color/simple_text_color"
+        android:textSize="@dimen/text_size_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/base_bg_color_level2" />
+
+    <TextView
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height_44"
+        android:background="@drawable/tuoyuan_bottom_bg"
+        android:gravity="center"
+        android:text="@string/button_ok"
+        android:textColor="@color/base_color" />
+</LinearLayout>

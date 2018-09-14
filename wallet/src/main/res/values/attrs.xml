@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="autonavimapview">
+        <attr name="userAgent" format="string" />
+    </declare-styleable>
+    <declare-styleable name="Amount">
+        <attr name="show_big" format="boolean" />
+        <attr name="single_line" format="boolean" />
+        <attr name="show_small" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="Address">
+        <attr name="multi_line" format="boolean" />
+        <attr name="show_coin_icon" format="boolean" />
+        <attr name="show_coin_name" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+
+        <attr name="pstsIndicatorPaddingLeft" format="dimension" />
+        <attr name="pstsIndicatorPaddingRight" format="dimension" />
+        <attr name="pstsIndicatorPaddingBottom" format="dimension" />
+        <attr name="pstsIndicatorRound" format="dimension" />
+
+        <attr name="pstsTextColorDrawableResource" format="reference" />
+
+    </declare-styleable>
+    <declare-styleable name="DecimalEditText">
+        <attr name="decimalNumber" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="SwitchButton">
+        <attr name="onDrawable" format="reference" />
+        <attr name="offDrawable" format="reference" />
+        <attr name="thumbDrawable" format="reference" />
+        <attr name="thumb_margin" format="dimension|reference" />
+        <attr name="thumb_marginTop" format="dimension|reference" />
+        <attr name="thumb_marginBottom" format="dimension|reference" />
+        <attr name="thumb_marginLeft" format="dimension|reference" />
+        <attr name="thumb_marginRight" format="dimension|reference" />
+        <attr name="thumb_width" format="dimension|reference" />
+        <attr name="thumb_height" format="dimension|reference" />
+        <attr name="onColor" format="color|reference" />
+        <attr name="offColor" format="color|reference" />
+        <attr name="thumbColor" format="color|reference" />
+        <attr name="thumbPressedColor" format="color|reference" />
+        <attr name="animationVelocity" format="integer" />
+        <attr name="radius" format="integer" />
+        <attr name="measureFactor" format="float" />
+        <attr name="insetLeft" format="dimension|reference" />
+        <attr name="insetRight" format="dimension|reference" />
+        <attr name="insetTop" format="dimension|reference" />
+        <attr name="insetBottom" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="pwText" format="string" />
+        <attr name="pwTextColor" format="color" />
+        <attr name="pwTextSize" format="dimension" />
+        <attr name="pwBarColor" format="color" />
+        <attr name="pwRimColor" format="color" />
+        <attr name="pwRimWidth" format="dimension" />
+        <attr name="pwSpinSpeed" format="dimension" />
+        <attr name="pwDelayMillis" format="integer" />
+        <attr name="pwCircleColor" format="color" />
+        <attr name="pwRadius" format="dimension" />
+        <attr name="pwBarWidth" format="dimension" />
+        <attr name="pwBarLength" format="dimension" />
+        <attr name="pwContourColor" format="color" />
+        <attr name="pwContourSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowTagView">
+        <attr name="lineSpacing" format="dimension" />
+        <attr name="tagSpacing" format="dimension" />
+        <!-- 是否是固定布局 -->
+        <attr name="isFixed" format="boolean" />
+        <attr name="columnSize" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="UniversalMediaController">
+        <attr name="uvv_scalable" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="UniversalVideoView">
+        <attr name="uvv_fitXY" format="boolean" />
+        <attr name="uvv_autoRotation" format="boolean" />
+    </declare-styleable>
+
+</resources>

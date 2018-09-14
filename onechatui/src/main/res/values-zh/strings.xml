@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_share">分享</string>
+    <string name="action_settings">设置</string>
+    <string name="action_refresh">刷新</string>
+
+
+    <!-- Errors -->
+    <string name="error_generic">执行指令时出错</string>
+    <string name="error_could_not_read_wallet">无法读取账户</string>
+    <string name="error_camera">不能访问摄像头</string>
+
+    <!-- Generic items -->
+    <string name="button_ok">确定</string>
+    <string name="button_confirm">确认</string>
+    <string name="button_cancel">取消</string>
+    <string name="button_default">缺省</string>
+    <string name="button_dismiss">取消</string>
+    <string name="button_add">添加</string>
+    <string name="button_save">保存</string>
+    <string name="button_send">发送</string>
+    <string name="button_retry">重试</string>
+    <string name="button_agree">同意</string>
+    <string name="button_disagree">否定</string>
+    <string name="scan_qr_code">扫描二维码</string>
+    <string name="copied_to_clipboard">复制到剪贴板</string>
+    <string name="wallet_locked_message">账户已加密</string>
+    <string name="unlock_wallet_title">解密账户</string>
+    <string name="unlocking_wallet_error_title">无法解密账户</string>
+    <string name="unlocking_wallet_error_detail">密码是否正确？请确认输入正确。如果问题没有解决请考虑恢复账号。</string>
+
+    <!-- Nav drawer -->
+
+    <!-- SendOutput widget -->
+    <string name="fee">交易手续费</string>
+    <string name="send">发送</string>
+    <string name="receive">接收</string>
+
+    <!-- Wallet activity -->
+    <string name="pay_with">用发送</string>
+    <string name="exchange_and_pay_title">换成并发送</string>
+
+    <!-- PayToDialog-->
+    <string name="ambiguous_address_message">请选择正确的币种</string>
+
+    <!-- Balance fragment -->
+    <string name="get_tx_broadcast_error">广播交易时出错</string>
+
+    <!-- Receive fragment -->
+    <string name="create_new_address">创建新地址吗？</string>
+    <string name="create_new_address_name">别名（可选）</string>
+    <string name="too_many_unused_addresses">未用地址太多，请在创建新地址前使用之前创建的地址。</string>
+
+    <!-- Send fragment -->
+    <!-- Here the %1$s is a detailed error message -->
+    <string name="scan_error">扫描时出现错误： %1$s</string>
+    <!-- Here the \"%1$s\" is the "coin name"-->
+    <string name="amount_error">输入的金额无效。</string>
+    <!-- %1$s is the amount e.g. ... is at least 0.00001 BTC-->
+    <string name="amount_error_not_enough_money_plain">余额不足</string>
+    <!-- %1$s is the wallet balance e.g. ... current balance is 3.1415 BTC-->
+
+    <!-- Set Password fragment -->
+    <!-- Here the \"%1$s\" is the "password"-->
+    <!-- The %1$d is a number of characters, usually 10 characters -->
+    <!-- FinalizeWalletRestorationFragment -->
+    <string name="wallet_restoration_master_key">创建主钥</string>
+    <!-- The %1$s is a coin name e.g. Creating key for Bitcoin -->
+    <string name="wallet_restoration_coin">为 %1$s 创建私钥</string>
+    <!-- The %1$s is an error message -->
+    <string name="wallet_restoration_error">无法恢复账户。\n\n%1$s</string>
+    <!-- PasswordConfirmationFragment -->
+    <string name="enter_password">输入密码</string>
+    <!-- SignTransactionFragment -->
+    <!-- &#8230; is the ... character -->
+    <!-- &#8230; is the ... character -->
+    <string name="sent_msg">已发送！等待确认中。</string>
+    <!-- %1$s is the time remaining e.g. ... in the next 8 minutes 35 seconds-->
+
+    <!-- About Activity -->
+    <!-- Add Coins -->
+    <!-- %1$s is the coin name e.g. ... create a Bitcoin account ... -->
+    <!-- %1$s is the coin name e.g. Add Bitcoin? -->
+    <string name="adding_coin_confirmation_title">添加 %1$s?</string>
+    <!-- %1$s is the coin name e.g. ... a new Bitcoin account -->
+    <string name="adding_coin_working">正在创建%1$s 帐号，请等待。</string>
+    <!-- %1$s is the coin name and %2$s is and error message e.g. Error adding Bitcoin: some error message -->
+    <string name="add_coin_error">添加 %1$s: %2$s 时出错。</string>
+    <!-- %1$s is the coin name e.g. Bitcoin already added -->
+    <!-- Transaction amount visualizer -->
+    <!-- Internal transfer means that the wallet send money to itself.-->
+    <string name="internal_transfer">内部转移</string>
+    <!-- Transaction Details -->
+    <!-- Status of a transaction, could be pending for confirmations or confirmed -->
+    <!-- %d is the number of confirmations -->
+
+    <!-- Exchange Rates -->
+    <!-- %1$s is the symbol of a fiat currency e.g. Set EUR as a ... -->
+
+    <!-- Select Coins -->
+
+    <!-- Previous Addresses -->
+
+    <!-- Edit Address Book Entry -->
+    <!-- Edit Account -->
+    <string name="edit_account_description_label">描述</string>
+    <!-- %1$s is the name of the account e.g. Remove account Bitcoin? -->
+    <!-- Settings -->
+    <string name="pref_title_restore_wallet">恢复账户</string>
+    <string name="pref_title_exchange_rates">兑换汇率</string>
+    <!-- Show Seed -->
+    <string name="title_activity_backup_seed">助记词备份</string>
+    <string name="seed_not_available_title">没有找到恢复密码</string>
+    <string name="seed_not_available">你的恢复密码没有保存在这个设备上。\n尝试恢复账户以解决这个问题。</string>
+    <!-- &#8230; is the ... character -->
+    <string name="seed_working">请等待&#8230;</string>
+    <string name="seed_password_protected">恢复密码有加密保护 (BIP39)</string>
+    <!-- Wallet locked -->
+    <string name="touch_to_decrypt_wallet">触摸解锁</string>
+    <!-- Debugging -->
+    <!-- Overview -->
+    <string name="title_activity_overview">概况</string>
+    <!-- Exchange -->
+    <!-- Exchange Status -->
+
+
+    <!-- Sign Message -->
+    <!-- Messages -->
+    <string name="tx_message_public">公开消息</string>
+    <string name="tx_message_private">私密消息</string>
+    <!-- Account details -->
+
+    <!-- Support -->
+
+    <!-- Sweep wallet -->
+
+    <!-- Fees settings -->
+    <string name="title_activity_transaction_fees">转账手续费</string>
+    <!-- Example: Bitcoin transaction fees-->
+    <string name="tx_fees_title">%1$s 转账手续费</string>
+    <!-- Example: The fee value is per kilobyte.-->
+    <string name="tx_fees_description">手续费是 %1$s.</string>
+    <string name="tx_fees_per_kilobyte">每千字节</string>
+    <string name="tx_fees_per_transaction">每交易</string>
+    <string name="tx_fees_per_gas">汽油价</string>
+    <!-- Terms -->
+    <string name="terms_of_service_title">服务条款</string>
+    <!-- TODO translate to other languages -->
+    <string name="terms_of_service">用户协议</string>
+
+    <string name="group_chats">小密圈</string>
+    <string name="open_group_chats">发起小密圈</string>
+    <string name="password_confirm">确认密码</string>
+
+    <string name="menu_groupchat">小密圈</string>
+    <string name="menu_addfriend">添加朋友</string>
+
+
+    <!-- icon_recive_red add begin -->
+    <string name="title_home">自由沟通</string>
+
+    <string name="tab_title_home">密信</string>
+    <string name="tab_title_wallet">账户</string>
+    <string name="tab_title_exchange">交易</string>
+    <string name="tab_title_my">我</string>
+
+    <!-- icon_recive_red add end -->
+
+    <!-- file dialog -->
+    <string name="menu_scan_qrcode">扫二维码</string>
+    <string name="menu_add_coin">添加币</string>
+
+
+    <!-- bts -->
+
+    <string name="unable_to_load_wif">不能加载WIF私钥</string>
+    <string name="error_wif">创建WIF私钥出错</string>
+
+    <string name="kindly_create_account">创建账户名</string>
+    <string name="please_enter_6_digit_pin">请设置PIN码</string>
+    <string name="pin_number_warning">PIN码至少6位数字</string>
+    <string name="mismatch_pin">PIN码不匹配</string>
+    <string name="error_invalid_account">非法账号，请检查您的私钥助记词</string>
+
+    <string name="please_enter_brainkey">请输入私钥助记词</string>
+    <string name="please_enter_correct_brainkey">请修正私钥助记词</string>
+
+    <string name="account_name_should_be_longer">账户名至少6个字符</string>
+    <string name="account_name_already_exist">账号%s已经存在</string>
+    <string name="account_name_not_exist">账户不存在</string>
+    <string name="account_already_exist">账号已经存在</string>
+
+    <string name="txt_no_internet_connection">没有网络连接</string>
+
+
+    <string name="importing_your_wallet">导入您的账户...</string>
+
+
+    <string name="to_capital">到</string>
+    <string name="from_capital">从</string>
+
+
+    <string name="ok">成功</string>
+
+
+    <string name="str_balance_available">%1$s %2$s 可用</string>
+
+
+    <string name="date_time_zone">时区</string>
+
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+
+
+    // Not to be localized
+    // Not to be localized
+
+
+    <string name="try_again">请等1分钟后再试</string>
+    <string name="unable_to_load_brainkey">不能加载私钥助记词</string>
+    <string name="error_read_dict_file">读取字典文件错误</string>
+    <string name="error_with_message">错误: %s</string>
+    <string name="error_no_message">操作过程中遇到一个错误</string>
+    <string name="account_name_must_include_dash_and_a_number">账户名必须包含中划线和数字</string>
+    <string name="validation_in_progress">正在验证中..</string>
+    <string name="last_letter_cannot">最后一个字符不能为中划线</string>
+    <string name="unable_to_generate_bin_format_for_key">不能生成bin格式的key</string>
+    <string name="saving_bin_file_to">保存Bin文件到</string>
+    <string name="folder_name">onechain</string>
+    <string name="bin_file_saved_successfully_to">Bin文件保存成功</string>
+    <string name="unable_to_save_bin_file">不能保存Bin文件</string>
+    <string name="creating_backup_file">创建备份文件</string>
+    <string name="fetching_key">获取Key</string>
+    <string name="invalid_pin">非法的PIN</string>
+    <string name="generating_bin_format">生成Bin格式</string>
+    <string name="is_already_added">已经添加</string>
+
+
+    <!-- PDF export -->
+
+    <!-- Import Backup activity -->
+    <string name="secure_key_important">数字货币的安全，核心在于助记词安全，请在不能被拍照、摄像、偷看的情况下进行创建！</string>
+
+    <string name="accountname_create_username">账号</string>
+    <string name="accountname_create_username_tips">暂时只支持小写字母和数字，至少6位</string>
+    <string name="accountname_create_nickname">昵称</string>
+    <string name="accountname_create_nickname_tips">请输入昵称</string>
+    <string name="accountname_create_password_tips">请输入8位以上密码</string>
+    <string name="accountname_create_password_tips2">再次输入密码，最少8位</string>
+
+    <string name="accountname_restore_key">助记词</string>
+    <string name="accountname_restore_key_tips">请输入助记词,不建议使用其他APP生成的助记词</string>
+
+    <string name="accountname_friend_username_tips">朋友账号</string>
+    <string name="accountname_friend_nickname">昵称</string>
+    <string name="accountname_friend_nickname_tips">本地好友的昵称</string>
+    <string name="accountname_search">搜索</string>
+
+    <string name="action_ok">确定</string>
+
+    <string name="accountname_create_title">创建账号</string>
+    <string name="accountname_restore_title">恢复账号</string>
+    <string name="action_add_friend">添加好友</string>
+
+    <string name="accountname_create_loading">正在创建账号...</string>
+    <string name="accountname_add_loading">正在添加好友...</string>
+    <string name="create_groupchat_loading">正在创建小密圈...</string>
+
+    <string name="action_have_saved">我已经保存</string>
+
+    <string name="default_chat_sentence">我们已经是好友，开始聊天吧!</string>
+
+    <string name="default_groupchat_sentence"> 邀请%s加入了小密圈!</string>
+
+    <string name="feature_come_soon">即将加入，敬请期待！</string>
+
+    <string name="default_friend_name">密友</string>
+    <string name="default_group_name">小密圈</string>
+
+
+    <string name="text_ack_msg">已读</string>
+    <string name="text_delivered_msg">送达</string>
+    <string name="button_pushtotalk">按住说话</string>
+    <string name="attach_picture">图片</string>
+    <string name="attach_take_pic">拍照</string>
+    <string name="attach_location">位置</string>
+    <string name="attach_file">文件</string>
+    <string name="attach_video_call">视频通话</string>
+    <string name="move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="send_fail">发送失败</string>
+    <string name="delete_message">删除消息</string>
+    <string name="copy_message">复制消息</string>
+    <string name="delete_voice">删除语音</string>
+    <string name="delete_video">删除视频</string>
+    <string name="connect_failuer_toast">请检查网络或稍候重试</string>
+    <string name="forward">转发</string>
+    <string name="prompt">提示</string>
+    <string name="location_recv">[%1$s的位置]</string>
+    <string name="location_prefix">[我的位置]</string>
+    <string name="picture">[图片消息]</string>
+    <string name="video">[视频通话]</string>
+    <string name="file">[文件消息]</string>
+    <string name="voice_call">[语音通话]</string>
+    <string name="voice_msg">[语音消息]</string>
+    <string name="voice">声音</string>
+    <string name="password">密码</string>
+    <string name="downwaiting">正在下载文件请稍后</string>
+    <string name="not_download">未下载:</string>
+    <string name="is_down_please_wait">正在下载视频请稍候</string>
+
+    <string name="expression">[表情]</string>
+    <string name="call_duration">通话时长</string>
+    <string name="Refused">已拒绝</string>
+    <string name="The_other_party_has_refused_to">[对方已拒绝]</string>
+    <string name="The_other_is_not_online">[对方不在线]</string>
+    <string name="The_other_is_on_the_phone">[对方正在通话中]</string>
+    <string name="The_other_party_did_not_answer">[对方未接听]</string>
+    <string name="did_not_answer">[未接听]</string>
+    <string name="Has_been_cancelled">[已取消]</string>
+    <string name="unable_to_get_loaction">无法获取到您的位置信息!</string>
+    <string name="sd_card_does_not_exist">SD卡不存在，不能拍照</string>
+    <string name="cant_find_pictures">找不到图片</string>
+    <string name="File_does_not_exist">文件不存在</string>
+    <string name="The_file_is_not_greater_than_10_m">文件不能大于10M</string>
+    <string name="Whether_to_empty_all_chats">是否清空所有聊天记录</string>
+    <string name="you_are_group">你被群创建者从此群中移除</string>
+    <string name="the_current_group">当前小密圈已被群创建者解散</string>
+    <string name="receive_the_passthrough">收到透传：action：</string>
+    <string name="Into_the_blacklist">移入到黑名单？</string>
+    <string name="Have_downloaded">已下载</string>
+    <string name="Did_not_download">未下载</string>
+
+    <string name="message_send_self">不能给自己发消息</string>
+
+    <string name="gallery">相册</string>
+    <string name="camera">拍照</string>
+    <string name="select_photo">请选择图片</string>
+
+    <string name="transaction_account">交易账户</string>
+
+    <string name="money">金额</string>
+
+    <string name="click_copy">点击可复制</string>
+
+
+    <string name="user_info">个人信息</string>
+
+    <string name="sex">性别</string>
+    <string name="man">男</string>
+    <string name="women">女</string>
+
+
+    <string name="nick_name">昵称</string>
+    <string name="user_intro">简介</string>
+
+    <!--用户交易-->
+    <!--交易队界面-->
+
+    <!--买、卖、委托单界面-->
+
+    <!--format-->
+    <string name="erro_format">%1$s失败</string>
+
+    <string name="success">成功</string>
+    <string name="erro">失败</string>
+
+    <!-- user_trade_title -->
+
+    <string name="zero_value">0.00</string>
+    <string name="zero">0</string>
+
+    <string name="default_user_intro">欢迎来到ONE的世界！</string>
+
+    <string name="default_value">-.--</string>
+
+    <string name="fast_transfer">闪电转账</string>
+
+    <string name="recharge_intro">从本地账户到交易账户</string>
+
+    <string name="save_key_tip">以下15个私钥助记词极其重要！！！\n一旦泄密，将丢失账户内所有账户！\n一旦丢失，将无法找回账户内所有账户！\n\n强烈建议：\n将单词手写，备份多份，放在不同的安全区域！\n\n务必注意：\n请不要在被拍照、摄像、偷看的情况下进行创建！\n严禁将单词在网络传输、放在网盘等不安全环境！</string>
+
+    <string name="user_contract">用户协议</string>
+
+    <string name="user_contract_txt">请遵守各个国家和地区的法律法规，国际公约，以及风俗习惯，请在合法合规的范围内使用本软件，否则请终止</string>
+
+    <!--group-->
+    <string name="change_groupname">修改群名称</string>
+
+
+    <string name="delete_success">删除成功</string>
+
+    <string name="override_wallet_warning_title">删除当前账户?</string>
+    <string name="override_new_wallet_warning_message">创建新账户，将删除当前账户，如果您已经备份私钥助记词，可以再用它恢复。</string>
+
+    <string name="send_msg">发消息</string>
+
+    <string name="message_num">消息数</string>
+
+    <string name="clear_chat_msg">清空聊天信息</string>
+    <string name="change_user_local_name">修改好友备注</string>
+
+    <string name="group_name">群名称</string>
+
+    <string name="contacts">通讯录</string>
+
+    <string name="add_symbol">+</string>
+
+    <string name="lock_status_input">请输入您的手势密码</string>
+    <string name="lock_status_create">为了减少您输入密码次数，请设置手势密码</string>
+    <string name="lock_status_create_sure">请再次输入手势密码</string>
+    <string name="lock_status_correct">输入正确</string>
+    <string name="lock_status_wrong">密码输入错误，您还可以输入%1$d次</string>
+    <string name="lock_status_second_wrong">与首次输入不一致，请重新输入</string>
+
+    <string name="click_back_again">再次按返回键退出</string>
+
+    <string name="reset">重新设置</string>
+    <string name="forget_lock">忘记手势密码</string>
+    <string name="change_lock_psw">修改手势密码</string>
+
+    <string name="account_name_length_erro">用户名长度不足，至少6位</string>
+    <string name="password_length_erro">密码长度不足，至少8位</string>
+    <string name="password_second_erro">密码不一致</string>
+
+    <string name="register_error">注册失败</string>
+
+    <string name="clear_mesage_success">清除成功</string>
+    <string name="clear_mesage_tip">确认清除聊天记录？</string>
+
+    <string name="forget_password">忘记密码</string>
+
+    <string name="select_langurafe">切换语言</string>
+
+    <string name="make_sure_save_seed">确认保存助记单词？</string>
+
+    <string name="send_location">发送位置</string>
+
+    <string name="msg_asset">[闪电转账]</string>
+
+    <string name="hint_chat_edittext">&#160;正在与%1$s聊天</string>
+    <string name="hint_groupchat_edittext">&#160;正在群聊</string>
+
+    <string name="make_sure_call_to">确定拨打给</string>
+
+    <string name="call">拨打电话</string>
+    <string name="perm_tip">
+        当前应用缺少必要权限。\n请点击"设置"-"权限"-打开所需权限。\n最后点击两次后退按钮，即可返回。
+    </string>
+    <string name="ask_again">请给予应用必要权限，让程序可正常工作。</string>
+
+
+    <!--k线-->
+    <string name="string_close">关闭</string>
+    <string name="landscape">横屏</string>
+    <string name="string_network_disconnect">网络不可用，请检查网络</string>
+
+    <string name="new_group_message">有新群消息</string>
+
+    <string name="lock_status_too_short">至少连接%1$d个，请重试</string>
+
+    <string name="no_history_tip">您目前还没有记录～</string>
+
+
+    <string name="open_out_browser">在浏览器中打开</string>
+    <string name="copy_url">复制链接</string>
+
+    <!--keep service alive start-->
+    <string name="keep_service_alive_reason">为了接收离线消息</string>
+    <string name="white_list_tip_title_power">需要忽略%1$s 的电池优化</string>
+    <string name="white_list_tip_msg_power">%1$s需要%2$s 加入到电池优化的忽略名单。\n\n请点击『确定』，在弹出的『忽略电池优化』对话框中，选择『是』。</string>
+    <string name="white_list_tip_title_close_screen_clean">%1$s 需要加入锁屏清理白名单</string>
+    <string name="white_list_tip_msg_close_screen_clean">%1$s需要%2$s 加入到锁屏清理白名单。\n\n请点击『确定』，在弹出的『锁屏清理』列表中，将 %2$s 对应的开关打开。</string>
+    <string name="white_list_tip_title_xiaomi_hide_model">需要关闭  %1$s 的神隐模式</string>
+    <string name="white_list_tip_title_run_backend">需要允许 %1$s 保持后台运行</string>
+    <string name="white_list_tip_msg_run_backend">%1$s需要允许 %2$s 保持后台运行。\n\n请点击『确定』，在弹出的应用信息界面中，将『后台管理』选项更改为『保持后台运行』。</string>
+    <string name="white_list_tip_msg_run_backend_meizu">%1$s需要 %2$s  在待机时保持运行。\n\n请点击『确定』，在弹出的『待机耗电管理』列表中，将 %2$s 对应的开关打开。</string>
+    <string name="white_list_tip_msg_run_backend_lenovo">%1$s需要允许 %2$s  的后台自启、后台 GPS 和后台运行。\n\n请点击『确定』，『后台管理』中，分别找到『后台自启』、『后台 GPS』和『后台运行』，将 %2$s 对应的开关打开。</string>
+    <string name="white_list_tip_msg_run_backend_lenovo_god">%1$s需要禁止 %2$s   被自动清理。\n\n请点击『确定』，在弹出的『后台耗电优化』中，将 %2$s 对应的开关关闭。</string>
+    <string name="white_list_tip_msg_run_backend_vivo">%1$s需要 %2$s  在待机时保持运行。\n\n请点击『确定』，在弹出的『后台高耗电』列表中，将 %2$s 对应的开关打开。</string>
+    <string name="white_list_tip_title_green_backend">%1$s 需要加入应用自启和绿色后台白名单</string>
+    <string name="white_list_tip_msg_green_backend">%1$s需要允许 %2$s  的自启动和后台运行。\n\n请点击『确定』，在弹出的『系统管家』中，分别找到『应用管理』->『应用自启』和『绿色后台』->『清理白名单』，将 %2$s添加到白名单。</string>
+    <string name="white_list_tip_msg_run_not_clean_backend">%1$s需要禁止 %2$s   被自动清理。\n\n请点击『确定』，在弹出的『应用保护』中，将 %2$s 对应的开关关闭。</string>
+    <!--keep service alive stop-->
+
+    <string name="sure_delete_user">确认删除群成员</string>
+
+
+    <string name="my_qr_code">我的二维码</string>
+    <string name="my_qr_code_tip">扫一扫上面的二维码图案，加我好友</string>
+
+    <string name="chat_info">聊天信息</string>
+
+    <string name="share_group">分享群</string>
+
+    <string name="join_group_tip">%1$s加入群聊</string>
+    <string name="group_public_status">群类型</string>
+    <string name="public_group">公开群</string>
+    <string name="private_group">私密群</string>
+
+    <string name="register_request_ok">注册成功</string>
+    <string name="register_request_user_exist">用户名已存在</string>
+    <string name="register_request_unknown_registrar">注册商错误</string>
+    <string name="register_request_unknown_referrer">邀请码错误</string>
+    <string name="register_request_param_error">参数错误</string>
+    <string name="register_request_server_error">服务错误</string>
+    <string name="register_request_name_error">用户名错误</string>
+    <string name="register_request_create_user_exist">用户名已存在</string>
+
+    <string name="recharge_search_tip">已经开始转入交易账户入账</string>
+
+    <string name="upgrade_tip">升级提示</string>
+    <string name="update_ok">升级</string>
+
+    <string name="group_invite_url">点击复制群邀请链接</string>
+
+    <string name="download_error">文件下载失败</string>
+    <string name="download_error_retry">文件下载失败,点击重试</string>
+    <string name="download_ok">下载完成,请点击安装</string>
+    <string name="downloading_new_apk">正在下载最新版本</string>
+    <string name="downloading">正在下载,请稍后...</string>
+
+    <string name="write_file">文件</string>
+
+
+    <string name="group_url_start">点开链接加入群组:</string>
+
+    <string name="null_this_friend">查找不到该好友</string>
+
+    <string name="msg_red_packet">[红包]</string>
+    <string name="red_packet">红包</string>
+
+    <string name="send_red_packet">发红包</string>
+    <string name="select_coin_type">选择币种</string>
+    <string name="send_red_packet_text">塞币进红包</string>
+    <string name="red_packet_default_msg">恭喜发财，大吉大利</string>
+    <string name="red_packet_message">留言</string>
+    <string name="red_packet_num">红包个数</string>
+    <string name="red_packet_total_amount">总金额</string>
+    <string name="red_packet_item_amount">单个金额</string>
+
+    <string name="simple_red_packet_tip">每人收到固定金额，</string>
+    <string name="lucky_red_packet_tip">每个人抽到的金额随机，</string>
+    <string name="set_lucky_red_packet">改为拼手气红包</string>
+    <string name="set_simple_red_packet">改为普通红包</string>
+
+    <string name="please_select_coin_type">请选择红包币种</string>
+
+    <string name="red_packet_num_cant_zero">红包个数不能为0</string>
+    <string name="item">个</string>
+    <string name="red_packet_value_cant_zero">红包金额不能为0</string>
+
+    <string name="group_member_num">本群共%1$d人</string>
+
+    <string name="one_red_packet">红包</string>
+    <string name="look_red_packet">查看红包</string>
+
+    <string name="red_packet_info">红包详情</string>
+
+    <string name="red_packet_text">发了一个红包</string>
+
+    <string name="app_crash_tip">很抱歉，程序遭遇异常，即将退出！</string>
+
+    <string name="check_sign">验证签名</string>
+
+    <string name="user_invite_url_start">点开链接加我好友:</string>
+
+    <string name="make_sure_seed">验证助记词</string>
+    <string name="make_sure_seed_error_tip">助记词验证错误，请检查后重试</string>
+
+    <string name="transfer_fee">交易费用</string>
+    <string name="red_packet_account">在线账户</string>
+
+    <string name="transfer_fee_need_more">交易费用不足</string>
+
+    <string name="make_sure_seed_tip">根据你记下的助记词，按顺序点击，验证你备份的助记词正确无误</string>
+
+    <string name="in_onechain">转入交易账户</string>
+    <string name="out_onechain">转入多链账户</string>
+
+    <string name="redpacket_open_failed">打开红包失败</string>
+    <string name="redpacket_send_failed">发送红包失败</string>
+
+    <string name="register_request_exceeded_max_number">注册超过最大次数</string>
+
+    <string name="social_redpacket">社交红包</string>
+    <string name="social_redpacket_tip">已生成社交红包\n请分享到第三方或者复制链接发送</string>
+
+    <string name="tap_copy_url">点击复制链接</string>
+    <string name="social_redpacket_url_start">币圈全能APP起航，大家快来抢全币种红包！</string>
+
+    <string name="quit_social_redpacket_tip">请确认您已分享或复制红包链接</string>
+
+    <string name="get_asset_list_error">获取资产列表失败</string>
+
+    <string name="out_chat_group">退出群聊</string>
+
+    <string name="seed">助记词</string>
+    <string name="create_seed">生成助记词</string>
+    <string name="input_seed">已有助记词注册</string>
+
+    <string name="add_trade_team">添加交易对</string>
+    <string name="look_all_group_members">查看全部群成员</string>
+    <string name="group_members">群成员</string>
+
+    <string name="delete_failed">删除失败</string>
+    <string name="add_error">添加失败</string>
+
+    <string name="switch_service_node">节点检测</string>
+
+    <string name="config_service_node_ing">稍等片刻，正在为您自动选择节点...</string>
+
+    <string name="account_name_cannot_number_start">账号不能以数字开头</string>
+
+    <string name="action_paste">粘贴</string>
+    <string name="action_clear">清除</string>
+    <string name="choose_seed">选择助记词</string>
+    <string name="search_seed">搜索助记词</string>
+    <string name="pasteboard_is_null">剪切板为空,请先拷贝助记词</string>
+
+    <string name="make_sure_delete_msg">您确定要删除该聊天吗？</string>
+
+    <string name="test_service_node_done">节点检测完成</string>
+
+    <string name="make_sure_delete_tip">确认删除?</string>
+
+    <string name="add_success">添加成功</string>
+
+    <string name="app_not_need_update">已是最新版本</string>
+
+    <string name="can_not_remain_one">剩余ONE币不能少于2个,将用于手续费</string>
+
+    <string name="update_user_info">正在同步用户信息</string>
+
+    <string name="register_request_seed_has_register">助记词已被使用,可用助记词恢复账号</string>
+
+    <string name="setting_more">更多</string>
+
+    <string name="no_notification_tip">当前应用缺少通知权限。\n请点击"设置"-"通知栏"-打开通知权限。</string>
+
+    <string name="over_seed_word_num_two">助记词个数不正确</string>
+
+    <string name="jump_pass">跳过</string>
+
+    <string name="message_prompt">ONE是一个工具，会尽量支持更多数字货币，请谨慎投资，注意风险。</string>
+
+    <string name="no_message">暂无更多消息</string>
+
+    <string name="new_chat_message_num">%1$d条新消息</string>
+
+    <string name="verification_seed">验证助记词</string>
+    <string name="input_infomation">填写信息</string>
+    <string name="register_completed">注册完成</string>
+
+    <string name="please_rember_the_key">请抄好15个助记单词</string>
+    <string name="you_just_do_this">您只可以用这些单词恢复账户！\n一旦丢失，资产将无法找回！一旦泄漏，资产将会被盗！</string>
+    <string name="safe_tip">安全提示:</string>
+    <string name="red1_tip">*建议手写或保存在离线设备中</string>
+    <string name="red2_tip">*建议注册后立即恢复一次，以确保安全</string>
+    <string name="now_bangding">立即绑定</string>
+    <string name="sync_account_fail">同步信息失败</string>
+
+    <string name="action_back">返回</string>
+    <string name="group_leave_fail">退出群组失败</string>
+
+    <string name="search_seed_tip">按顺序，一次输入一个单词</string>
+
+
+    <string name="add_network_sataus">添加节点</string>
+    <string name="server_ip">服务器IP</string>
+    <string name="please_write_server_ip">请输入服务器IP</string>
+    <string name="port_num">端口</string>
+    <string name="please_write_port_num">请输入端口</string>
+    <string name="detection_and_use">检测并应用</string>
+    <string name="clear_network_status">清除节点</string>
+
+    <string name="mining">挖矿</string>
+    <string name="mining_income">挖宝收入</string>
+
+    <string name="finish_verify">完成验证</string>
+    <string name="skip_verify">跳过验证</string>
+    <string name="no_screen_shoot">请认真抄写，不要用截屏的方式保管助记词。</string>
+
+    <string name="next_step">下一步</string>
+
+    <string name="please_verify_your_seed">为保证您的资产安全，请先备份并验证您的助记词！</string>
+    <string name="now_verify">立即验证</string>
+
+    <string name="release_to_cancel">松开手指，取消发送</string>
+    <string name="Send_voice_need_sdcard_support">发送语音需要sdcard支持</string>
+    <string name="recoding_fail">录音失败，请重试！</string>
+    <string name="Recording_without_permission">无录音权限</string>
+    <string name="The_recording_time_is_too_short">录音时间太短</string>
+    <string name="send_failure_please">发送失败，请检测服务器是否连接</string>
+
+    <string name="choose_brainkey_file">在文件夹选择加密助记词文件</string>
+    <string name="click_encrypt_file_address">点击选择加密助记词文件地址</string>
+    <string name="password_while_export_seed">请输入导出加密助记词时使用的账户密码</string>
+    <string name="start_recover">开始恢复</string>
+
+    <string name="export_encrypted_seed">导出加密助记词</string>
+    <string name="saved_offline">离线保存</string>
+    <string name="copy_and_paste_encrypt_brainkey">请复制粘贴加密助记词文件到安全、离线的地方保存。切勿保存至邮箱、记事本、网盘、聊天工具等，非常危险。</string>
+    <string name="transmission_offline_title">请勿使用网络传输</string>
+    <string name="transmission_offline_content">请勿通过网络工具传输加密助记词，一旦被黑客获取将造成不可挽回的资产损失。</string>
+    <string name="remember_password_title">请牢记导出加密助记词时使用的账户密码</string>
+    <string name="remember_password_content">请牢记导出加密助记词时使用的账户密码，使用加密助记词文件恢复账号时必须使用该密码。</string>
+    <string name="derive_encrypt_brainkey_address">导出加密助记词到该地址</string>
+
+    <string name="encrypted_seed">加密助记词</string>
+    <string name="test_service_fail_tip_choose">节点有问题发送邮件联系客服\n</string>
+    <string name="never_remind">不再提醒</string>
+    <string name="whether_export_immediately">是否立即导出加密助记词</string>
+    <string name="export_immediately">立即导出</string>
+    <string name="no_file_supervisor">没有文件管理器</string>
+    <string name="keep_account_password_in_mind">请牢记该密码，该密码将成为账户密码</string>
+
+    <string name="invitation_code">邀请码:</string>
+    <string name="export_seed_success">导出加密助记词成功</string>
+    <string name="write_referrer_account">请输入邀请码</string>
+    <string name="no_regist_phone">尚未验证，绑定手机号增加挖矿算力！</string>
+    <string name="sign_add_mining_power">每日签到 算力+%1$s</string>
+
+    <string name="save_to_phone">保存到手机</string>
+    <string name="save_to_phone_success">已保存到手机</string>
+
+    <string name="please_retry_create">请再次点击注册</string>
+
+    <string name="error_invalid_account_or_pass">非法账号，请检查您的私钥助记词或密码</string>
+
+    <string name="group_chat_send_url_tip">群聊发链接要发红包哦～</string>
+
+    <string name="perm_tip_format">
+        当前应用缺少%1$s权限。\n请点击"设置"-"权限"-打开所需权限。\n最后点击两次后退按钮，即可返回。
+    </string>
+
+    <string name="refresh_node_then_retry">请刷新节点后重试</string>
+    <string name="recover_account_fail">恢复账户失败</string>
+
+    <string name="join_group_error">加入群组失败</string>
+
+    <string name="error_no_account">账号不存在</string>
+
+    <string name="newton_plan">牛顿计划</string>
+
+    <string name="money_go_and_out">法币出入</string>
+
+    <string name="service_node_plan">节点计划</string>
+    <string name="video_course">帮助与反馈</string>
+
+    <string name="from_transaction_account">来自交易账户</string>
+
+    <string name="no_create_group_auth">您没有建群权限</string>
+
+    <string name="release_to_close">松开结束</string>
+
+    <string name="record_error_permission">录音失败，请检查权限</string>
+
+    <string name="upload_file_error">文件上传失败</string>
+
+    <string name="file_overdue">文件过期</string>
+    <string name="loading">加载中...</string>
+    <string name="img_overdue">图片已过期</string>
+
+    <string name="image_save_fail">图片保存失败</string>
+    <string name="image_save_success">图片保存成功</string>
+
+    <string name="group_manage">群管理</string>
+    <string name="group_id">群ID</string>
+    <string name="group_qr_code">群二维码</string>
+    <string name="group_notice">群公告</string>
+
+    <string name="my_nickname_in_group">我在本群昵称</string>
+
+    <string name="group_clean_chatting_records">清空聊天记录</string>
+    <string name="group_receive_message">接受群推送</string>
+
+    <string name="video_uploading">视频处理中...</string>
+    <string name="video_upload_ok">视频已上传</string>
+
+    <string name="reply_weibo">回复帖子</string>
+    <string name="null_shuoshuo">原帖子已删除</string>
+    <string name="reply">回复</string>
+    <string name="share">分享</string>
+    <string name="copy">复制</string>
+
+    <string name="zhuanfa_weibo_hint">帖子分享心得...</string>
+
+    <string name="balance">余额&#160;&#160;</string>
+    <string name="other_money">其他金额</string>
+    <string name="submit_shang">确认赞赏</string>
+    <string name="zanshang">赞赏</string>
+    <string name="comment">评论</string>
+    <string name="video_checking">视频审核中</string>
+    <string name="shang_tip">看完分享给作者打个赏，或发表评论告诉作者你的看法</string>
+    <string name="pay">支付</string>
+    <string name="report">举报</string>
+    <string name="no_next_page">无更多数据</string>
+    <string name="more_weibo_msg">查看更早的消息</string>
+
+    <string name="group_community">社区</string>
+    <string name="group_notifications">群组通知</string>
+
+    <string name="clean_list">清空列表</string>
+
+    <string name="set_pay_weibo">设置为收费内容</string>
+
+    <string name="button_check_means_card">查看资料</string>
+    <string name="button_set_as_manager">设为管理员</string>
+    <string name="button_banned_to_post">禁言</string>
+    <string name="button_from_group_delete">从本群中删除</string>
+    <string name="button_add_blacklist">移除并加入黑名单</string>
+
+    <string name="keyword">关键词</string>
+    <string name="input_content">输入内容</string>
+    <string name="no_sensitive_character">禁止出现敏感字符。</string>
+    <string name="publish">发表</string>
+    <string name="release_invitation">发布帖子</string>
+    <string name="setting_charge_content">设置为收费内容</string>
+
+    <string name="all">全部</string>
+    <string name="essence">精华</string>
+    <string name="charge">收费</string>
+    <string name="free">免费</string>
+
+    <string name="order_by_time">最新发布</string>
+    <string name="order_by_comment">评论最多</string>
+    <string name="order_by_profit_up">看涨排序</string>
+    <string name="order_by_profit_down">看跌排序</string>
+    <string name="order_by_shang">赞赏数</string>
+    <string name="order_by_comment_time">最新评论</string>
+
+    <string name="chat_all_banned_to_post">全体禁言</string>
+    <string name="chat_owner">所有人</string>
+    <string name="message_center">消息中心</string>
+    <string name="button_refuse">拒绝</string>
+    <string name="heading_qrcode_to_img">识别图中二维码</string>
+
+    <string name="input_join_group_psw">请输入加群密码</string>
+    <string name="content_too_short">内容太短</string>
+    <string name="content_too_long">内容超过最大限度</string>
+
+    <string name="set_admin_success">设置管理员成功</string>
+    <string name="limits_of_authority">权限不足</string>
+    <string name="user_not_in_group">该用户不在群中</string>
+    <string name="admin_counts_limit">管理员人数达到上限</string>
+    <string name="mute_member_success">禁言成功</string>
+    <string name="add_member_to_blacklist_success">添加黑名单成功</string>
+    <string name="reward_amount">赞赏金额</string>
+    <string name="failed_to_reward">赞赏失败</string>
+    <string name="articles_no_more">没有更多数据</string>
+    <string name="article_detail">详情</string>
+    <string name="article_set_essence">设置精华</string>
+    <string name="article_report_success">举报成功</string>
+    <string name="article_has_reported">您已举报过该帖子</string>
+    <string name="article_essence_success">设置精华成功</string>
+
+    <string name="is_sure_to_forgive_this">确定放弃当前编辑吗</string>
+
+    <string name="write_key_word">输入关键词</string>
+
+    <string name="charge_amount">收费金额</string>
+
+    <string name="group_chat">聊天</string>
+
+    <string name="weibo_msg">消息</string>
+
+    <string name="someone_at_me">[有人@我]</string>
+
+    <string name="pls_wait_examine">请等待审核</string>
+    <string name="group_not_exist">该群不存在</string>
+    <string name="already_in_group">您已在该群</string>
+    <string name="in_group_blacklist">您在该群黑名单中</string>
+
+    <string name="you_in_ban">你已被禁言</string>
+    <string name="all_in_ban">全员禁言中</string>
+
+    <string name="msg_not_enough_balance">该消息需要发红包,您的余额不足</string>
+
+
+    <string name="push_comment_weibo">评论了你的帖子</string>
+    <string name="push_reward_weibo">赞赏了你的帖子</string>
+    <string name="push_pay_weibo">查看了你的收费内容</string>
+    <string name="group_password_error">加群密码错误</string>
+
+    <string name="not_enough_money_todo">该操作需要消耗资产,您的余额不足</string>
+
+    <string name="to_pay_a_oneluck">您已支付</string>
+
+    <string name="audit_join">申请加入</string>
+
+    <string name="group_created_count_exceed">创建群个数超过上限</string>
+
+    <string name="weibo_video_max_tip">视频最大支持上传500M</string>
+
+    <string name="pls_open_device_permission">请打开允许访问手机设备信息的权限,否则可能注册失败</string>
+
+    <string name="reward_message">赞赏消息</string>
+
+    <string name="send_add_friend_msg">发送好友申请</string>
+    <string name="send_add_success">已发送好友申请</string>
+
+    <string name="new_friend">新的朋友</string>
+    <string name="group_invitation">群组邀请</string>
+
+    <string name="group_max_people">群人数达到上限</string>
+
+    <string name="remark_length_exceed">备注超过字数限制</string>
+    <string name="already_agree">已同意</string>
+    <string name="already_refuse">已拒绝</string>
+
+    <string name="pls_wait_apply">邀请已发送，请等待对方审核</string>
+
+    <string name="delete_friend">删除好友</string>
+
+    <string name="input_apply_msg">请输入验证信息</string>
+
+    <string name="apply_add_friend">申请加为好友</string>
+
+    <string name="invite_you_join_group">邀请您加入群</string>
+
+
+    <string name="pls_add_friend">请先添加好友</string>
+
+    <string name="order_has_change">您的订单有变化</string>
+    <string name="order_id">订单ID:</string>
+
+    <string name="create_a_group">创建了群聊</string>
+
+    <string name="my_group_chat">群聊</string>
+
+    <string name="i_am">我是</string>
+
+    <!--人脸识别-->
+    <string name="verify_completion">认证完成</string>
+    <string name="verify_error_retry">认证失败，请重新进行认证</string>
+    <string name="face_has_verified">已经进行过人脸验证</string>
+
+    <string name="trade_dividend">分红宝</string>
+    <string name="trade_mining">交易挖矿</string>
+
+    <string name="invitation_code_must">邀请码(选填):</string>
+
+    <string name="announcement">公告</string>
+
+    <string name="one_private_key">ONE私钥</string>
+
+
+    <string name="select_skin">切换皮肤</string>
+    <string name="default_skin">经典皮肤</string>
+    <string name="black_skin">黑金皮肤</string>
+
+    <string name="my_tools">我的工具</string>
+
+    <string name="dapp_application">Dapp应用</string>
+    <string name="task">任务</string>
+    <string name="eth_standard">ETH规范</string>
+
+    <string name="other_service">第三方服务</string>
+    <string name="news">新闻</string>
+    <string name="quotation">行情</string>
+    <string name="news_flash">快讯</string>
+
+    <string name="make_sure_delete">确认删除</string>
+
+    <string name="authority">官方</string>
+
+</resources>

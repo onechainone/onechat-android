@@ -1,0 +1,424 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sdk.android.onechatui">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppThemeNoTitleBar">
+
+        <!-- android:resizeableActivity="true" -->
+        <!-- android:largeHeap="true" -->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="oneapp.onechat.oneandroid.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+        <!--<activity-->
+            <!--android:name="onemessageui.SplashActivity"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/AppThemeSplash">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.VIEW" />-->
+
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<category android:name="android.intent.category.BROWSABLE" />-->
+
+                <!--<data-->
+                    <!--android:hoonechathain.one"-->
+                    <!--android:scheme="oneapp" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+        <activity
+            android:name="onemessageui.chat.AlertDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="onewalletui.ui.ScanActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:stateNotNeeded="true"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="onemessageui.view.activity.SendRedPacketActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="onemessageui.view.activity.SocialRedPacketActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="onemessageui.view.activity.OtherUserInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- <activity -->
+        <!-- android:name="ui.IOUAccountTransferActivity" -->
+        <!-- android:theme="@style/AppThemeNoTitleBar" -->
+        <!-- android:windowSoftInputMode="adjustResize" /> -->
+        <activity
+            android:name="onemessageui.view.activity.MakeSureSeedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="onemessageui.view.activity.SimpleWebViewActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="sensor"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+        <activity
+            android:name="onemessageui.view.activity.UnlockActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="onemessageui.view.activity.MyQrCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name="onemessageui.view.activity.AddFriendActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="onemessageui.view.activity.CheckSignActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="onemessageui.view.activity.CreateSeedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="onemessageui.view.activity.NativeWebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="onemessageui.view.activity.TencentMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="onemessageui.view.activity.DeriveBrainkeyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="onemessageui.chat.ContextMenu"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="onemessageui.community.activity.SendWeiboActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="onemessageui.community.activity.WeiboContentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="onemessageui.community.video.VideoPlayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="onemessageui.community.activity.WeiboListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="onemessageui.community.activity.WeiboMsgListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="onemessageui.community.activity.SetWeiboPayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="onemessageui.community.activity.PayWeiboActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <service android:name="onemessageui.view.UpdateService" />
+        <activity android:name="onemessageui.community.activity.ImagePagerActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 朋友圈分享 -->
+        <!-- <activity -->
+        <!-- android:name="oneapp.onemessage.view.activity.ShareActivity" -->
+        <!-- android:label="@string/app_name"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.SEND" /> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+
+
+        <!-- <data android:mimeType="image/*" /> -->
+        <!-- </intent-filter> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.SEND" /> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+
+
+        <!-- <data android:mimeType="text/plain" /> -->
+        <!-- </intent-filter> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.SEND_MULTIPLE" /> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+
+
+        <!-- <data android:mimeType="image/*" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+
+
+        <!-- 消息开始 -->
+        <activity
+            android:name="onemessageui.chat.NewChatActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="onemessageui.view.activity.AddGroupChatActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name="onemessageui.view.activity.FriendsListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="onemessageui.view.activity.GroupListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="onemessageui.view.activity.GroupSettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name="onemessageui.view.activity.GroupMembersActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name="onemessageui.view.activity.DeleteGroupMemberActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+
+        <activity
+            android:name="onemessageui.view.activity.TestServiceNodeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name="onemessageui.view.activity.SwitchServiceNodeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name="onemessageui.view.activity.InputSeedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="onemessageui.chat.ShowBigImage"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name="onemessageui.chat.ShowNormalFileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name="onemessageui.chat.ShowVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="onemessageui.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="RB2BZ-HSDK6-BGLS5-MWE6Y-GBRG6-7SBVT" />
+
+        <!-- ShareSDK -->
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="22ae18d2ab76c" />
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="79f89ba63a142c1721b1c6e8cb7b9143" />
+
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!--
+            	AuthorizeAdapter表示一个继承自cn.sharesdk.framework.authorize.AuthorizeAdapter
+            	的类，这个类可以监听到页面的生命周期，也可以获取授权页面的各种UI控件。
+            	开发者可以通过继承AuthorizeAdapter，重写其方法，并获取各种UI来自定义这个页面的行为。
+            -->
+            <meta-data
+                android:name="AuthorizeAdapter"
+                android:value="cn.sharesdk.demo.MyAdapter" />
+            <meta-data
+                android:name="FBWebShareAdapter"
+                android:value="cn.sharesdk.demo.FBWebShareAdapter" />
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 集成Line客户端登录授权，需要添加如下格式的过滤器 -->
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="line.1477692153" />
+            </intent-filter>
+        </activity>
+
+        <!-- keep_service_alive start -->
+        <receiver
+            android:name="oneapp.onechat.oneandroid.onewallet.keepservicealive.WakeUpReceiver"
+            android:process=":watch">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="com.xdandroid.hellodaemon.CANCEL_JOB_ALARM_SUB" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="oneapp.onechat.oneandroid.onewallet.keepservicealive.WakeUpReceiver$WakeUpAutoStartReceiver"
+            android:process=":watch">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="oneapp.onechat.oneandroid.onewallet.keepservicealive.AbsWorkService$WorkNotificationService" />
+        <service
+            android:name="oneapp.onechat.oneandroid.onewallet.keepservicealive.JobSchedulerService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":watch" />
+        <service
+            android:name="oneapp.onechat.oneandroid.onewallet.keepservicealive.WatchDogService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":watch" />
+        <service
+            android:name="oneapp.onechat.oneandroid.onewallet.keepservicealive.WatchDogService$WatchDogNotificationService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":watch" />
+        <!-- keep_service_alive stop -->
+
+        <activity
+            android:name="onemessageui.view.activity.WaitReviewActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="onemessageui.view.activity.GroupQrCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="onemessageui.view.activity.FriendApplyActivity" />
+        <activity android:name="onemessageui.view.activity.GroupApplyActivity" />
+
+        <service android:name="onewalletui.service.DownAPKService" />
+
+        <receiver
+            android:name="onemessageui.mpush.MPushReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.mpush.HEALTH_CHECK" />
+                <action android:name="com.mpush.NOTIFY_CANCEL" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="onemessageui.mpush.MPushService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote" />
+
+        <!-- android:process=":remote" -->
+        <service android:name="onemessageui.mpush.MPushFakeService" />
+
+        <receiver
+            android:name="onemessageui.mpush.MyReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.mpush.MESSAGE_RECEIVED" /> <!-- 收到PUSH消息 -->
+                <action android:name="com.mpush.KICK_USER" /> <!-- 收到踢人消息 -->
+                <action android:name="com.mpush.CONNECTIVITY_CHANGE" /> <!-- 收到链接变化 -->
+                <action android:name="com.mpush.HANDSHAKE_OK" /> <!-- 收到握手成功消息 -->
+                <action android:name="com.mpush.BIND_USER" /> <!-- 收到绑定用户消息 -->
+                <action android:name="com.mpush.UNBIND_USER" /> <!-- 收到解绑用户消息 -->
+
+
+                <!-- 此值要改为自己的应用的applicationId  @see MPushService -->
+                <category android:name="oneapp.onechat.androidapp" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_background_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_25"
+        android:background="@color/base_bg_color_level1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_simple_10"
+        android:paddingLeft="@dimen/margin_large_15"
+        android:paddingRight="@dimen/margin_large_15"
+        android:paddingTop="@dimen/padding_simple_10">
+
+        <TextView
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="wrap_content"
+            android:text="@string/server_ip"
+            android:textColor="@color/black_second"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/et_service_ip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/please_write_server_ip"
+            android:padding="@dimen/padding_little_5"
+            android:textColor="@color/black_second"
+            android:textColorHint="@color/hint_gray"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large_15"
+        android:background="@color/base_bg_color_level1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_simple_10"
+        android:paddingLeft="@dimen/margin_large_15"
+        android:paddingRight="@dimen/margin_large_15"
+        android:paddingTop="@dimen/padding_simple_10">
+
+        <TextView
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="wrap_content"
+            android:text="@string/port_num"
+            android:textColor="@color/black_second"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/et_service_node"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/please_write_port_num"
+            android:padding="@dimen/padding_little_5"
+            android:textColor="@color/black_second"
+            android:textColorHint="@color/hint_gray"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_60"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_add_node"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="@dimen/simple_btn_height"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:background="@color/base_color_transparent"
+            android:gravity="center"
+            android:text="@string/detection_and_use"
+            android:textColor="@color/base_bg_color_level1"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/btn_clear_node"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="@dimen/simple_btn_height"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:background="@color/base_color"
+            android:gravity="center"
+            android:text="@string/clear_network_status"
+            android:textColor="@color/base_bg_color_level1"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+</LinearLayout>

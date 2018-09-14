@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/base_bg_color_level1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/view_new_friends"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_54"
+        android:background="@drawable/base_click_bg_white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_little_8"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/padding_simple_10"
+            android:src="@drawable/icon_new_friend" />
+
+        <TextView
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_simple_10"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/new_friend"
+            android:textColor="@color/base_text_color_level1"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_new_friend_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:background="@drawable/unread_msg_num_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding_little_4"
+            android:paddingRight="@dimen/padding_little_4"
+            android:textColor="@color/tint_text_color"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_1dp"
+        android:background="@color/base_background_bg" />
+
+    <LinearLayout
+        android:id="@+id/view_new_groups"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_54"
+        android:background="@drawable/base_click_bg_white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_little_8"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/padding_simple_10"
+            android:src="@drawable/icon_new_group" />
+
+        <TextView
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_simple_10"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/group_invitation"
+            android:textColor="@color/base_text_color_level1"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_new_group_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:background="@drawable/unread_msg_num_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding_little_4"
+            android:paddingRight="@dimen/padding_little_4"
+            android:textColor="@color/tint_text_color"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_1dp"
+        android:background="@color/base_background_bg" />
+
+    <LinearLayout
+        android:id="@+id/view_all_groups"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_54"
+        android:background="@drawable/base_click_bg_white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_little_8"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/padding_simple_10"
+            android:src="@drawable/icon_group_list" />
+
+        <TextView
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_simple_10"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/my_group_chat"
+            android:textColor="@color/base_text_color_level1"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_large_15"
+            android:background="@drawable/unread_msg_num_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding_little_4"
+            android:paddingRight="@dimen/padding_little_4"
+            android:textColor="@color/tint_text_color"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

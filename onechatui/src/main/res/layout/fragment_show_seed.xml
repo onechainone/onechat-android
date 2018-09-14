@@ -1,0 +1,323 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg_color_level1"
+    android:orientation="vertical"
+    tools:context="oneapp.onechat.oneandroid.onewallet.ui.ShowSeedFragment">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:id="@+id/title_brainkey"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/brainkey_recover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/accountname_restore_key"
+                android:textColor="@color/black_second"
+                android:textSize="@dimen/text_size_14" />
+
+            <View
+                android:id="@+id/view_brainkey_recover"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="@dimen/dimen_4"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@drawable/switch_cursor_bg" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pass_brainkey_recover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/mnemonic_recovery_background"
+                android:gravity="center"
+                android:text="@string/encrypted_seed"
+                android:textColor="@color/black_second"
+                android:textSize="@dimen/text_size_14" />
+
+            <View
+                android:id="@+id/view_pass_brainkey_recover"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="@dimen/dimen_4"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@drawable/switch_cursor_bg"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/encrypt_brainkey_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:gravity="bottom"
+            android:text="@string/saved_offline"
+            android:textColor="@color/base_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_5"
+            android:text="@string/copy_and_paste_encrypt_brainkey"
+            android:textColor="@color/base_text_color_level1"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30"
+            android:gravity="bottom"
+            android:text="@string/transmission_offline_title"
+            android:textColor="@color/base_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_5"
+            android:text="@string/transmission_offline_content"
+            android:textColor="@color/base_text_color_level1"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30"
+            android:gravity="bottom"
+            android:text="@string/remember_password_title"
+            android:textColor="@color/base_color"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_5"
+            android:text="@string/remember_password_content"
+            android:textColor="@color/base_text_color_level1"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_seed_path"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_100"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:background="@drawable/edit_text_circle_bg"
+            android:padding="@dimen/dimen_5"
+            android:textColor="@color/base_text_color_level1" />
+
+        <TextView
+            android:id="@+id/tv_save_seed_file"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height_44"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:background="@drawable/bt_big"
+            android:gravity="center"
+            android:text="@string/derive_encrypt_brainkey_address"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/brainkey_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/margin_large_18">
+
+            <LinearLayout
+                android:id="@+id/show_seed_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:lineSpacingExtra="@dimen/line_space_extra"
+                        android:text="@string/save_key_tip"
+                        android:textColor="@color/simple_text_color"
+                        android:textSize="@dimen/text_size_16"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_large_15"
+                        android:gravity="center"
+                        android:lineSpacingExtra="@dimen/line_space_extra"
+                        android:text="@string/save_key_tip"
+                        android:textColor="@color/simple_text_color"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:id="@+id/seed"
+                        style="@style/SeedText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_16"
+                        tools:text="deliver broken make enrich core vendor ski help sock spy purse roast token jewel female" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_large_15"
+                        android:text="@string/one_private_key"
+                        android:textColor="@color/black_second"
+                        android:textSize="@dimen/text_size_12" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/one_private_key"
+                        style="@style/SeedText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_little_3"
+                        android:textSize="@dimen/text_size_14"
+                        tools:text="deliver broken make enrich core vendor ski help sock spy purse roast token jewel female" />
+
+
+                    <TextView
+                        style="@style/SecondaryText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_simple_10"
+                        android:text="@string/click_copy"
+                        android:textColor="@color/black_second"
+                        android:textSize="@dimen/text_size_14"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/seed_password_protected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_simple_10"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/seed_password_protected_lock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginRight="4dp"
+                            android:text="@string/font_icon_lock_bip39"
+                            tools:text="CD" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/seed_password_protected" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_copy_save"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/simple_btn_height"
+                    android:layout_marginTop="@dimen/dimen_30"
+                    android:background="@color/base_color"
+                    android:enabled="true"
+                    android:text="@string/action_have_saved"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_size_16" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:minWidth="500dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/qr_code_seed"
+                        android:layout_width="@dimen/qr_code_size"
+                        android:layout_height="@dimen/qr_code_size"
+                        android:layout_margin="@dimen/qr_code_margin"
+                        android:background="@color/qr_code_normal_bg"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/seed_encrypted_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/NormalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/wallet_locked_message" />
+
+                <TextView
+                    android:id="@+id/lock_icon"
+                    style="@style/FontIconBig"
+                    android:layout_width="@dimen/font_icon_bg_size"
+                    android:layout_height="@dimen/font_icon_bg_size"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:background="@drawable/lock_icon" />
+
+                <TextView
+                    style="@style/SmallHelpText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/touch_to_decrypt_wallet" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

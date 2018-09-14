@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dimen_70"
+    android:background="@drawable/base_click_bg_white"
+    android:minHeight="@dimen/dimen_70"
+    android:orientation="vertical">
+
+    <onemessageui.widght.swipe.SwipeLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/MMFontTitleInList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/base_color"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/make_sure_delete"
+                android:textColor="@color/base_bg_color_level1"
+                android:textSize="@dimen/text_size_16"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_del"
+                style="@style/MMFontTitleInList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/base_color"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/delete"
+                android:textColor="@color/base_bg_color_level1"
+                android:textSize="@dimen/text_size_16" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            style="@style/MMListItem"
+            android:layout_height="match_parent"
+            android:background="@drawable/base_click_bg_white"
+            android:paddingLeft="@dimen/margin_large_18"
+            android:paddingRight="@dimen/margin_large_18">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/contactitem_avatar_iv"
+                    android:layout_width="@dimen/dimen_msg_avatar"
+                    android:layout_height="@dimen/dimen_msg_avatar"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/padding_little_4"
+                    android:src="@drawable/default_other_head" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_simple_10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_7"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_is_group"
+                        android:layout_width="@dimen/dimen_20"
+                        android:layout_height="@dimen/dimen_15"
+                        android:layout_marginRight="@dimen/margin_little_3"
+                        android:src="@drawable/icon_group_hint"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txt_name"
+                        style="@style/MMFontTitleInList"
+                        android:singleLine="true"
+                        android:textColor="@color/base_text_color_level1"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <TextView
+                        android:id="@+id/txt_state"
+                        style="@style/MMFontTag"
+                        android:layout_below="@+id/txt_name"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/btn_bg_blue"
+                        android:text="已读"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txt_group_authen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen_12"
+                        android:layout_marginLeft="@dimen/margin_little_5"
+                        android:layout_marginRight="@dimen/margin_little_5"
+                        android:background="@drawable/group_authen_bg"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:paddingLeft="@dimen/dimen_3"
+                        android:paddingRight="@dimen/dimen_3"
+                        android:text="@string/authority"
+                        android:textColor="@color/base_color"
+                        android:textSize="@dimen/text_size_10"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txt_time"
+                        style="@style/MMFontTitleInList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_simple_10"
+                        android:singleLine="true"
+                        android:textColor="@color/base_text_color_level2"
+                        android:textSize="@dimen/text_size_12" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_little_3"
+                    android:layout_marginTop="@dimen/dimen_7">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_25"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_tip"
+                            style="@style/MMFontTitleInList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="@color/base_color"
+                            android:textSize="@dimen/text_size_13" />
+
+                        <onemessageui.utils.skin.SkinEmojiconTextView
+                            android:id="@+id/txt_content"
+                            style="@style/MMFontTitleInList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="@color/base_text_color_level2"
+                            android:textSize="@dimen/text_size_13"
+                            emojicon:emojiconSize="@dimen/emoji_default_size" />
+
+                        <TextView
+                            android:id="@+id/txt_special_msg"
+                            style="@style/MMFontTitleInList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="@color/base_color"
+                            android:textSize="@dimen/text_size_13" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/unread_msg_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/unread_msg_num_bg"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/padding_little_4"
+                        android:paddingRight="@dimen/padding_little_4"
+                        android:textColor="@color/tint_text_color"
+                        android:textSize="@dimen/text_size_10"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </onemessageui.widght.swipe.SwipeLayout>
+
+    <View
+        android:id="@+id/view_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/base_line_bg_color" />
+
+</LinearLayout>
