@@ -1,228 +1,509 @@
-ONE Wallet
-===============
+### 结构   
 
-Our goal is to support every cryptocurrency with an active development team. Store all the best cryptocurrency through a single app, without sacrificing security. Private keys are stored on your own device. Instead of having one backup file for every coin, you get a master key that can be memorized or stored on a piece of paper. Restore all wallets from a single recovery phrase.
+- 账号管理
+- 聊天管理
+- 群组管理
+- 联系人管理
+- 红包管理
+- 社区管理   
 
-TODOs:
+## 初始化SDK   
 
-* Create instrumentation tests to test a signed APK
+### 初始化环境
+
+APP启动需要调用`registerSDK`来初始化SDK环境，在`Appdelegate`的`- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions `方法中调用。
+
+```objc
+[[ONEChatClient sharedClient] registerSDK];
+```
+
+### 判断本地是否存在账号
+
+如果本地没有账号则需要去注册或者恢复,建议在进行注册或者恢复之前先进行节点检测以选择性能最优的节点。如果本地有账号信息则验证密码即可。
+
+```objc
+BOOL exist = [ONEChatClient isHomeAccountExist];
+```   
+
+## 注册恢复   
+
+### 助记词   
+
+助记词由15个单词组成   
+
+- 生成助记词   
+
+	```objc
+	NSString *seed = [ONEChatClient buildSeed];
+	```
+- 获取本地存储的助记词   
+
+	```objc
+	NSString *seed = [ONEChatClient seedWithPassword:password];
+	```
+	
+- 验证助记词是否合法
+
+	```objc
+	// invalidSeeds会返回错误的助记单词列表
+	NSMutableArray *invalidSeeds = [NSMutableArray array];
+    
+    ONEError *error = [ONEChatClient seedIsValid:seed invalidWords:&invalidSeeds];
+	```   
+	
+- 获取加密助记词   
+
+	加密助记词是通过助记词和用户密码通过一系列加密生成的加密字符串
+
+	```objc
+	NSString *encryptedSeed = [ONEChatClient getEncryptedSeed];
+	```   
+	
+- 用密码解密加密后的助记词   
+
+	```objc
+	NSString *seed = [ONEChatClient aesCommonDecryptWithPass:password string:encryptedSeed];
+	```
+	
+### 注册   
+
+- 生成账号信息
+
+	```objc
+	WSAccountInfo* info = [[WSAccountInfo alloc] init];
+	info.name = name;	// 用户名
+	info.nickname = nickname;	// 昵称
+	info.referrer = invitecode;	// 邀请码
+	info.sex = AccountMan;	// 性别
+	```   
+	
+- 注册账号   
+
+	注册账号需要传`WSAccountInfo`对象、助记词以及密码   
 
 
-## Building the app
+	```objc
+	[[ONEChatClient sharedClient] createAccount:info seed:seed password:password completion:^(ONEError *error){
+	
+		dispatch_async(dispatch_get_main_queue(), ^{
 
-Install [Android Studio](https://developer.android.com/sdk/installing/studio.html). Once it is
-running, import oneapp-android by navigating to where you cloned or downloaded it and selecting
-settings.gradle. When it is finished importing, click on the SDK Manager ![SDK Manager](https://developer.android.com/images/tools/sdk-manager-studio.png). You will need to install SDK version 21.
+   			if (!error) {
+		
+					// 注册成功
+    			} else {
+					// 注册失败
+   			}
+		});
+	}];
 
-<br/>
-Make sure that you have JDK 7 installed before building. You can get it [Here](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html). Once you have that installed, navigate to File > Project Structure > SDK Location and change the path of your current JDK to the path of the new JDK. **The project will not build with JDK 8**. 
+	```
+	> 注册成功之后会回调`- (void)accountVerificationFinish:(AccountVerifyType)type;`在此方法中需要去做获取token等一系列操作。`delegate`使用方法使用见。   
+	
+### 恢复   
 
-<br/>
-Once it is finished installing, you will need to enable developer options on your phone. To do so,
-go into settings, About Phone, locate your Build Number, and tap it 7 times, or until it says
-"You are now a Developer". Then, go back to the main Settings screen and scroll once again to the
-bottom. Select Developer options and enable USB Debugging.
+- 恢复账号   
 
-<br/>
-Then plug your phone into your computer and hit the large green play button at the top of
-Android Studio. It will load for a moment before prompting you to select which device to install
-it on. Select your device from the list, and hit continue.
+	恢复账号需要传入助记词以及密码
 
-**NOTE**
-If you are attempting to build on a Lollipop emulator, please ensure that you are using *Android 5.*.* armeabi-v7*. It will not build on an x86/x86_64 emulator.
+	```objc
+	[[ONEChatClient sharedClient] recoverAccount:seed password:self.miMatextFiled.text completion:^(ONEError *error) {
+       
+        dispatch_async(dispatch_get_main_queue(), ^{
+           
+            if (!error) {
+                // 恢复成功
+            } else {
+                // 恢复失败
+            }
+        });
+    }];
+	```
+	> 恢复成功之后也会回调`- (void)accountVerificationFinish:(AccountVerifyType)type;`。在此方法中需要去做获取token等一系列操作。`delegate`使用方法使用见。    
+	
+### 验证密码   
 
-## Contributions
+- 验证密码   
 
-Your contributions are very welcome, be it translations, extra features or new coins support. Just
-fork this repo and create a pull request with your changes.
+	APP每次启动,如果本地存在账号，则不需要进行注册或者恢复操作，通过验证密码可以激活账号。   
+	
+	```objc
+	BOOL state = [ONEChatClient verifyAccountWithPassword:password];
+	```
+	> 验证密码成功之后也会回调`- (void)accountVerificationFinish:(AccountVerifyType)type;`。在此方法中需要去做获取token等一系列操作。`delegate`使用方法使用见。   
+	
 
-For new coins support read this [document](https://onechain.one/AddingSupportForANewCurrency/).
-Generally you need:
+## 账号管理   
 
-* Electrum-server support
-* ONE core support
-* A beautiful vector icon
-* Entry to the [BIP44 registry](https://github.com/satoshilabs/docs/blob/master/slips/slip-0044.rst) that is maintained by Satoshi labs
+### 当前账号信息   
+
+- AccountName
+
+	`AccountName`为注册时传入的用户名   
+	获取自己的`AccountName`:
+	
+	```objc
+	NSString *accountName = [ONEChatClient homeAccountName];
+	```
+
+- AccountId
+
+	`AccountId`是服务器生成的唯一ID，格式为`1.2.xxx`。   
+	获取自己的`AccountId`:
+	
+	```objc
+	NSString *accountId = [ONEChatClient homeAccountId];
+	```   
+	
+- AccountInfo   
+
+	`AccountInfo`为自己的账号信息，包括用户名、昵称、性别、头像URL等信息。   
+	获取自己的`AccountInfo`:   
+	
+	```objc
+	WSAccountInfo *info = [ONEChatClient homeAccountInfo];
+	```
+	
+- 本地是否有账号信息   
+
+	```objc
+	BOOL isExist = [ONEChatClient isHomeAccountExist];
+	```   
+	
+- 本地账号是否已经激活   
+
+	```objc
+	BOOL isActive = [ONEChatClient isHomeAccountActive];   
+	```
+	
+- 更新本地账号信息   
+
+	```objc
+	BOOL isSuccess = [ONEChatClient saveAccountInfo:accountInfo];
+	```
+	
+- 更新用户信息到Server   
+
+	只能更新用户性别、昵称、简介
+
+	```objc
+    [[ONEChatClient sharedClient] pushAccountInfo:accInfo completion:^(ONEError *error) {
+       
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (!error) {
+            		// 更新成功
+            } else {
+            		// 更新失败
+            }
+        });
+    }];
+	
+	```   
+	
+- 上传用户头像   
+
+	传入UIImage对象
+
+	```objc
+	[[ONEChatClient sharedClient] uploadAvatar:image completion:^(ONEError *error) {
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (!error) {
+            		// 上传成功
+           } else {
+           		// 上传失败
+           }
+        });
+    }];
+	```   
+	
+- 从服务器获取用户头像URL   
 
 
-## Releasing the app
-
-To release the app follow the steps.
-
-1) Change the following:
-
-* in strings.xml app_name string to "ONE" and app_package to oneapp.onewallet
-* in build.gradle the package from "oneapp.onewallet.dev" to "oneapp.onewallet"
-* in AndroidManifest.xml the android:icon to "ic_launcher" and all "oneapp.onewallet.dev.*"  to "oneapp.onewallet.*"
-* remove all ic_launcher_dev icons with `rm wallet/src/main/res/drawable*/ic_launcher_dev.png`
-* setup ACRA and ShapeShift
-
-2) Then in the Android Studio go to:
-
-* Build -> Clean Project and without waiting...
-* Build -> Generate Signed APK and generate a signed APK. ... and now you can grab yourself a nice cup of tea.
-
-3) Test this APK (TODO: with instrumentation tests).
-
-For now test it manually by installing it `adb install -r wallet/wallet-release.apk`
-
-> This one is in the TODOs and must be automated
-> because it will be here that you take a break ;)
-
-4) Upload to Play Store and check for any errors and if all OK publish in beta first.
-
-5) Create a GIT release commit:
-
-* Create a commit with the log entry similar to the description in the Play Store
-* Create a tag with the version of the released APK with `git tag vX.Y.Z <commit-hash>`
+	```
+	[[ONEChatClient sharedClient] fetchUserAvatarUrl:account_id completion:^(ONEError *error, NSString *newAvatarUrl) {
+       
+        dispatch_async(dispatch_get_main_queue(), ^{
+           
+            if (!error) {
+                WSAccountInfo *info = [ONEChatClient accountInfoWithName:accountName];
+                info.avatar_url = newAvatarUrl;
+                [ONEChatClient saveAccountInfo:info];
+            }
+        });
+    }];
+	```
+	
+	获取到的头像URL在界面展示时需要拼接Host   
+	
+	```objc
+	NSString *urlString = [NSString stringWithFormat:@"%@%@",[ONEUrlHelper userAvatarPrefix], accountInfo.avatar_url];
+	```
 
 
-## Version history
+### 他人账号信息
 
-New in version 1.6.0-1.6.2
-- Overview screen
-- Optimized memory usage
-- Sweep paper wallets
-- “Pull to refresh” functionality
-- Synchronized progress bar
-- Option to rename accounts
-- Option to modify fees in the Settings area
-- Transactions now include Date stamps
-- Improved handling of addresses of coins with conflicting address versions
-- Support for landscape view
-- User interface and usability tweaks
-- New coins: Auroracoin, Gulden, Potcoin, Bata, Verge, Asiacoin, e-Gulden, OKCash, Clubcoin, Richcoin
+- 获取账号信息   
 
-New in version 1.5.22
-- Improved UI for setting a BIP39 passphrase
-- New coins: Clams, GCRcoin, Dogecoindark
+	```objc
+	// 根据accountId获取账号信息
+	WSAccountInfo *info = [ONEChatClient accountInfoWithId:accountId];
+	// 根据accountName获取账号信息
+	WSAccountInfo *info = [ONEChatClient accountInfoWithName:accountName];
+	// 根据accountName获取accountId
+	NSString *accountId = [ONEChatClient accountIdWithName:accountName];
+	```
 
-New in version 1.5.21
-- Fixed memory leak when restoring a wallet
-- Fixed crash when adding a coin account with the wrong password in the exchange screen
-- Fixed crash on empty password in sign/verify message screen
-- Added coin: ParkByte
+- 通过`accountName`获取账号信息，如果本地有，取本地，本地没有从Server拉取   
 
-New in version 1.5.20
-- Fixed crashes on some devices
-- Added coins: Novacoin, Canada eCoin and ShadowCash
-- Experimental req-addressrequest support
+	```objc
+	[[ONEChatClient sharedClient] pullAccountInfoWithAccountName:accountName completion:^(ONEError *error, WSAccountInfo *accountInfo) {
+	    // 获取成功之后会自动更新本地存储的账号信息                    
+	}];
+	```   
+	
+- 通过`accountName`获取账号信息，直接从Server拉取更新本地   
 
-New in version 1.5.19
-- Possibility to sign and verify messages
-- Account details screen to view the public key
-- Transaction messages in Vpncoin
-- Russian translation
-- Some UI optimizations
-- Bug fixes
-- Increase the default size of the recovery phrase
+	```objc
+    [[ONEChatClient sharedClient] updateFriendAccountInfoWithCompletion:^(ONEError *error) {
+       	if (!error) {
+       		// 成功
+       	}
+    }];
+	```
+	
+- 批量获取账号信息   
+	
+	通过`accountId`列表获取,自动更新本地   
+	
+	```objc
+	[[ONEChatClient sharedClient] pullAccountInfosWithAccountIdList:needFetchList completion:^(ONEError *error) {
+   }];
+	```   
+	
+## 消息管理   
 
-New in version 1.5.18
-- Can set an amount in receive screen
-- Added Chinese and Japanese translations
-- Updated the recovery phrase creation procedure
-- Added coins: Namecoin, Vpncoin, Vertcoin, Jumbucks, Neoscoin
+### 消息构造   
 
-New in version 1.5.17
-- Added Greek translation
-- Fixed Peercoin and Digitalcoin rare invalid transaction creation
-- New block explorer for Blackcoin
-- Added Neoscoin
-- Small UI fixes
 
-New in version 1.5.16
-- Changed the way balance is calculated and added the possibility to spend unconfirmed transactions
-- Small optimizations when handling the QR code and transactions
+- 消息Body		
 
-New in version 1.5.15
-- Support payment URIs requests from browsers and other apps
-- Changed NuBits and NuShares URIs to "nu"
-- Added Monacoin and Digibyte
-- Added ability to spend own unconfirmed change funds
-- Usability tweaks and bug fixes
+	|消息类型|ONEMessageBodyType|支持类型|   
+	|:--:|:--:|:--:|   
+	|文本|ONEMessageBodyTypeText|全部|
+	|图片|ONEMessageBodyTypeImage|全部|
+	|位置|ONEMessageBodyTypeLocation|全部|
+	|语音|ONEMessageBodyTypeVoice|全部|
+	|红包|ONEMessageBodyTypeRedpacket|群聊|
 
-New in version 1.5.14
-- Added exchange history log
-- Can send alt-coins from bitcoin wallet and vise-versa
-- Make exchange rates appear faster in the UI
-- Fix rare crash when viewing the exchange status of Peercoin or NuBits
+- 文本消息   
 
-New in version 1.5.13
-- Integrated exchange (beta)
-- Rebranding of Darkcoin to Dash
-- UI tweaks
+	```objc
+	NSString *willSendText = @"message";
+	ONETextMessageBody *body = [[ONETextMessageBody alloc] initWithText:willSendText];
+	```   
+	
+- 图片消息   
 
-New in version 1.5.12
-- Click on any addresses to edit the label or copy it
-- Dedicated copy address button in the receive screen
-- New user interface for Android Lollipop devices
-- Improved icons
-- Bug and crash fixes
+	```objc
+	NSData *imageData = UIImageJPEGRepresentation(image, 1);
+	ONEImageMessageBody *body = [[ONEImageMessageBody alloc] initWithData:imageData];
+	```   
+	
+- 位置消息   
 
-New in version 1.5.11
-- New settings screen
-- Ability to view recovery phrase in settings
-- Manual receiving address management (enable in settings)
-- Testnet for Bitcoin, Litecoin and Dogecoin
-- Usability tweaks
-- Bug and crash fixes
+	```objc
+	double latitude = 1.0;
+	double longitude = 1.0;
+	NSString *address = @"北京市";
+	ONELocationMessageBody *body = [[ONELocationMessageBody alloc] initWithLatitude:latitude longitude:longitude address:address];
+	```   
 
-New in version 1.5.10
-- Balance screen shows the amount with 4 decimal places (click to view the full amount)
-- Basic address book
+- 语音消息
 
-New in version 1.5.9
-- Ask confirmation before creating a new address
+	```objc
+	NSString *voiceLocalPath = @"语音文件本地路径";
+	int duration = 语音时长;
+	ONEVoiceMessageBody *body = [[ONEVoiceMessageBody alloc] initWithLocalPath:localPath];
+	body.duration = duration;
+	```   
+	
+- 红包消息   
 
-New in version 1.5.8
-- Added the ability to create new addresses and view the previous ones
-- When creating a new wallet, it is now possible to select the passphrase and copy it
-- Usability fix when setting a password
-- Better bug/crash reporting
+	```objc
+	NSDictionary *dic = @{
+	                      @"red_packet_id":红包ID,
+	                      @"red_packet_msg":红包留言
+	                      };
+   NSString *params = [dic yy_modelToJSONString];
+   ONERedPacketMessageBody *body = [[ONERedPacketMessageBody alloc] initWithPacket:params];
+	```   
+	
+- ONEMessage构造   
 
-New in version 1.5.6 and 1.5.7
-- Cannacoin, Feathercoin, Digitalcoin and Rubycoin support
+	- 消息类型			
 
-New in version 1.5.5
-- Revert BTC fees to previous values, as transactions are not included fast enough in the blocks
-- Added local currency values in the sign transaction screen
+		|消息类型|ONEChatType|
+		|:--:|:--:|
+		|单聊|ONEChatTypeChat|
+		|群聊|ONEChatTypeGroupChat|
+		
+	- 消息状态   
 
-New in version 1.5.4
-- Improved transaction broadcasting and send validation logic
-- Fix issue where the balance was incorrectly calculated in some cases
-- Updated Darkcoin p2sh address versions
+		|消息状态|ONEMessageStatus|
+		|:--:|:--:|
+		|正在发送|ONEMessageStatusDelivering|
+		|发送成功|ONEMessageStatusSuccessed|
+		|发送失败|ONEMessageStatusFailed|
 
-New in version 1.5.3
-- Changed Blackcoin code from BC to BLK
+	构造`ONEMessage`时，`from`是自己的`accountName`,单聊时，`to`为聊天对方的`accountName`。群聊时，`to`为群组ID。需要指定消息类型。
+	
+	```objc
+	NSString *toUser = @"username";	// 对方的accountName，如果是群的话为群组ID
+	ONETextMessageBody *body = [[ONETextMessageBody alloc] initWithText:@"msg"];
+   NSString *from = [ONEChatClient homeAccountName];
+   ONEMessage *message = [[ONEMessage alloc] initWithConversationID:toUser from:from to:toUser body:body ext:nil];
+    message.chatType = ONEChatTypeChat;	// 消息类型
+    message.timestamp = [[ONEChatClient date] timeIntervalSince1970]*1000;
+	```   
+	
+### 发送消息   
 
-New in version 1.5.2
-- Added exchange rates for various national currencies
-- Blackcoin support
-- Implemented multiple coin selection on creation or restoring wallet
-- Improved automatic connectivity management with faster reconnects and detection of network change. Added feature to disconnect when the app is in background and idle for 30 minutes.
-- Fix issue when restoring a wallet the previous wallet could reappear
-- General usability and bug fixes
+构造完成`ONEMessage`对象完成后，调用SDK提供的api进行消息的发送操作。   
+发送失败会回调相应的```error```。
 
-New in version 1.5.1
-- Added beta support for Blackcoin
+```objc
+[[ONEChatClient sharedClient] sendMessage:message progress:nil completion:^(ONEMessage *message, ONEError *error) {
+        
+    if (!error) {
+			// 发送成功
+    } else {
+			// 发送失败
+    }
+ }];
+```   
 
-New in version 1.5.0
-- The supported coins are now Bitcoin, Litecoin, Dogecoin, Peercoin, Darkcoin, Reddcoin, NuBits and NuShares. All will work without changing your seed!
-- Cleaner interface and bug fixes.
+### 接收消息   
 
-New in version 1.4.1
-- Re-design of the create wallet tutorial and set more sane defaults
-- Fix crash when refreshing a non connected wallet
-- Small UI tweaks
+首先要在需要接收的页面注册回调,需要在哪个页面接收消息的通知，就在哪个界面注册回调。   
 
-New in version 1.4.0
-- New balance screen design
-- Optimization for old 2.3.x Androids with very small screens
-- Fix crash when emptying an already empty wallet
-- When refreshing, do it only for the current coin
-- General UI and usability tweaks
-- Optimize layouts for small screens
-- Fixed crash in older Androids due to a missing API
-- Fixed camera crash in low resolution screens
-- Able to install app in external storage
-- ... and many fixes and optimizations
+```objc
+[[ONEChatClient sharedClient] addDelegate:self delegateQueue:nil];
+```   
+
+实现代理方法：   
+
+```objc
+/**
+ 收到新消息
+
+ @param aMessages 消息数组List<ONEMessage>
+ */
+- (void)didReceiveMessages:(NSArray *)aMessages;
+```   
+
+### 解析消息   
+
+```objc
+- (void)didReceiveMessages:(NSArray *)aMessages
+{
+	for (ONEMessage *msg in aMessages) {
+		
+		ONEMessageBody *body = msg.body;
+		switch(body.type) {
+			// 文本消息
+			case ONEMessageBodyTypeText: 
+			{
+				ONETextMessageBody *textBody = (ONETextMessageBody *)body;
+				NSString *receiveText = textBody.text;
+			}
+			break;
+			// 图片消息,收到图片消息SDK会自动下载，下载缓存本地之后会将本地路径和远程路径做映射。
+			// 通过消息附件的远程路径获取本地路径进行展示。
+			case ONEMessageBodyTypeImage:
+			{
+				ONEImageMessageBody *imgMessageBody = (ONEImageMessageBody *)body;
+                
+	            NSString *localPath = imgMessageBody.localPath;
+	            NSString *remotePath = imgMessageBody.remotePath;
+	            if (localPath == nil) {
+	                
+	                localPath = [ONEChatClient localPathFromRemotePath:remotePath];
+	            }
+			}
+			break;
+			// 语音消息，处理等同图片消息
+			case ONEMessageBodyTypeVoice:
+			{
+				ONEVoiceMessageBody *voiceBody = (ONEVoiceMessageBody *)body;
+				NSString *localPath = voiceBody.localPath;
+                NSString *remotePath = voiceBody.remotePath;
+                if (localPath == nil) {
+                    
+                    localPath = [ONEChatClient localPathFromRemotePath:remotePath];
+                }
+			}
+			break;
+			// 位置消息
+			case ONEMessageBodyTypeLocation:
+			{
+				ONELocationMessageBody *locationBody = (ONELocationMessageBody *)body;
+                NSString *address = locationBody.address;
+                long latitude = locationBody.latitude;
+                long longitude = locationBody.longitude;
+			}
+			break;
+			// 红包消息
+			case ONEMessageBodyTypeRedpacket:
+			{
+				ONERedPacketMessageBody *msgBody = (ONERedPacketMessageBody *)body;
+                NSString *params = msgBody.redpacketParam;
+                if (params.length > 0) {
+                    
+                    NSData *jsonData = [params dataUsingEncoding:NSUTF8StringEncoding];
+                    if (jsonData) {
+                        
+                        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:nil];
+                        NSString *red_id = dic[@"red_packet_id"];
+                        NSString *red_msg = dic[@"red_packet_msg"];
+                    }
+                }
+			}
+			break;
+			default:
+                break;
+		}
+	}
+} 
+```   
+
+### 会话管理   
+
+会话在本地DB进行管理   
+
+
+- 获取会话列表   
+
+	```objc
+	NSArray *list = [[ONEChatClient sharedClient] getAllConversations];
+	```
+
+- 获取单个会话实例   
+
+
+	```objc
+	// 如果本地没有这个会话会创建新的实例
+	ONEConversation *conversation = [[ONEChatClient sharedClient] getConversation:conversationChatter type:conversationType createIfNotExist:YES];
+	```
+	
+- 删除某个人的会话
+
+	```objc
+	[[ONEChatClient sharedClient] deleteConversationFromUser:accountName];
+	```   
+	
+- 删除某个会话实例
+
+	```objc
+	[[ONEChatClient sharedClient] deleteConversation:conversation];
+	```
+    
