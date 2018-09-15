@@ -1,3 +1,4 @@
+
 # onechat-sdk-android
 
 ## WalletCore  
@@ -88,4 +89,5 @@ boolean isHasAccount = OneAccountHelper.isHasAccount();
 
 ## ONE红包相关
 ### OneRedpacketHelper
+
 
