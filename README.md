@@ -1,3 +1,9 @@
+
+# onechat-sdk-android
+
+## WalletCore  
+
+
 ### 结构   
 
 - 账号管理
@@ -21,6 +27,7 @@ APP启动需要调用`registerSDK`来初始化SDK环境，在`Appdelegate`的`- 
 
 如果本地没有账号则需要去注册或者恢复,建议在进行注册或者恢复之前先进行节点检测以选择性能最优的节点。如果本地有账号信息则验证密码即可。
 
+
 ```objc
 BOOL exist = [ONEChatClient isHomeAccountExist];
 ```   
@@ -32,6 +39,7 @@ BOOL exist = [ONEChatClient isHomeAccountExist];
 助记词由15个单词组成   
 
 - 生成助记词   
+
 
 	```objc
 	NSString *seed = [ONEChatClient buildSeed];
@@ -50,10 +58,12 @@ BOOL exist = [ONEChatClient isHomeAccountExist];
     
     ONEError *error = [ONEChatClient seedIsValid:seed invalidWords:&invalidSeeds];
 	```   
+
 	
 - 获取加密助记词   
 
 	加密助记词是通过助记词和用户密码通过一系列加密生成的加密字符串
+
 
 	```objc
 	NSString *encryptedSeed = [ONEChatClient getEncryptedSeed];
@@ -507,3 +517,4 @@ BOOL exist = [ONEChatClient isHomeAccountExist];
 	[[ONEChatClient sharedClient] deleteConversation:conversation];
 	```
     
+
